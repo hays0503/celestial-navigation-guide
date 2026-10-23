@@ -1,0 +1,4 @@
+# Publish exactly the bytes that were verified locally.
+# Text conversion is disabled so CRLF/LF never changes the served content:
+# qa/checks.json pins SHA-256 over the same files that are committed.
+* -text
