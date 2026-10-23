@@ -1,6 +1,6 @@
 {
-  "recorded_at_utc": "2026-10-23T17:42:46.657488+00:00",
-  "published_base_commit": "9fe911a8c94769f893bb7ce42d51c95a5314d48b",
+  "recorded_at_utc": "2026-10-23T18:17:25.629919+00:00",
+  "published_base_commit": "7f04bd3c8b694cd5457f897a17f2802fa29c3808",
   "verified_site_tree_sha256": "408bb02c2a625fa6b4476f3f8366b88245b590769cd29d58544380a2424f3411",
   "verified_file_count": 103,
   "tree_status": "Verified against content SHA-256 manifest of lessons-site/ (not claimed as old git SHA)",
