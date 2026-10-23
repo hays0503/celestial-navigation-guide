@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Проверки редакции — Секстант и Солнце</title><style>body{margin:0;background:#f7f5ef;color:#16232b;font:1rem/1.7 Georgia,serif}.wrap{max-width:860px;margin:0 auto;padding:2rem 1.5rem 4rem}h1{font-size:2.2rem;line-height:1.2}h2{margin-top:2rem;font-size:1.5rem}code{background:#eaf0ef;padding:.1rem .3rem;border-radius:.2rem;font-size:.9em}pre{background:#eef2f1;padding:.8rem;overflow:auto}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border-bottom:1px solid #d8ded9;padding:.5rem .6rem;text-align:left;vertical-align:top}th{background:#e9eeec}a{color:#1e5f7a}</style></head><body><div class="wrap"><p><a href="../index.html">Главная</a> · <a href="../QA-STATUS.html">Статус</a> · <a href="checks.json">checks.json</a> · <a href="verify_site.py">verify_site.py</a> · <a href="EDITORIAL-20261023B.md">Выпуск: рабочая редакция 1</a> · <a href="EDITORIAL-20261023.md">История: редактура 9fe911a</a></p><h1>Проверки рабочей редакции</h1>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Проверки редакции — Секстант и Солнце</title><style>:root{--paper:#f7f5ef;--surface:#fffefa;--ink:#16232b;--text:#243d4a;--muted:#586d78;--line:#d8ded9;--link:#1e5f7a;--code:#eaf0ef;color-scheme:light dark}@media (prefers-color-scheme:dark){:root{--paper:#0e1720;--surface:#16232e;--ink:#e8f0f4;--text:#c9d7de;--muted:#96abb7;--line:#2c3f4b;--link:#8ccbee;--code:#16232e}}@media print{:root{--paper:#fff;--surface:#fff;--ink:#111;--text:#111;--muted:#444;--line:#ccc;--link:#183f5c;--code:#f4f4f4}}body{margin:0;background:var(--paper);color:var(--text);font:1rem/1.7 Georgia,serif}.wrap{max-width:860px;margin:0 auto;padding:2rem 1.5rem 4rem}h1{font-size:2.2rem;line-height:1.2;color:var(--ink)}h2{margin-top:2rem;font-size:1.5rem;color:var(--ink)}code{background:var(--code);padding:.1rem .3rem;border-radius:.2rem;font-size:.9em}pre{background:var(--code);padding:.8rem;overflow:auto}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border-bottom:1px solid var(--line);padding:.5rem .6rem;text-align:left;vertical-align:top}th{background:var(--surface)}a{color:var(--link)}</style></head><body><div class="wrap"><p><a href="../index.html">Главная</a> · <a href="../QA-STATUS.html">Статус</a> · <a href="checks.json">checks.json</a> · <a href="verify_site.py">verify_site.py</a> · <a href="EDITORIAL-20261023B.md">Выпуск: рабочая редакция 1</a> · <a href="EDITORIAL-20261023.md">История: редактура 9fe911a</a></p><h1>Проверки рабочей редакции</h1>
 <ul>
-<li>Время записи (UTC): <code>2026-10-23T18:17:25.629919+00:00</code></li>
-<li>Сводный SHA-256 проверенного дерева <code>lessons-site/</code>: <code>408bb02c2a625fa6…</code> (103 файлов в <code>checks.json</code>)</li>
-<li>Предыдущий базовый коммит в репозитории публикации до синхронизации: <code>7f04bd3c8b69</code></li>
+<li>Время записи (UTC): <code>2026-10-23T19:08:20.546245+00:00</code></li>
+<li>Сводный SHA-256 проверенного дерева <code>lessons-site/</code>: <code>b5be70a58a938e21…</code> (103 файлов в <code>checks.json</code>)</li>
+<li>Предыдущий базовый коммит в репозитории публикации до синхронизации: <code>20495e954049</code></li>
 </ul>
 <p>Результаты ниже привязаны к фактическим SHA-256 файлов текущей редакции в <code>qa/checks.json</code>, а не к старому коммиту.</p>
 <h2>Сводка проверок (PASS / FAIL / NOT RUN)</h2>
@@ -29,7 +29,7 @@
 <tr>
 <td>Поставка Б (П1–П6, схемы F II/LOP, мутации ключей)</td>
 <td><strong>PASS</strong></td>
-<td>17 PASS / 0 FAIL</td>
+<td>19 PASS / 0 FAIL</td>
 </tr>
 <tr>
 <td>Цифровой экспорт A4</td>
@@ -39,7 +39,12 @@
 <tr>
 <td>Браузер (CDP + негативные пробы)</td>
 <td><strong>PASS</strong></td>
-<td>13 экранов, 3 негативных отказа, макс. переполнение 0 px</td>
+<td>18 экранов (из них 5 тёмных), 3 негативных отказа, макс. переполнение 0 px</td>
+</tr>
+<tr>
+<td>Тёмная тема по системной настройке</td>
+<td><strong>PASS</strong></td>
+<td>минимальный контраст в тёмной теме 6.7:1; печать остаётся светлой</td>
 </tr>
 <tr>
 <td>Переносимая проверка статической копии (<code>qa/verify_site.py</code>)</td>

@@ -19,6 +19,24 @@ main>section:focus{outline:none}.mobile-toc-top{display:none}.sidebar{scroll-mar
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{@page{size:A4}}
 section{scroll-margin-top:0}
+
+:root{color-scheme:light dark}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#0e1720;--surface:#16232e;--ink:#e8f0f4;--text:#c9d7de;--muted:#96abb7;
+    --line:#2c3f4b;--blue:#8ccbee;--orange:#f2a962;--wash:#1b2c37;--warning:#3b2a15;
+    --code-bg:#12202a;--code-fg:#a9d6ea;--check-line:#43808f;--figure-mat:#f7f7f4;
+    --shadow:0 10px 26px rgba(0,0,0,.45)}
+  code{background:var(--code-bg);color:var(--code-fg)}
+  .check{border-left-color:var(--check-line)}
+  figure img{background:var(--figure-mat);border-radius:.25rem}
+  .tools button:hover{background:var(--wash);color:var(--ink)}
+  .sidebar a[aria-current="location"]{background:var(--wash)}
+  blockquote,.warning{color:var(--text)}
+}
+@media print{:root{color-scheme:light;--paper:#fff;--surface:#fff;--ink:#111;--text:#111;
+  --muted:#444;--line:#ccc;--blue:#183f5c;--orange:#6b3b00;--wash:#f2f2f2;
+  --warning:#fff8ec;--code-bg:#f4f4f4;--code-fg:#111;--check-line:#666;--figure-mat:#fff}
+}
 .sheet-layout{max-width:920px;margin:2rem auto;padding:0 1.5rem}.sheet-layout td{height:2.1rem}.sheet-continuation{display:none}@media print{.sheet-layout{margin:0;padding:0;font-size:9.5pt;line-height:1.35}.sheet-layout h1{font-size:22pt;margin:0 0 .6rem}.sheet-layout h2{font-size:14pt;margin:1rem 0 .45rem}.sheet-layout p{margin:.4rem 0}.sheet-layout li{margin:.25rem 0}.sheet-layout .table-scroll{margin:.65rem 0}.sheet-layout table{font-size:9pt;line-height:1.3}.sheet-layout th,.sheet-layout td{padding:.28rem .45rem}.sheet-layout td{height:1.5rem}.sheet-page+.sheet-page{break-before:page}.sheet-continuation{display:block;margin:0 0 .6rem!important;color:#444}}</style><style id="course-nav-style">.course-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.4rem;padding:.65rem 1rem;font-size:.9rem}.course-nav a{color:inherit}@media print{.course-nav{display:none}}</style></head><body><header class="topbar"><div class="brand">Лист наблюдений и прокладки</div><div class="tools"><a href="index.html">Главная</a><a href="GUIDE.html#worksheet">К пособию</a><button type="button" onclick="window.print()">Печать листа</button></div></header><!-- course-nav --><nav aria-label="Маршруты курса" class="course-nav"><a href="START.html">Учиться</a><a href="TRAINING.html">Практика</a><a href="CONTROLS.html">Справка</a><a href="QA-STATUS.html">QA</a></nav><!-- /course-nav --><main class="sheet-layout"><div class="sheet-page"><h1 id="sheet-heading-1">Лист наблюдений и прокладки</h1>
 <p><strong>Не для реального судовождения.</strong> Учебная запись для игры.</p>
 <p>Распечатайте или перепишите на чистый лист. Заполняйте <strong>только то, что действительно измерили или прочитали</strong>. Неизвестное поле оставляйте пустым и записывайте причину: «нет данных», «не читается», «остановка». Не подставляйте число из образца.</p>

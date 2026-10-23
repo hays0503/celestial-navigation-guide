@@ -12,6 +12,24 @@
   --wash:#eaf3f4; --warning:#fff1d9;
   --font:system-ui,-apple-system,"Segoe UI",sans-serif;
   --serif:Georgia,"Times New Roman",serif;
+  --shadow:0 8px 20px rgba(23,59,85,.07);
+  --button-bg:#173b55; --button-fg:#fff;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#0e1720; --surface:#16232e; --ink:#e8f0f4; --text:#c9d7de;
+    --muted:#96abb7; --line:#2c3f4b; --blue:#8ccbee; --orange:#f2a962;
+    --wash:#1b2c37; --warning:#3b2a15;
+    --shadow:0 10px 26px rgba(0,0,0,.45);
+    --button-bg:#8ccbee; --button-fg:#0e1720;
+  }
+  .button.primary:hover{background:var(--orange);color:#0e1720}
+}
+@media print{
+  :root{color-scheme:light;--paper:#fff;--surface:#fff;--ink:#111;--text:#111;
+    --muted:#444;--line:#ccc;--blue:#183f5c;--orange:#6b3b00;--wash:#f2f2f2;
+    --warning:#fff8ec;--button-bg:#111;--button-fg:#fff}
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -35,7 +53,7 @@ h3{font-size:1.3rem}
 .lede{font-size:1.12rem;max-width:58ch;margin:1.2rem 0 0;color:var(--text)}
 .actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.6rem}
 .button{display:inline-block;padding:.7rem 1rem;border-radius:.4rem;text-decoration:none;font-weight:700;font-size:.92rem;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
-.button.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+.button.primary{background:var(--button-bg);color:var(--button-fg);border-color:var(--button-bg)}
 .button.primary:hover{background:var(--blue);color:#fff}
 .status{margin:1.3rem 0 0;font-size:.84rem;color:var(--muted)}
 .hero-note{background:var(--wash);border-left:4px solid var(--blue);padding:1rem 1.1rem;font-size:.9rem}
@@ -43,7 +61,7 @@ h3{font-size:1.3rem}
 .section{padding-top:2.7rem}
 .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
 .card{display:flex;flex-direction:column;min-height:13rem;background:var(--surface);border:1px solid var(--line);border-radius:.5rem;padding:1.15rem;text-decoration:none;color:var(--text)}
-.card:hover{border-color:var(--blue);color:var(--text);transform:translateY(-2px);box-shadow:0 8px 20px rgba(23,59,85,.07)}
+.card:hover{border-color:var(--blue);color:var(--text);transform:translateY(-2px);box-shadow:var(--shadow)}
 .card .num{font:700 .78rem var(--font);letter-spacing:.1em;color:var(--muted);margin-bottom:1.5rem}
 .card strong{display:block;font:700 1.25rem/1.25 var(--serif);color:var(--ink);margin-bottom:.55rem}
 .card span{font-size:.88rem;color:var(--muted)}
