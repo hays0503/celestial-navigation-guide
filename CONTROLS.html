@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Управление прибором — Секстант и Солнце</title><style>
+:root{--paper:#f5f3ed;--surface:#fffefa;--ink:#173b55;--text:#243d4a;--muted:#586d78;--line:#d6dfdf;--blue:#1e638d;--orange:#b8660e;--wash:#eaf3f4;--warning:#fff1d9;--font:system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:6rem}body{margin:0;background:var(--paper);color:var(--text);font:1rem/1.75 var(--font)}a{color:var(--blue);text-underline-offset:.18em}a:hover{color:var(--orange)}:focus-visible{outline:3px solid var(--orange);outline-offset:4px}.skip{position:absolute;left:1rem;top:-5rem}.skip:focus{top:.5rem;z-index:5;background:var(--surface);padding:.5rem}
+.topbar{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem max(1rem,calc((100vw - 1400px)/2));background:var(--surface);border-bottom:1px solid var(--line)}.brand{font-weight:750;line-height:1.3;letter-spacing:.02em;color:var(--ink)}.brand small{display:block;font-size:.73rem;letter-spacing:.08em;color:var(--muted);font-weight:550}.tools{display:flex;gap:.7rem;align-items:center;font-size:.85rem}.tools button{font:inherit;color:var(--ink);border:1px solid var(--line);border-radius:.4rem;background:var(--surface);padding:.35rem .75rem;cursor:pointer}.layout{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:245px minmax(0,860px);gap:3.5rem;padding:2.5rem 2rem 6rem}.sidebar{position:sticky;top:6rem;align-self:start;max-height:calc(100vh - 7rem);overflow:auto;font-size:.88rem;line-height:1.55}.sidebar h2{font-size:.72rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin:.2rem 0 .9rem}.sidebar ul{list-style:none;margin:0;padding:0}.sidebar li{margin:.15rem 0}.sidebar a{display:block;padding:.35rem .55rem;border-radius:.35rem;color:var(--text);text-decoration:none;border-left:3px solid transparent}.sidebar a[aria-current="location"]{background:var(--wash);color:var(--blue);border-left-color:var(--blue)}.sidebar .appendices{border-top:1px solid var(--line);margin-top:.9rem;padding-top:.9rem}.sidebar .edition{margin-top:1.2rem;color:var(--muted);font-size:.77rem}.mobile-menu{display:none}
+main{min-width:0}section{padding:0 0 3rem;margin:0 0 3rem;border-bottom:1px solid var(--line);scroll-margin-top:6rem}section:last-child{border-bottom:0}h1,h2,h3,h4,h5{color:var(--ink);line-height:1.28;font-weight:700}h1{font:700 clamp(2.7rem,5vw,4.1rem)/1.1 Georgia,serif;margin:.3rem 0 1.3rem;letter-spacing:-.035em}h2{font:700 clamp(1.9rem,3vw,2.7rem)/1.2 Georgia,serif;margin:.3rem 0 1.8rem}h3{font-size:1.35rem;margin:2.4rem 0 .8rem}h4{font-size:1.08rem;margin:1.8rem 0 .7rem}h5{font-size:1rem;margin:1.2rem 0 .5rem}p{margin:.8rem 0 1.1rem}li{padding-left:.1rem;margin:.38rem 0}ol,ul{padding-left:1.5rem}strong{font-weight:700;color:var(--ink)}em{color:var(--muted)}code{font: .92em ui-monospace,"Cascadia Code",Consolas,monospace;background:#eaf0ef;color:#184962;padding:.12rem .3rem;border-radius:.2rem;overflow-wrap:anywhere}pre{white-space:pre-wrap}blockquote,.warning{margin:1.4rem 0;padding:.8rem 1.2rem;background:var(--warning);border-left:4px solid var(--orange)}.check{background:var(--wash);padding:.8rem 1.1rem;border-left:3px solid #5594a1}.check-item{list-style:none;position:relative}.check-item>span{position:absolute;left:-1.2rem;color:var(--blue)}.section-kicker{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .65rem}.chapter-intro{background:var(--wash);padding:.45rem 1rem;border-radius:.3rem;margin-bottom:1.6rem;font-size:.9rem}
+figure{margin:1.7rem 0 2rem;background:var(--surface);border:1px solid var(--line);border-radius:.5rem;padding:.9rem}.figure-link{display:block;text-decoration:none}figure img{display:block;width:auto;max-width:100%;height:auto;max-height:500px;margin:0 auto;object-fit:contain}figcaption{margin:.8rem .25rem .15rem;color:var(--muted);font-size:.86rem;line-height:1.55}.table-scroll{width:100%;overflow-x:auto;margin:1.4rem 0;background:var(--surface);border:1px solid var(--line);border-radius:.35rem}table{border-collapse:collapse;width:100%;font-size:.92rem;line-height:1.5}th,td{text-align:left;vertical-align:top;padding:.7rem .8rem;border-bottom:1px solid var(--line);min-width:7rem}th{font-weight:650;background:var(--wash);color:var(--ink)}tr:last-child td{border-bottom:0}details{margin:1.6rem 0;padding:.85rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:.4rem}summary{cursor:pointer;color:var(--blue);font-weight:600;font-size:.92rem}details[open]>summary{margin-bottom:1rem}details.illustration{border-style:dashed}details figure{border:0;padding:0;margin:1rem 0}details.illustration>p{font-size:.9rem;color:var(--muted)}details.answer{background:var(--wash)}.end-note{font-size:.84rem;color:var(--muted)}.print-note{display:none}
+@media(max-width:1000px){.layout{grid-template-columns:205px minmax(0,1fr);gap:2rem;padding-left:1.3rem;padding-right:1.3rem}.sidebar{font-size:.82rem}.tools a{display:none}}
+@media(max-width:720px){body{font-size:1rem}.topbar{padding:.65rem 1rem}.brand small{font-size:.65rem}.tools{font-size:.8rem}.layout{display:block;padding:1rem 1rem 3rem}.sidebar{position:static;max-height:none;margin:0 0 2rem}.sidebar>h2,.sidebar>ul,.sidebar .edition,.sidebar>p.nav-group{display:none}.sidebar.is-open>ul{display:block}.sidebar.is-open>p.nav-group{display:block}.sidebar .appendices{border:0;margin:0;padding:0}.mobile-menu{display:block;width:100%;font:600 .9rem var(--font);text-align:left;padding:.7rem 0;color:var(--blue);background:transparent;border:0;border-bottom:1px solid var(--line);cursor:pointer}section{padding-bottom:2rem;margin-bottom:2rem}h1{font-size:2.6rem}h2{font-size:1.9rem}figure{padding:.5rem}figure img{max-height:330px}th,td{padding:.55rem;min-width:6rem}html{scroll-padding-top:5rem}.section-kicker{font-size:.7rem}}
+@media print{@page{margin:17mm}html{scroll-behavior:auto}body{background:white;color:#111;font:10.5pt/1.5 Georgia,serif}.topbar,.sidebar,.tools,.skip{display:none!important}.layout{display:block;max-width:none;margin:0;padding:0}main{max-width:none}section{break-before:page;margin:0 0 1rem;padding:0;border:0}section:first-child{break-before:auto}h1{font-size:31pt}h2{font-size:23pt}h3{font-size:15pt}h4{font-size:12pt}h1,h2,h3,h4{break-after:avoid}figure{break-inside:avoid;border:1px solid #bbb}figure img{max-height:110mm}a{color:#183f5c;text-decoration:none}table{font-size:9pt}.table-scroll{overflow:visible}th{background:#eee}details:not([open])> :not(summary){display:block!important}details{break-inside:auto;border:1px solid #ccc}summary{font-size:10pt}.print-note{display:block;font-size:9pt;color:#444}.check,.warning{break-inside:avoid}p{orphans:3;widows:3}}
+
+main>section:focus{outline:none}.mobile-toc-top{display:none}.sidebar{scroll-margin-top:5.2rem}
+.sidebar .nav-group{margin:1.1rem 0 .3rem;font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:650}
+.sidebar .nav-group:first-of-type{margin-top:0}
+@media(max-width:720px){.tools .mobile-toc-top{display:inline-block}.tools{gap:.45rem}.tools button{padding:.35rem .55rem}.brand{min-width:0}}
+@media print{th,td{min-width:0;overflow-wrap:anywhere}table{table-layout:fixed}}
+.section-nav{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.86rem}.section-nav a{max-width:100%}.section-nav small{display:block;color:var(--muted)}
+@media print{.section-nav{display:none}thead{display:table-header-group}tr{break-inside:avoid}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{@page{size:A4}}
+section{scroll-margin-top:0}
+.controls-layout{max-width:820px;margin:0 auto;padding:2rem 1.5rem 4rem}@media print{.controls-layout{margin:0;padding:0}.controls-layout h1{font-size:24pt}}</style></head><body><header class="topbar"><div class="brand">Управление прибором<small>КАРТОЧКА · НЕ УРОК</small></div><div class="tools"><a href="index.html">Главная</a><a href="START.html">Первый отсчёт</a><a href="GUIDE.html">Уроки</a><a href="QA-STATUS.html">Статус</a><button type="button" onclick="window.print()">Печать</button></div></header><main class="controls-layout"><h1 id="controls-heading-1">Управление прибором</h1>
+<p>Справочная карточка, не урок. Клавиши — <strong>назначения по умолчанию</strong>; если вы их меняли, используйте свои. Названия действий есть в настройках управления и в справке <code>P</code>.</p>
+<h2 id="controls-heading-2">Самое необходимое</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Клавиша</th>
+<th>Действие</th>
+<th>Когда нужна</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Z</code></td>
+<td>открыть или закрыть секстант</td>
+<td>начало и конец упражнения</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>сильный правый фильтр</td>
+<td>первый выбор, чтобы увидеть диск</td>
+</tr>
+<tr>
+<td><code>2</code>, <code>1</code></td>
+<td>слабее затемнение справа</td>
+<td>если диск слишком тёмный</td>
+</tr>
+<tr>
+<td><code>↑</code></td>
+<td>увеличить угол: отражение опускается</td>
+<td>поиск горизонта</td>
+</tr>
+<tr>
+<td><code>Shift+↑</code></td>
+<td>то же быстрее</td>
+<td>пока Солнце далеко</td>
+</tr>
+<tr>
+<td><code>↓</code></td>
+<td>уменьшить угол: отражение поднимается</td>
+<td>если проскочили</td>
+</tr>
+<tr>
+<td><code>Ctrl+↑</code>, <code>Ctrl+↓</code></td>
+<td>точный шаг</td>
+<td>последние десятые минуты</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td>вернуть барабан к нулю</td>
+<td>только как настройка поиска</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="controls-heading-3">Дополнительно</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Клавиша</th>
+<th>Действие</th>
+<th>Ограничение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>снять правый фильтр</td>
+<td>не влияет на левый</td>
+</tr>
+<tr>
+<td><code>Ctrl+1</code>, <code>Ctrl+2</code>, <code>Ctrl+3</code></td>
+<td>левый фильтр</td>
+<td>нужен редко</td>
+</tr>
+<tr>
+<td><code>Ctrl+0</code></td>
+<td>снять левый фильтр</td>
+<td>одна <code>Ctrl</code> фильтр не выбирает</td>
+</tr>
+<tr>
+<td><code>+</code>, <code>−</code></td>
+<td>увеличение изображения</td>
+<td>не меняет измеренный угол</td>
+</tr>
+<tr>
+<td><code>←</code>, <code>→</code></td>
+<td>поворот взгляда</td>
+<td>не настройка высоты</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td>справка по прибору</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>I</code></td>
+<td>встроенная запись наблюдения</td>
+<td>для урока 1 не требуется</td>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td>служебная калибровка по светилу</td>
+<td>не ручная поверка нуля</td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td>сброс серии</td>
+<td>для урока 1 не требуется</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="controls-heading-4">Три правила, чтобы не спутать</h2>
+<ol>
+<li><strong><code>R</code> — не поверка.</strong> Он возвращает барабан к исходной настройке, но не измеряет и не удостоверяет поправку нуля.</li>
+<li><strong><code>C</code> — не шаг ручного расчёта.</strong> Это служебная калибровка по известному светилу.</li>
+<li><strong>Увеличение не умножает угол.</strong> Оно меняет только размер изображения.</li>
+</ol>
+<p>Что именно проверено в реализации и что ещё нет — в <a href="QA-STATUS.html">статусе проверки</a>.</p>
+</main></body></html>
