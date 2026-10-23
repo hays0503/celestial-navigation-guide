@@ -1,17 +1,17 @@
 {
   "date": "2026-10-23",
-  "commit": "75395bd98188d10a31c0d3d532da766f617e35d6",
+  "commit": "236df880969a4f2217eb02b8654e2087c1c1daf9",
   "scope": {
     "protected_originals": 25,
     "production_files": 295,
     "note": "SHA-256 checked against evidence baselines; originals and production code untouched."
   },
   "results": {
-    "guide_content_and_links": "84 PASS / 0 FAIL",
+    "guide_content_and_links": "86 PASS / 0 FAIL",
     "learning_regressions": "38 PASS / 0 FAIL",
     "factcheck_regressions": "36 PASS / 0 FAIL",
     "print_export": "32 PASS / 0 FAIL",
-    "ux_refactor": "19 PASS / 0 FAIL"
+    "ux_refactor": "22 PASS / 0 FAIL"
   },
   "print_pages": {
     "guide_pages": 121,
