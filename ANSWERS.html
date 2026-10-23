@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Решения и ключи — Секстант и Солнце</title><style>
+:root{--paper:#f5f3ed;--surface:#fffefa;--ink:#173b55;--text:#243d4a;--muted:#586d78;--line:#d6dfdf;--blue:#1e638d;--orange:#b8660e;--wash:#eaf3f4;--warning:#fff1d9;--font:system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:6rem}body{margin:0;background:var(--paper);color:var(--text);font:1rem/1.75 var(--font)}a{color:var(--blue);text-underline-offset:.18em}a:hover{color:var(--orange)}:focus-visible{outline:3px solid var(--orange);outline-offset:4px}.skip{position:absolute;left:1rem;top:-5rem}.skip:focus{top:.5rem;z-index:5;background:var(--surface);padding:.5rem}
+.topbar{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem max(1rem,calc((100vw - 1400px)/2));background:var(--surface);border-bottom:1px solid var(--line)}.brand{font-weight:750;line-height:1.3;letter-spacing:.02em;color:var(--ink)}.brand small{display:block;font-size:.73rem;letter-spacing:.08em;color:var(--muted);font-weight:550}.tools{display:flex;gap:.7rem;align-items:center;font-size:.85rem}.tools button{font:inherit;color:var(--ink);border:1px solid var(--line);border-radius:.4rem;background:var(--surface);padding:.35rem .75rem;cursor:pointer}.layout{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:245px minmax(0,860px);gap:3.5rem;padding:2.5rem 2rem 6rem}.sidebar{position:sticky;top:6rem;align-self:start;max-height:calc(100vh - 7rem);overflow:auto;font-size:.88rem;line-height:1.55}.sidebar h2{font-size:.72rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin:.2rem 0 .9rem}.sidebar ul{list-style:none;margin:0;padding:0}.sidebar li{margin:.15rem 0}.sidebar a{display:block;padding:.35rem .55rem;border-radius:.35rem;color:var(--text);text-decoration:none;border-left:3px solid transparent}.sidebar a[aria-current="location"]{background:var(--wash);color:var(--blue);border-left-color:var(--blue)}.sidebar .appendices{border-top:1px solid var(--line);margin-top:.9rem;padding-top:.9rem}.sidebar .edition{margin-top:1.2rem;color:var(--muted);font-size:.77rem}.mobile-menu{display:none}
+main{min-width:0}section{padding:0 0 3rem;margin:0 0 3rem;border-bottom:1px solid var(--line);scroll-margin-top:6rem}section:last-child{border-bottom:0}h1,h2,h3,h4,h5{color:var(--ink);line-height:1.28;font-weight:700}h1{font:700 clamp(2.7rem,5vw,4.1rem)/1.1 Georgia,serif;margin:.3rem 0 1.3rem;letter-spacing:-.035em}h2{font:700 clamp(1.9rem,3vw,2.7rem)/1.2 Georgia,serif;margin:.3rem 0 1.8rem}h3{font-size:1.35rem;margin:2.4rem 0 .8rem}h4{font-size:1.08rem;margin:1.8rem 0 .7rem}h5{font-size:1rem;margin:1.2rem 0 .5rem}p{margin:.8rem 0 1.1rem}li{padding-left:.1rem;margin:.38rem 0}ol,ul{padding-left:1.5rem}strong{font-weight:700;color:var(--ink)}em{color:var(--muted)}code{font: .92em ui-monospace,"Cascadia Code",Consolas,monospace;background:#eaf0ef;color:#184962;padding:.12rem .3rem;border-radius:.2rem;overflow-wrap:anywhere}pre{white-space:pre-wrap}blockquote,.warning{margin:1.4rem 0;padding:.8rem 1.2rem;background:var(--warning);border-left:4px solid var(--orange)}.check{background:var(--wash);padding:.8rem 1.1rem;border-left:3px solid #5594a1}.check-item{list-style:none;position:relative}.check-item>span{position:absolute;left:-1.2rem;color:var(--blue)}.section-kicker{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .65rem}.chapter-intro{background:var(--wash);padding:.45rem 1rem;border-radius:.3rem;margin-bottom:1.6rem;font-size:.9rem}
+figure{margin:1.7rem 0 2rem;background:var(--surface);border:1px solid var(--line);border-radius:.5rem;padding:.9rem}.figure-link{display:block;text-decoration:none}figure img{display:block;width:auto;max-width:100%;height:auto;max-height:500px;margin:0 auto;object-fit:contain}figcaption{margin:.8rem .25rem .15rem;color:var(--muted);font-size:.86rem;line-height:1.55}.table-scroll{width:100%;overflow-x:auto;margin:1.4rem 0;background:var(--surface);border:1px solid var(--line);border-radius:.35rem}table{border-collapse:collapse;width:100%;font-size:.92rem;line-height:1.5}th,td{text-align:left;vertical-align:top;padding:.7rem .8rem;border-bottom:1px solid var(--line);min-width:7rem}th{font-weight:650;background:var(--wash);color:var(--ink)}tr:last-child td{border-bottom:0}details{margin:1.6rem 0;padding:.85rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:.4rem}summary{cursor:pointer;color:var(--blue);font-weight:600;font-size:.92rem}details[open]>summary{margin-bottom:1rem}details.illustration{border-style:dashed}details figure{border:0;padding:0;margin:1rem 0}details.illustration>p{font-size:.9rem;color:var(--muted)}details.answer{background:var(--wash)}.end-note{font-size:.84rem;color:var(--muted)}.print-note{display:none}
+@media(max-width:1000px){.layout{grid-template-columns:205px minmax(0,1fr);gap:2rem;padding-left:1.3rem;padding-right:1.3rem}.sidebar{font-size:.82rem}.tools a{display:none}}
+@media(max-width:720px){body{font-size:1rem}.topbar{padding:.65rem 1rem}.brand small{font-size:.65rem}.tools{font-size:.8rem}.layout{display:block;padding:1rem 1rem 3rem}.sidebar{position:static;max-height:none;margin:0 0 2rem}.sidebar>h2,.sidebar>ul,.sidebar .edition{display:none}.sidebar.is-open>ul{display:block}.sidebar .appendices{border:0;margin:0;padding:0}.mobile-menu{display:block;width:100%;font:600 .9rem var(--font);text-align:left;padding:.7rem 0;color:var(--blue);background:transparent;border:0;border-bottom:1px solid var(--line);cursor:pointer}section{padding-bottom:2rem;margin-bottom:2rem}h1{font-size:2.6rem}h2{font-size:1.9rem}figure{padding:.5rem}figure img{max-height:330px}th,td{padding:.55rem;min-width:6rem}html{scroll-padding-top:5rem}.section-kicker{font-size:.7rem}}
+@media print{@page{margin:17mm}html{scroll-behavior:auto}body{background:white;color:#111;font:10.5pt/1.5 Georgia,serif}.topbar,.sidebar,.tools,.skip{display:none!important}.layout{display:block;max-width:none;margin:0;padding:0}main{max-width:none}section{break-before:page;margin:0 0 1rem;padding:0;border:0}section:first-child{break-before:auto}h1{font-size:31pt}h2{font-size:23pt}h3{font-size:15pt}h4{font-size:12pt}h1,h2,h3,h4{break-after:avoid}figure{break-inside:avoid;border:1px solid #bbb}figure img{max-height:110mm}a{color:#183f5c;text-decoration:none}table{font-size:9pt}.table-scroll{overflow:visible}th{background:#eee}details:not([open])> :not(summary){display:block!important}details{break-inside:auto;border:1px solid #ccc}summary{font-size:10pt}.print-note{display:block;font-size:9pt;color:#444}.check,.warning{break-inside:avoid}p{orphans:3;widows:3}}
+
+main>section:focus{outline:none}.mobile-toc-top{display:none}.sidebar{scroll-margin-top:5.2rem}
+@media(max-width:720px){.tools .mobile-toc-top{display:inline-block}.tools{gap:.45rem}.tools button{padding:.35rem .55rem}.brand{min-width:0}}
+@media print{th,td{min-width:0;overflow-wrap:anywhere}table{table-layout:fixed}}
+.section-nav{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.86rem}.section-nav a{max-width:100%}.section-nav small{display:block;color:var(--muted)}
+@media print{.section-nav{display:none}thead{display:table-header-group}tr{break-inside:avoid}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{@page{size:A4}}
+section{scroll-margin-top:0}
+.answers-layout{max-width:920px;margin:2rem auto;padding:0 1.5rem}.answers-layout section{padding-bottom:2rem;margin-bottom:2rem}.answer-index{display:flex;gap:.8rem;flex-wrap:wrap;margin:1rem 0 2rem}@media print{.answers-layout{margin:0;padding:0}.answers-layout section{break-before:page}.answers-layout section:first-of-type{break-before:auto}.answer-index{display:none}}</style></head><body><header class="topbar"><div class="brand">Решения и ключи<small>ОТКРЫВАТЬ ПОСЛЕ СВОЕЙ ПОПЫТКИ</small></div><div class="tools"><a href="index.html">Главная</a><a href="GUIDE.html">К пособию</a><a href="GUIDE.html#full-example">Условие примера</a><a href="GUIDE.html#exercises">Упражнения</a><a href="TRAINING.html">Практикум</a><button type="button" onclick="window.print()">Печать</button></div></header><main class="answers-layout"><p class="warning"><strong>Это готовые ответы. Не для реального судовождения.</strong> Они не заменяют собственную прокладку. Числа относятся к условным задачам, не к игре.</p><nav class="answer-index" aria-label="Выбор ключа"><a href="#solution">Сквозной пример</a><a href="#answers">Упражнения У1–У10</a><a href="#training-key">Новый практикум</a></nav><section id="solution" aria-label="Решение сквозного примера"><p class="section-kicker">ОТДЕЛЬНАЯ СТРАНИЦА РЕШЕНИЙ</p><h2 id="solution-heading-1">Ключ к сквозному примеру</h2>
+<p><strong>Открывайте после собственной попытки.</strong> Это решение условной задачи из <a href="GUIDE.html#full-example">условия примера</a>, не игровое наблюдение. δ взято из независимого расчёта по JPL DE421; GHA для упражнения приведён к строгому шагу 15°/ч. Расхождение с «истинным» местом ключа показано в конце.</p>
+<h3 id="solution-heading-2">1. Высота центра</h3>
+<p>Глаз 5,5 м — ровно середина между столбцами 5 и 6 м. Строки 38° и 40° дают после усреднения <strong>10,7′</strong> и <strong>10,8′</strong>. Дальше — доля высоты внутри двухградусной строки и месячная добавка сентября <strong>−0,1′</strong>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:right">№1</th>
+<th style="text-align:right">№2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hs</td>
+<td style="text-align:right">38°58,9′</td>
+<td style="text-align:right">39°07,8′</td>
+</tr>
+<tr>
+<td>Доля от 38°</td>
+<td style="text-align:right">58,9 ÷ 120 = 0,491</td>
+<td style="text-align:right">—</td>
+</tr>
+<tr>
+<td>Доля от 38°</td>
+<td style="text-align:right">—</td>
+<td style="text-align:right">67,8 ÷ 120 = 0,565</td>
+</tr>
+<tr>
+<td>Поправка строк</td>
+<td style="text-align:right">10,700 + 0,1 × 0,491 = 10,749′</td>
+<td style="text-align:right">10,700 + 0,1 × 0,565 = 10,757′</td>
+</tr>
+<tr>
+<td>Месяц, сентябрь</td>
+<td style="text-align:right">−0,1′</td>
+<td style="text-align:right">−0,1′</td>
+</tr>
+<tr>
+<td>Общая поправка</td>
+<td style="text-align:right"><strong>10,65′</strong></td>
+<td style="text-align:right"><strong>10,66′</strong></td>
+</tr>
+<tr>
+<td>Ho</td>
+<td style="text-align:right"><strong>39°09,55′</strong></td>
+<td style="text-align:right"><strong>39°18,46′</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Полудиаметр, наклон горизонта и рефракцию повторно не прибавляем: они уже в F VIII.</p>
+<h3 id="solution-heading-3">2. Солнце на момент наблюдения</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>№1</th>
+<th>№2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Опорная строка</td>
+<td>08:00</td>
+<td>12:00</td>
+</tr>
+<tr>
+<td>GHA опорной строки</td>
+<td>300°05,9′</td>
+<td>0°05,9′</td>
+</tr>
+<tr>
+<td>Приращение</td>
+<td>2 ч = 30°00,0′</td>
+<td>1 ч 04 мин = 16°00,0′</td>
+</tr>
+<tr>
+<td>GHA наблюдения</td>
+<td><strong>330°05,9′</strong></td>
+<td><strong>16°05,9′</strong></td>
+</tr>
+<tr>
+<td>δ опорной строки</td>
+<td>+7°51,1′</td>
+<td>+7°47,4′</td>
+</tr>
+<tr>
+<td>δ следующей строки</td>
+<td>+7°47,4′</td>
+<td>+7°43,7′</td>
+</tr>
+<tr>
+<td>Доля интервала</td>
+<td>0,5</td>
+<td>0,2667</td>
+</tr>
+<tr>
+<td>Изменение δ</td>
+<td>−1,85′</td>
+<td>−0,99′</td>
+</tr>
+<tr>
+<td>δ наблюдения</td>
+<td><strong>+7°49,25′</strong></td>
+<td><strong>+7°46,41′</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="solution-heading-4">3. Принятые точки</h3>
+<p>Табличный часовой угол <strong>1h32m = 23°</strong>.</p>
+<ul>
+<li>№1: 360° − 23° − 330°05,9′ = <strong>6°54,10′ E</strong>.</li>
+<li>№2: 23° − 16°05,9′ = <strong>6°54,10′ E</strong>.</li>
+</ul>
+<p>Обратная проверка: 330°05,9′ + 6°54,10′ = 337°00,0′ → tE = 23°; 16°05,9′ + 6°54,10′ = 23°00,0′ → tW = 23°.</p>
+<p>Обе AP: широта <strong>55°00′ N</strong>.</p>
+<h3 id="solution-heading-5">4. Расчётная высота</h3>
+<p>F I, строка 55°, группа 1h32m: <strong>U = 32°48,2′</strong>, <strong>V = 9,98881</strong>, <strong>Gr.δ = 52,7°</strong>. Склонение меньше Gr.δ — азимут позже считаем от нижнего полюса.</p>
+<p>Ниже интерполяция выполняется <strong>по печатным клеткам F II</strong>, с сохранением долей логарифма. Прямое вычисление синуса — отдельная проверка, не замена этой цепочки. У второго склонения сохранённое значение — 7°46,413333…′; запись 7°46,41′ выше округлена.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>№1</th>
+<th>№2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>q = U + δ</td>
+<td>32°48,2′ + 7°49,25′ = <strong>40°37,45′</strong></td>
+<td>32°48,2′ + 7°46,413333…′ = <strong>40°34,613333…′</strong></td>
+</tr>
+<tr>
+<td>log sin q (F II)</td>
+<td>40°37′ 9,81358; 38′ 9,81372 → <strong>9,813643</strong></td>
+<td>40°34′ 9,81314; 35′ 9,81328 → <strong>9,8132258667</strong></td>
+</tr>
+<tr>
+<td>+ V</td>
+<td>19,802453</td>
+<td>19,8020358667</td>
+</tr>
+<tr>
+<td>− 10</td>
+<td><strong>9,802453</strong></td>
+<td><strong>9,8020358667</strong></td>
+</tr>
+<tr>
+<td>Обратное чтение F II</td>
+<td>39°23′ 9,80244; 24′ 9,80259 → <strong>39°23,086667′</strong></td>
+<td>39°20′ 9,80197; 21′ 9,80213 → <strong>39°20,411667′</strong></td>
+</tr>
+<tr>
+<td>Hc, до 0,01′</td>
+<td><strong>39°23,09′</strong></td>
+<td><strong>39°20,41′</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="solution-heading-6">5. Интерсепт</h3>
+<ul>
+<li>№1: по напечатанным Ho/Hc: 39°09,55′ − 39°23,09′ = <strong>−13,54′</strong>; до округления −13,537583…′. Для прокладки <strong>−13,5 NM</strong>.</li>
+<li>№2: по напечатанным Ho/Hc: 39°18,46′ − 39°20,41′ = <strong>−1,95′</strong>; до округления 39°18,4565′ − 39°20,411667′ = <strong>−1,955167′ ≈ −1,96′</strong>. Округляем для карты <strong>неокруглённый</strong> интерсепт: <strong>−2,0 NM</strong>, а не повторно округлённые −1,95′.</li>
+</ul>
+<p>Оба значения отрицательные: измеренная высота меньше расчётной, линии сдвигаются <strong>от Солнца</strong>.</p>
+<h3 id="solution-heading-7">6. Азимут по F XI</h3>
+<p>PDF 104, группа 1h32m, аргумент — склонение. PDF 105, аргумент — Hc, колонки 30° и 31°.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>№1</th>
+<th>№2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>δ</td>
+<td>7°49,25′</td>
+<td>7°46,41′</td>
+</tr>
+<tr>
+<td>P: линейно между строками 7° (67°11′) и 8° (67°14′)</td>
+<td>67°11′ + (49,25 ÷ 60) × 3′ = <strong>67°13,46′</strong></td>
+<td>67°11′ + (46,41 ÷ 60) × 3′ = <strong>67°13,32′</strong></td>
+</tr>
+<tr>
+<td>Локальная проверка по <code>.06</code></td>
+<td>67°13,96′ — на 0,50′ выше; для длинной доли не используем</td>
+<td>67°13,78′ — на 0,46′ выше</td>
+</tr>
+<tr>
+<td>Колонка 30° при Hc</td>
+<td>67°08′ + (23,086667 ÷ 60) × 21′ = <strong>67°16,08′</strong></td>
+<td>67°08′ + (20,411667 ÷ 60) × 21′ = <strong>67°15,14′</strong></td>
+</tr>
+<tr>
+<td>Колонка 31° при Hc</td>
+<td>66°24′ + (23,086667 ÷ 60) × 22′ = <strong>66°32,47′</strong></td>
+<td>66°24′ + (20,411667 ÷ 60) × 22′ = <strong>66°31,48′</strong></td>
+</tr>
+<tr>
+<td>A, с сохранёнными долями</td>
+<td>30 + 2,618 ÷ 43,615 = <strong>30,06°</strong></td>
+<td>30 + 1,823 ÷ 43,660 = <strong>30,04°</strong></td>
+</tr>
+<tr>
+<td>Сторона</td>
+<td>восточная: 180° − A</td>
+<td>западная: 180° + A</td>
+</tr>
+<tr>
+<td>Zn</td>
+<td><strong>149,94°</strong></td>
+<td><strong>210,04°</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="solution-heading-8">7. Прокладка</h3>
+<p>Масштаб 1 см = 2 NM.</p>
+<ul>
+<li><strong>№1:</strong> рабочий луч на Солнце <strong>149,9°</strong>. a отрицательный, поэтому точка прокладки — по направлению <strong>329,9°</strong>, на <strong>13,5 NM (6,75 см)</strong>. Через неё — перпендикуляр; направления линии <strong>59,9° / 239,9°</strong>.</li>
+<li><strong>№2:</strong> рабочий луч <strong>210,0°</strong>; точка прокладки по <strong>30,0°</strong> на <strong>2,0 NM (1,0 см)</strong>. Перпендикуляр: <strong>120,0° / 300,0°</strong>.</li>
+<li>Путь: 3 ч 04 мин = 3,066666… ч; 10 × 3,066666… = 30,666666… NM, для карты <strong>30,7 NM</strong> на восток, <strong>15,35 см</strong>.</li>
+<li>Первая линия переносится на восток без поворота; вторая остаётся на месте.</li>
+<li>Меньший угол между линиями: 210,04° − 149,94° = <strong>60,10°</strong> — удобный для пересечения.</li>
+</ul>
+<h3 id="solution-heading-9">8. Место</h3>
+<p><strong>При указанном рабочем округлении: 55°00,1′ N, 7°00,9′ E</strong> на 13:04 GMT. Это численная проверка идеального построения; реальное чтение линейкой может отличаться.</p>
+<p>Контроль ключа: синтетическое «истинное» место задачи — 55°00,00′ N, 7°01,07′ E. До округления a, Zn и пути пересечение — примерно <strong>55°00,1′ N, 7°00,7′ E</strong>, остаток <strong>0,24 NM</strong>; при рабочем округлении — <strong>0,13 NM</strong>. Случайное уменьшение остатка после округления не доказывает лучшую точность. Оба результата относятся только к этой модели, не задают допуск игры и не служат поводом подгонять наблюдения.</p>
+<h3 id="solution-heading-10">Что проверить в своей работе</h3>
+<ul>
+<li>Hs и Ho не перепутаны; Hs — сырой отсчёт, Ho — после F VIII.</li>
+<li>Для обеих AP использован один и тот же табличный угол 23°, но разные GHA.</li>
+<li>Знак a и сторона азимута дают согласованную точку, а не линию в противоположном квадранте.</li>
+<li>Первая линия перенесена по курсу 090°, а не по направлению на Солнце.</li>
+<li>Итог подписан как условное упражнение, а не как измеренное место лодки.</li>
+</ul>
+</section><section id="answers" aria-label="Ключи к упражнениям"><p class="section-kicker">ОТДЕЛЬНАЯ СТРАНИЦА РЕШЕНИЙ</p><h2 id="answers-heading-1">Ключи к упражнениям</h2>
+<p>Сначала решите самостоятельно. Здесь — ответ и короткое объяснение, а не замена уроку.</p>
+<h3 id="answers-heading-2">У1</h3>
+<ol>
+<li>38 × 60 = 2280; 2280 + 58,7 = <strong>2338,7′</strong>.</li>
+<li>Занимаем градус: 336°60,0′ − 330°05,9′ = <strong>6°54,1′</strong>. Десятичное «занять десять» здесь не работает.</li>
+<li>6,7′ + 6,7′ = 13,4′; градусы 0 + 16 = 16 → <strong>16°13,4′</strong>. Полный оборот не превышен, 360° вычитать не нужно.</li>
+</ol>
+<h3 id="answers-heading-3">У2</h3>
+<ol>
+<li>38°, глаз 5,5 м: (10,9 + 10,5) ÷ 2 = <strong>10,70′</strong>.</li>
+<li>40°, глаз 5,5 м: (11,0 + 10,6) ÷ 2 = <strong>10,80′</strong>.</li>
+<li>От 38° прошло 1°31,4′ = 91,4′; интервал 120′; доля 91,4 ÷ 120 = <strong>0,762</strong>.</li>
+<li>10,70 + 0,1 × 0,762 = 10,776′; месяц −0,1′ → <strong>10,68′</strong>. Ho = 39°31,4′ + 10,68′ = <strong>39°42,08′</strong>.
+Проверка: результат между 10,70′ и 10,80′ до месячной добавки и между 39°40′ и 39°44′ после неё.</li>
+</ol>
+<h3 id="answers-heading-4">У3</h3>
+<ol>
+<li>12:03:05 − 08:47:20 = <strong>3 ч 15 мин 45 с</strong> = 3 + 15/60 + 45/3600 = <strong>3,2625 ч</strong>.</li>
+<li>8,4 × 3,2625 = <strong>27,4 NM</strong>.</li>
+<li>27,405 ÷ 2 = <strong>13,7 см</strong>.</li>
+</ol>
+<h3 id="answers-heading-5">У4</h3>
+<ol>
+<li>42°18,6′ + 7°41,2′ = <strong>49°59,8′</strong>. Меньше 180° → <strong>tW = 49°59,8′</strong>.</li>
+<li>318°20,0′ + 5°10,0′ = <strong>323°30,0′</strong>. Больше 180° → 360° − 323°30,0′ = <strong>36°30,0′ восточный (tE)</strong>.</li>
+<li>360° − 23° − 335°12,4′ = 1°47,6′ → <strong>1°47,6′ E</strong>. Проверка: 335°12,4′ + 1°47,6′ = 337°00,0′ → tE = 23°.</li>
+</ol>
+<h3 id="answers-heading-6">У5</h3>
+<ol>
+<li><strong>9,81358</strong> (строка 37′ в столбце 40°).</li>
+<li>Соседняя строка 38′ даёт 9,81372; шаг 0,00014 на 1′; 0,45 × 0,00014 = 0,000063 → <strong>9,81364</strong>.</li>
+<li>Нужно прибавить <strong>−0,01119</strong>: 9,80204 − 9,81323 = −0,01119. Это <strong>V − 10 = 9,98881 − 10</strong>, поэтому действие: 9,81323 + 9,98881 − 10 = <strong>9,80204</strong>. Вычитать V и прибавлять 10 здесь нельзя: получилось бы другое число.</li>
+<li><strong>39°23′</strong>. Проверка: обратное чтение по таблице даёт угол в столбце 39°, между строками 23′ и 24′.</li>
+</ol>
+<h3 id="answers-heading-7">У6</h3>
+<ol>
+<li>41°12,4′ − 41°05,9′ = <strong>+6,5′</strong> → к Солнцу.</li>
+<li>38°02,1′ − 38°11,3′ = <strong>−9,2′</strong> → от Солнца.</li>
+<li>Знак перепутан: <strong>положительный</strong> a сдвигает линию <strong>к Солнцу</strong>, отрицательный — от Солнца. Кроме того, +3,0 NM — это уже расстояние, а не минуты; переводить повторно не нужно.</li>
+</ol>
+<h3 id="answers-heading-8">У7</h3>
+<ol>
+<li>δ = 7°30′ меньше Gr.δ = 52,7°, часовой угол меньше 6 ч → <strong>от юга</strong> (нижнего полюса).</li>
+<li>Zn = 180° − 28° = <strong>152°</strong>.</li>
+<li>Zn = 180° + 31° = <strong>211°</strong>.</li>
+<li>152° ± 90° → <strong>62° и 242°</strong> (одна прямая).</li>
+</ol>
+<h3 id="answers-heading-9">У8</h3>
+<ol>
+<li>14:42:10 − 09:15:30 = <strong>5 ч 26 мин 40 с</strong> = 5 + 26/60 + 40/3600 = <strong>5,4444 ч</strong>.</li>
+<li>9,0 × 5,4444 = <strong>49,0 NM</strong>.</li>
+<li>49,0 ÷ 5 = <strong>9,8 см</strong>.</li>
+<li><strong>Нельзя.</strong> Один вектор по последнему курсу описывает только последний участок. Нужно отложить участки последовательно: до поворота по 090°, после — по 120°, каждый со своим временем.</li>
+</ol>
+<h3 id="answers-heading-10">У9</h3>
+<ol>
+<li>Подробно разобраны: <strong>северная</strong> широта и северное склонение; δ <strong>меньше</strong> Gr.δ; часовой угол <strong>меньше 6 ч</strong>; глаз <strong>1–14 м</strong>; Hc <strong>не выше 70°</strong>. Здесь не выполнены сразу несколько условий: южное склонение, 7 ч угла, глаз 20 м, Hc около 72°.</li>
+<li>Остановиться и записать, какое условие не поддержано. Можно решать отдельно заданную бумажную задачу или искать другую ветвь таблиц, но нельзя переносить формулы и знаки по догадке и подгонять ответ под ожидаемое место.</li>
+</ol>
+<h3 id="answers-heading-11">У10</h3>
+<ol>
+<li>В сетке, столбцы 1939, блок 2-Sep: 08:00 → GHA <strong>300°01,1′</strong>, δ <strong>+8°11,1′</strong>; 12:00 → GHA <strong>0°01,9′</strong>, δ <strong>+8°07,5′</strong>.</li>
+<li><strong>Time = GMT-1</strong> (порты Memel, Kiel, Wilhelmshaven, Narvik, Trondheim, La Spezia, Tripoli) и <strong>Time = GMT</strong> (Brest, Lorient, St.Nazaire, La Pallice, Bordeaux, Bergen). Обе подписи относятся к одной сетке.</li>
+<li>Это <strong>одна сетка</strong>, а не два набора строк, между которыми выбирают по удобству. Подпись и перечень портов объясняют, для какой группы портов напечатано время; числа клеток от выбора «половины» не меняются. Если в вашей копии разметка выглядит иначе, запишите фактические подписи и остановитесь.</li>
+</ol>
+</section><section id="training-key" aria-label="Ключ к практикуму"><p class="section-kicker">ОТДЕЛЬНАЯ СТРАНИЦА РЕШЕНИЙ</p><h2 id="training-key-heading-1">Ключ к практикуму</h2>
+<p><strong>Не для реального судовождения.</strong> Здесь решения условных бумажных задач, не результаты игровых наблюдений. Сначала сохраните свою попытку. Открывайте только первый блок, в котором нужна проверка; инструкция и оригинальные таблицы могут оставаться открытыми.</p>
+<p><a href="TRAINING.html">Условия практикума</a>. Контроль ниже использует ближайшие табличные углы и целую широту. Если вы обосновали другую AP, сначала сравните исходные условия расчёта, а не отдельный интерсепт.</p>
+<h3 id="training-key-heading-2">Новая полная задача</h3>
+<details class="checkpoint">
+<summary>Блок 1: момент и исправленная высота</summary>
+<p>ИП <strong>+0,6′</strong> прибавляется к Hs. Для F VIII нужны строки <strong>40° и 45°</strong>, а не автоматически 38° и 40° из прежнего примера; глаз <strong>7,2 м</strong> — доля <strong>0,2</strong> между 7 и 8 м.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>F VIII</th>
+<th style="text-align:right">Глаз 7 м</th>
+<th style="text-align:right">Глаз 8 м</th>
+<th style="text-align:right">Для 7,2 м</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>40°</td>
+<td style="text-align:right">+10,3′</td>
+<td style="text-align:right">+9,9′</td>
+<td style="text-align:right">+10,22′</td>
+</tr>
+<tr>
+<td>45°</td>
+<td style="text-align:right">+10,5′</td>
+<td style="text-align:right">+10,1′</td>
+<td style="text-align:right">+10,42′</td>
+</tr>
+</tbody>
+</table></div>
+<p>Месячная добавка <strong>April = 0,0′</strong>, нижний край. h первого наблюдения — 40°38,9′, второго — 40°15,1′. В обоих случаях интервал строк равен <strong>5° = 300′</strong>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>№1</th>
+<th>№2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hs</td>
+<td>40°38,3′</td>
+<td>40°14,5′</td>
+</tr>
+<tr>
+<td>h после ИП</td>
+<td>40°38,9′</td>
+<td>40°15,1′</td>
+</tr>
+<tr>
+<td>Доля между строками</td>
+<td>38,9 ÷ 300</td>
+<td>15,1 ÷ 300</td>
+</tr>
+<tr>
+<td>Общая поправка F VIII</td>
+<td>10,245933′</td>
+<td>10,230067′</td>
+</tr>
+<tr>
+<td>Ho, до 0,001′</td>
+<td><strong>40°49,146′</strong></td>
+<td><strong>40°25,330′</strong></td>
+</tr>
+<tr>
+<td>GHA</td>
+<td><strong>329°30,0′</strong></td>
+<td><strong>14°00,0′</strong></td>
+</tr>
+<tr>
+<td>δ</td>
+<td><strong>+8°02,033333′</strong></td>
+<td><strong>+8°05,000000′</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Первый интервал от 08:00 — 2 ч 02 мин, приращение GHA 30°30′. Второй — 1 час от 12:00; 359° + 15° = 374° → 14°. Склонение <strong>растёт</strong>, поэтому знак старого сентябрьского изменения копировать нельзя.</p>
+</details>
+<details class="checkpoint">
+<summary>Блок 2: принятые точки, Hc, сдвиги и азимуты</summary>
+<p>После двух участков пути DR на 13:00 составляет примерно <strong>54°12′ N, 8°56,7′ E</strong>. При выборе AP ближайшая целая широта в обоих случаях — 54°.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>№1</th>
+<th>№2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Меньший угол для DR</td>
+<td>22°10′ восточный</td>
+<td>около 22°56,7′ западный</td>
+</tr>
+<tr>
+<td>Выбранный табличный угол</td>
+<td><strong>1h28m = 22°</strong>, tE</td>
+<td><strong>1h32m = 23°</strong>, tW</td>
+</tr>
+<tr>
+<td>AP</td>
+<td><strong>54°00′ N, 8°30′ E</strong></td>
+<td><strong>54°00′ N, 9°00′ E</strong></td>
+</tr>
+<tr>
+<td>Проверка</td>
+<td>329°30′ + 8°30′ = 338° → 22° E</td>
+<td>14° + 9° = 23° W</td>
+</tr>
+<tr>
+<td>U из F I</td>
+<td>33°57,9′</td>
+<td>33°46,4′</td>
+</tr>
+<tr>
+<td>V из F I</td>
+<td>9,98921</td>
+<td>9,98823</td>
+</tr>
+<tr>
+<td>Gr.δ</td>
+<td>51,9°</td>
+<td>51,7°</td>
+</tr>
+<tr>
+<td>q = U + δ</td>
+<td>41°59,933333′</td>
+<td>41°51,400000′</td>
+</tr>
+<tr>
+<td>log sin q</td>
+<td>9,825500667</td>
+<td>9,824300000</td>
+</tr>
+<tr>
+<td>+ V − 10</td>
+<td>9,814710667</td>
+<td>9,812530000</td>
+</tr>
+<tr>
+<td>Hc, до 0,001′</td>
+<td><strong>40°44,719′</strong></td>
+<td><strong>40°29,933′</strong></td>
+</tr>
+<tr>
+<td>Ho − Hc по напечатанным тысячным</td>
+<td><strong>+4,427′</strong></td>
+<td><strong>−4,603′</strong></td>
+</tr>
+<tr>
+<td>Для прокладки</td>
+<td><strong>+4,4 NM, к Солнцу</strong></td>
+<td><strong>−4,6 NM, от Солнца</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Клетки прямого F II:</strong> №1 — 41°59′: 9,82537 и 42°00′: 9,82551; №2 — 41°51′: 9,82424 и 41°52′: 9,82439. Первая интерполяция пересекает границу целого градуса: строка 60′ первого столбца и строка 0′ следующего обозначают один угол.</p>
+<p><strong>Клетки обратного F II:</strong> №1 — 40°44′: 9,81461 и 40°45′: 9,81475; №2 — 40°29′: 9,81239 и 40°30′: 9,81254. В ключе сохранены дополнительные знаки интерполяции. Если округлить промежуточный log sin q до пяти знаков, Hc этой задачи изменится меньше чем на 0,01′; это не повод менять исходные данные ради последней цифры ключа.</p>
+<p>Для P минуты склонения меньше 18′, поэтому применима локальная поправка: в группе 1h28m при 8° — <strong>68°14′, .05</strong>; в группе 1h32m — <strong>67°14′, .06</strong>. Получаются <strong>68°14,102′</strong> и <strong>67°14,300′</strong>.</p>
+<p>Для высоты в F XI доли больше 18′: интерполируем между <strong>40° и 41°</strong>. Нужные колонки и клетки:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Hc</th>
+<th>A = 29°</th>
+<th>A = 30°</th>
+<th>A = 31°</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>40°</td>
+<td>68°12′</td>
+<td>67°29′</td>
+<td>66°46′</td>
+</tr>
+<tr>
+<td>41°</td>
+<td>68°32′</td>
+<td>67°50′</td>
+<td>67°08′</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>№1</th>
+<th>№2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Колонки для охвата P</td>
+<td>29° / 30°</td>
+<td>30° / 31°</td>
+</tr>
+<tr>
+<td>P после поправки за Hc в первой колонке</td>
+<td>68°26,906′</td>
+<td>67°39,477′</td>
+</tr>
+<tr>
+<td>Во второй колонке</td>
+<td>67°44,652′</td>
+<td>66°56,976′</td>
+</tr>
+<tr>
+<td>A</td>
+<td><strong>29,303°</strong></td>
+<td><strong>30,592°</strong></td>
+</tr>
+<tr>
+<td>Сторона полюса</td>
+<td>от юга; tE</td>
+<td>от юга; tW</td>
+</tr>
+<tr>
+<td>Zn</td>
+<td><strong>150,697°</strong></td>
+<td><strong>210,592°</strong></td>
+</tr>
+<tr>
+<td>Для транспортира</td>
+<td><strong>150,7°</strong></td>
+<td><strong>210,6°</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>В обоих наблюдениях δ меньше Gr.δ, поэтому отсчёт от юга: для первого Zn = 180° − A, для второго Zn = 180° + A. Разные AP и разные знаки a здесь ожидаемы, но в условии они не подсказывались.</p>
+<p><strong>Как сравнивать:</strong> при той же AP расхождения Hc больше 0,2′ или Zn больше 0,1° — повод найти первую отличающуюся клетку или операцию. Это пороги учебной сверки с этим ключом, не заявленная точность игры.</p>
+</details>
+<details class="checkpoint">
+<summary>Блок 3: путь, перенос и место</summary>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Участок</th>
+<th>Время</th>
+<th>Длина</th>
+<th>Восточная часть</th>
+<th>Северная часть</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>090°, 8 узлов</td>
+<td>58 мин = 0,966667 ч</td>
+<td><strong>7,733333 NM</strong></td>
+<td>7,733333 NM</td>
+<td>0</td>
+</tr>
+<tr>
+<td>060°, 8 узлов</td>
+<td>2 ч</td>
+<td><strong>16,000000 NM</strong></td>
+<td>около 13,8564 NM</td>
+<td>8,0000 NM</td>
+</tr>
+<tr>
+<td>Суммарное перемещение</td>
+<td></td>
+<td>не сумма длин по одному курсу</td>
+<td><strong>21,5897 NM E</strong></td>
+<td><strong>8,0000 NM N</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>На бумаге компоненты второго участка можно измерить по построенной стрелке; тригонометрия не требуется. Для самой прокладки достаточно последовательно отложить <strong>7,7 NM по 090°</strong>, затем <strong>16,0 NM по 060°</strong>. Сумма длин участков не является длиной прямого перемещения между концами пути.</p>
+<p>На сетке 1 см = 2 NM это <strong>3,85 см</strong>, затем <strong>8,00 см</strong>. Переносится только первая линия, без поворота. Вторая уже относится к 13:00.</p>
+<p>У Fulst, Tafel 13, строка <strong>54°00′</strong>: <strong>2 sm → 3,40′ долготы</strong>, <strong>5 sm → 8,51′</strong>. Не переносите коэффициент широты 55° из старого образца.</p>
+<p>Для первого наблюдения сдвиг <strong>4,4 NM по 150,7°</strong>, для второго — <strong>4,6 NM по 30,6°</strong>. Линии через концы сдвигов проводятся перпендикулярно своим солнечным направлениям.</p>
+<p>Меньший угол — примерно <strong>59,9°</strong>. Прокладка по указанным рабочим округлениям даёт около <strong>54°03,0′ N, 9°06,8′ E на 13:00 GMT</strong>. Небольшое отличие последних десятых при ручном построении проверяют по масштабу и промежуточным полям, не исправлением Hs.</p>
+<p>Контроль составителя: до рабочих округлений табличное пересечение отличается от синтетического места примерно на <strong>0,08 NM</strong>. Это результат модели конкретной условной задачи, не измеренная точность прибора и не допуск для игровых наблюдений.</p>
+</details>
+<h3 id="training-key-heading-3">Поиск первой ошибки</h3>
+<p><strong>Д1:</strong> первая ошибка — строка <strong>2</strong>. <code>98 881</code> восстанавливается как <strong>9,98881</strong>, не 0,98881. Строка 3 после исправления даёт <strong>9,80538</strong>, затем Hc около <strong>39°42,25′</strong>. q не меняют. Пересчитать обратное чтение и всё, что зависит от Hc: a, азимут и линию. Проверка — полная запись V по заголовку F I и правильная пара клеток обратного F II.</p>
+<p><strong>Д2:</strong> первая ошибка — строка <strong>3</strong>. F VIII уже содержит полудиаметр и остальные необходимые общие поправки; Ho остаётся <strong>39°24,06′</strong>. Пересчитать a и положение линии. Hc и рассчитанный по нему азимут не меняются, если их остальные входы прежние. Проверка — состав общей поправки, не похожесть итогового места.</p>
+<p><strong>Д3:</strong> первая ошибка — строка <strong>2</strong>. Правильный перенос — <strong>8 NM к востоку</strong>, затем <strong>6 NM к северу</strong>. Вектор между концами имеет длину 10 NM, а не 12; его можно получить построением прямоугольного треугольника. Перенести заново первую линию и пересчитать пересечение. Собственные Ho, Hc, a и Zn обеих линий от ошибки переноса не меняются. Проверка — отдельная строка каждого участка в журнале.</p>
+<h3 id="training-key-heading-4">Опыты с неточностью</h3>
+<p><strong>Н1:</strong> при 10° сдвиг пересечения примерно <strong>5,8 NM</strong>, при 60° — <strong>1,2 NM</strong>. Геометрическая проверка: перемещение вдоль второй линии равно 1 ÷ sin угла; соответственно 5,7588 и 1,1547 NM. Пользоваться синусом для выполнения опыта не нужно. Поэтому ошибка одной линии в 1 NM не означает ошибку места ровно в 1 NM.</p>
+<p><strong>Н2:</strong> неучтённое перемещение не больше <strong>0,5 × 3 = 1,5 NM</strong> в неизвестном направлении. Можно обозначить область возможных перемещений, но нельзя выбрать восточную стрелку без основания. Если ограничение 0,5 узла тоже неизвестно, числовой предел 1,5 NM больше не обоснован. Ошибка места дополнительно зависит от угла линий.</p>
+<p><strong>Н3:</strong> размах <strong>0,3′</strong>, среднее <strong>40°11,95′</strong>. Сотая в среднем — результат деления, не доказанная точность до сотой. Все четыре отсчёта могли иметь одну общую ошибку нуля или одинаковую ошибку выбора горизонта. Серия показывает повторяемость условных касаний, не истинную высоту и не норму игры.</p>
+</section><p class="end-note">Конец страницы решений · <a href="GUIDE.html">Вернуться к пособию</a></p></main><script>
+(() => {
+  let states = null;
+  window.addEventListener('beforeprint', () => {
+    if (states !== null) return;
+    states = [...document.querySelectorAll('details')].map(item => [item, item.open]);
+    states.forEach(([item]) => { item.open = true; });
+  });
+  window.addEventListener('afterprint', () => {
+    if (states === null) return;
+    states.forEach(([item, open]) => { item.open = open; });
+    states = null;
+  });
+})();
+
+(() => {
+  const visit = id => {
+    const target = document.getElementById(id);
+    if (!target) return;
+    target.scrollIntoView({ block: 'start', behavior: 'instant' });
+    target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+  };
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', event => {
+      const id = link.hash.slice(1);
+      if (!document.getElementById(id)) return;
+      event.preventDefault();
+      if (window.location.hash !== link.hash) history.pushState(null, '', link.hash);
+      visit(id);
+    });
+  });
+  const current = () => visit(window.location.hash.slice(1));
+  window.addEventListener('load', current);
+  window.addEventListener('popstate', current);
+  window.addEventListener('hashchange', current);
+})();
+</script></body></html>

@@ -1,0 +1,145 @@
+{
+  "control": {
+    "inputs": {
+      "gmt": "1939-09-02T10:03:07Z",
+      "hs_deg": 39.223333333333336,
+      "eye_m": 5.5,
+      "dr": "54°53′N 5°45′E",
+      "index_arcmin": 0
+    },
+    "ho_steps": {
+      "f_viii_5m_38": 10.9,
+      "f_viii_6m_38": 10.5,
+      "f_viii_5m_40": 11.0,
+      "f_viii_6m_40": 10.6,
+      "f_viii_at_5p5_38": 10.7,
+      "f_viii_at_5p5_40": 10.8,
+      "f_viii_interpolated": 10.761166666666666,
+      "september": -0.1,
+      "total_correction_arcmin": 10.661166666666666,
+      "ho_deg": 39.40101944444445,
+      "ho_text": "39°24.1′"
+    },
+    "almanac": {
+      "gha_08": 300.0183333333333,
+      "dec_08": 8.185,
+      "dec_12": 8.125,
+      "elapsed_hours": 2.051944444444444,
+      "gha_deg": 330.79749999999996,
+      "gha_text": "330°47.8′",
+      "dec_deg": 8.154220833333333,
+      "dec_text": "8°09.3′"
+    },
+    "ap": {
+      "lat_deg": 55.0,
+      "t_deg": 23.0,
+      "t_hm": "1h32m",
+      "lon_deg": 6.202500000000043,
+      "lon_text": "6°12.2′E",
+      "check_lha": 337.0,
+      "check_t": 23.0
+    },
+    "f_i": {
+      "u_deg": 32.803333333333335,
+      "u_text": "32°48.2′",
+      "v": 9.98881,
+      "gr_delta": 52.7,
+      "branch": "t<6h, φ N and δ N, δ<Gr.δ → U same name as φ; azimuth from the lower pole"
+    },
+    "q": {
+      "deg": 40.95755416666667,
+      "text": "40°57.5′",
+      "log_sin": -0.18342747265214848
+    },
+    "hc": {
+      "log_sin": -0.19461747265214768,
+      "table_deg": 39.70432673215054,
+      "table_text": "39°42.3′",
+      "independent_deg": 39.704547918709515,
+      "difference_arcmin": -0.013271193538457737
+    },
+    "intercept": {
+      "arcmin": -18.198437262365417,
+      "nm": -18.198437262365417,
+      "sign": "negative = away from the Sun",
+      "direction_deg": 329.8186992715388,
+      "lop_bearings": [
+        239.81869927153878,
+        59.818699271538776
+      ]
+    },
+    "azimuth": {
+      "at_ap": 149.81869927153878,
+      "at_observer": 149.2308130735478
+    },
+    "truth_control": {
+      "hc_true_deg": 39.40535858576112,
+      "distance_to_lop_nm": 0.2603484790002142,
+      "rule": "P·S = sin(Ho); the value is a check only, never an input"
+    }
+  },
+  "drill": {
+    "note": "SYNTHETIC DRILL — generated from a chosen fix, not an observation",
+    "fix_deg": [
+      55.0,
+      5.0
+    ],
+    "course": 90.0,
+    "speed_kn": 10.0,
+    "run_nm": 30.0,
+    "gmt": [
+      "1939-09-02T08:03:07Z",
+      "1939-09-02T11:03:07Z"
+    ],
+    "start_deg": [
+      54.996884,
+      4.128322
+    ],
+    "sights": [
+      {
+        "gmt": "1939-09-02T08:03:07Z",
+        "ho_deg": 26.210434304896424,
+        "ho_text": "26°12.6′",
+        "ap": [
+          55.0,
+          4.0
+        ],
+        "hc_deg": 26.142496599461513,
+        "hc_text": "26°08.5′",
+        "intercept_nm": 4.076262326094664,
+        "zn_deg": 115.1179283852691,
+        "lop_bearings": [
+          205.1179283852691,
+          25.117928385269124
+        ]
+      },
+      {
+        "gmt": "1939-09-02T11:03:07Z",
+        "ho_deg": 42.56805514874888,
+        "ho_text": "42°34.1′",
+        "ap": [
+          55.0,
+          5.0
+        ],
+        "hc_deg": 42.56805514874888,
+        "hc_text": "42°34.1′",
+        "intercept_nm": 0.0,
+        "zn_deg": 167.58675488178542,
+        "lop_bearings": [
+          257.5867548817854,
+          77.5867548817854
+        ]
+      }
+    ],
+    "constructed_fix_nm_from_fix": [
+      0.09745880081350156,
+      0.021451326995601594
+    ],
+    "constructed_fix_deg": [
+      55.000357522116595,
+      5.002831903899723
+    ],
+    "error_nm": 0.09979166942123975,
+    "reading": "the two lines are advanced/plotted independently; the drill shows why one line is never a fix and how the run between sights is handled"
+  }
+}

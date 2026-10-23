@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Учебный сайт по солнечной навигации в RadioNavigation / UBOAT: секстант, время, таблицы, линия положения и место.">
+<title>Секстант и Солнце — учебный сайт</title>
+<style>
+:root{
+  --paper:#f5f3ed; --surface:#fffefa; --ink:#173b55; --text:#243d4a;
+  --muted:#586d78; --line:#d6dfdf; --blue:#1e638d; --orange:#b8660e;
+  --wash:#eaf3f4; --warning:#fff1d9;
+  --font:system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--text);font:1rem/1.65 var(--font)}
+a{color:var(--blue);text-underline-offset:.18em}
+a:hover{color:var(--orange)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+.topbar{background:var(--surface);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;justify-content:space-between;gap:1rem;align-items:center;padding-top:.8rem;padding-bottom:.8rem}
+.brand{font-weight:750;color:var(--ink);line-height:1.2}
+.brand small{display:block;margin-top:.2rem;color:var(--muted);font-size:.7rem;letter-spacing:.09em;font-weight:600}
+.topnav{display:flex;flex-wrap:wrap;gap:.9rem;font-size:.88rem}
+main{padding:3rem 0 4rem}
+.eyebrow{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .8rem}
+h1,h2,h3{font-family:var(--serif);color:var(--ink);line-height:1.15;margin:0}
+h1{font-size:clamp(2.5rem,7vw,4.8rem);letter-spacing:-.04em;max-width:15ch}
+h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:1rem}
+h3{font-size:1.3rem}
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(240px,.75fr);gap:2.5rem;align-items:end;padding-bottom:3rem;border-bottom:1px solid var(--line)}
+.lede{font-size:1.12rem;max-width:58ch;margin:1.2rem 0 0;color:var(--text)}
+.actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.6rem}
+.button{display:inline-block;padding:.7rem 1rem;border-radius:.4rem;text-decoration:none;font-weight:700;font-size:.92rem;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.button.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+.button.primary:hover{background:var(--blue);color:#fff}
+.status{margin:1.3rem 0 0;font-size:.84rem;color:var(--muted)}
+.hero-note{background:var(--wash);border-left:4px solid var(--blue);padding:1rem 1.1rem;font-size:.9rem}
+.hero-note strong{display:block;color:var(--ink);margin-bottom:.35rem}
+.section{padding-top:2.7rem}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.card{display:flex;flex-direction:column;min-height:13rem;background:var(--surface);border:1px solid var(--line);border-radius:.5rem;padding:1.15rem;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--blue);color:var(--text);transform:translateY(-2px);box-shadow:0 8px 20px rgba(23,59,85,.07)}
+.card .num{font:700 .78rem var(--font);letter-spacing:.1em;color:var(--muted);margin-bottom:1.5rem}
+.card strong{display:block;font:700 1.25rem/1.25 var(--serif);color:var(--ink);margin-bottom:.55rem}
+.card span{font-size:.88rem;color:var(--muted)}
+.card.wide{grid-column:span 2;min-height:auto}
+.card.soft{background:var(--wash)}
+.split{display:grid;grid-template-columns:1.25fr .75fr;gap:2rem;align-items:start}
+.lesson-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.lesson-list li{border-bottom:1px solid var(--line)}
+.lesson-list a{display:flex;gap:1rem;align-items:baseline;padding:.8rem .2rem;text-decoration:none;color:var(--text)}
+.lesson-list b{font:700 .78rem var(--font);color:var(--muted);min-width:1.8rem}
+.lesson-list span{font-size:.92rem}
+.lesson-list a:hover span{color:var(--blue)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:.5rem;padding:1.2rem}
+.panel p{font-size:.9rem;margin:.3rem 0 .8rem}
+.panel ul{margin:0;padding-left:1.1rem;font-size:.88rem}
+.panel li{margin:.35rem 0}
+.warning{margin-top:2.5rem;background:var(--warning);border-left:4px solid var(--orange);padding:1rem 1.1rem;font-size:.9rem}
+.warning strong{color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:1.4rem 0 2rem;color:var(--muted);font-size:.82rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+@media(max-width:850px){
+  .hero{grid-template-columns:1fr;gap:1.8rem}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .card.wide{grid-column:span 2}
+  .split{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+  .wrap{padding:0 1rem}
+  .topbar .wrap{align-items:flex-start;flex-direction:column;width:100%}
+  .topnav{width:100%;gap:.7rem}
+  h1{font-size:clamp(2rem,9vw,2.7rem);max-width:100%;overflow-wrap:anywhere}
+  .lede,.hero-note{max-width:100%}
+  main{padding-top:2rem}
+  .grid{grid-template-columns:1fr}
+  .card.wide{grid-column:auto}
+  .card{min-height:auto}
+  .actions .button{width:100%;text-align:center}
+}
+@media print{
+  .topbar,.actions,.status,footer{display:none}
+  body{background:#fff}
+  main{padding:0}
+  .card,.panel,.hero-note{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">Секстант и Солнце<small>УЧЕБНЫЙ САЙТ · RADIONAVIGATION / UBOAT</small></div>
+    <nav class="topnav" aria-label="Основная навигация">
+      <a href="START.html">Первый урок</a>
+      <a href="GUIDE.html">Полное пособие</a>
+      <a href="TRAINING.html">Практикум</a>
+      <a href="GUIDE.html#facts">Факты</a>
+      <a href="FIELD.html">Карточка</a>
+      <a href="ANSWERS.html">Ключи</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Практическое пособие для начинающих</p>
+      <h1>Секстант и Солнце</h1>
+      <p class="lede">От первого взгляда на морской горизонт до линии положения и места по двум наблюдениям. Сначала смысл и действие, затем числа.</p>
+      <div class="actions">
+        <a class="button primary" href="START.html">Начать с первого урока</a>
+        <a class="button" href="GUIDE.html">Открыть полное пособие</a>
+      </div>
+      <p class="status">Рабочая редакция · 23 октября 2026 года · не для реального судовождения</p>
+    </div>
+    <aside class="hero-note">
+      <strong>Что внутри</strong>
+      Семь уроков, практикум на бумаге, полевая карточка, лист записей и отдельные ключи. Инструкции и оригинальные таблицы можно держать открытыми.
+      <br><br><a href="GUIDE.html#facts">Коротко о происхождении метода и прибора →</a>
+    </aside>
+  </section>
+
+  <section class="section" aria-labelledby="materials">
+    <h2 id="materials">Материалы</h2>
+    <div class="grid">
+      <a class="card" href="START.html">
+        <div class="num">01</div>
+        <strong>Первый урок</strong>
+        <span>Короткая версия: горизонт, Солнце, окуляр, касание и собственный Hs.</span>
+      </a>
+      <a class="card" href="GUIDE.html">
+        <div class="num">02</div>
+        <strong>Полное пособие</strong>
+        <span>Семь уроков, поправки, альманах, расчёт, линия и место по двум наблюдениям.</span>
+      </a>
+      <a class="card" href="TRAINING.html">
+        <div class="num">03</div>
+        <strong>Практикум</strong>
+        <span>Три коротких блока, новая задача без подсказок, поиск ошибок и опыты с неточностью.</span>
+      </a>
+      <a class="card" href="FIELD.html">
+        <div class="num">04</div>
+        <strong>Полевая карточка</strong>
+        <span>Четыре решения на одном листе: наблюдение, место, разбор ошибки, таблицы.</span>
+      </a>
+      <a class="card wide soft" href="WORKSHEET.html">
+        <div class="num">05 · ПЕЧАТЬ</div>
+        <strong>Лист наблюдений и прокладки</strong>
+        <span>Четыре страницы A4 для собственных данных: поля наблюдения, поправок, пути и места.</span>
+      </a>
+      <a class="card wide soft" href="ANSWERS.html">
+        <div class="num">06 · ПОСЛЕ СВОЕЙ ПОПЫТКИ</div>
+        <strong>Решения и ключи</strong>
+        <span>Отдельная страница с решением примера, ключами упражнений и блоком практикума.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section split" aria-labelledby="route">
+    <div>
+      <h2 id="route">Маршрут из семи уроков</h2>
+      <ol class="lesson-list">
+        <li><a href="GUIDE.html#lesson-1"><b>01</b><span>Что измеряет секстант</span></a></li>
+        <li><a href="GUIDE.html#lesson-2"><b>02</b><span>Время наблюдения</span></a></li>
+        <li><a href="GUIDE.html#lesson-3"><b>03</b><span>Превращаем отсчёт в исправленную высоту</span></a></li>
+        <li><a href="GUIDE.html#lesson-4"><b>04</b><span>Где находится Солнце</span></a></li>
+        <li><a href="GUIDE.html#lesson-5"><b>05</b><span>Какую высоту ожидаем в выбранной точке</span></a></li>
+        <li><a href="GUIDE.html#lesson-6"><b>06</b><span>Первая линия на карте</span></a></li>
+        <li><a href="GUIDE.html#lesson-7"><b>07</b><span>Место по двум наблюдениям</span></a></li>
+      </ol>
+    </div>
+    <aside class="panel">
+      <h2>Оригинальные таблицы</h2>
+      <p>Страницы SH5, F-Tafel и Fulst открываются в этой же папке сайта. Они не перерисованы и не заменены схемами.</p>
+      <ul>
+        <li><a href="source-tables/%5B1%5D%20Nautical%20Almanac%20SH5%201939-1945.pdf#page=57">Альманах SH5, PDF 57</a></li>
+        <li><a href="source-tables/%5B2%5D%20F-Tafel.pdf#page=34">F-Tafel: F I, PDF 34</a></li>
+        <li><a href="source-tables/%5B2%5D%20F-Tafel.pdf#page=79">F-Tafel: F II, PDF 79</a></li>
+        <li><a href="source-tables/%5B2%5D%20F-Tafel.pdf#page=98">F-Tafel: F VIII, PDF 98</a></li>
+        <li><a href="source-tables/%5B2%5D%20F-Tafel.pdf#page=104">F-Tafel: F XI, PDF 104–105</a></li>
+        <li><a href="source-tables/Fulst%27s%20Nautische%20Tafeln.pdf#page=200">Fulst: Tafel 13, PDF 200</a></li>
+      </ul>
+    </aside>
+  </section>
+
+  <p class="warning"><strong>Только для игры и учёбы.</strong> Не смотрите на настоящее Солнце через незащищённую оптику. Сайт не заменяет проверку собственных игровых источников и не содержит готовых координат для наведения прибора. Ключи предназначены для сверки после собственной попытки.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>RadioNavigation / UBOAT · учебные материалы</span>
+    <span>Локальная копия · <a href="FACTCHECK.html">фактчек пособия</a> · <a href="GUIDE.html#limits">источники и границы</a></span>
+  </div>
+</footer>
+</body>
+</html>
