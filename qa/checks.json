@@ -1,6 +1,6 @@
 {
   "date": "2026-10-23",
-  "commit": "0e7146043d4e073c80b75a501ca283472c46eaf9",
+  "commit": "48cec2e35cce7abeffb055c6a3c470bfb93d6ab4",
   "scope": {
     "protected_originals": 25,
     "production_files": 295,
@@ -9,9 +9,9 @@
   "results": {
     "guide_content_and_links": "84 PASS / 0 FAIL",
     "learning_regressions": "38 PASS / 0 FAIL",
-    "factcheck_regressions": "35 PASS / 0 FAIL",
+    "factcheck_regressions": "36 PASS / 0 FAIL",
     "print_export": "32 PASS / 0 FAIL",
-    "ux_refactor": "15 PASS / 0 FAIL"
+    "ux_refactor": "19 PASS / 0 FAIL"
   },
   "print_pages": {
     "guide_pages": 121,
@@ -39,6 +39,5 @@
     "physical print",
     "other physical device"
   ],
-  "limits": "Automated checks confirm structure, links, arithmetic, print PDF and page bytes. They do not confirm game behaviour, human comprehension or physical printing.",
-  "commit_note": "Checks ran in the working project on this tree; the QA summary files themselves were added in the following commit and do not affect the site."
+  "limits": "Automated checks confirm structure, links, arithmetic, print PDF and page bytes. They do not confirm game behaviour, human comprehension or physical printing."
 }

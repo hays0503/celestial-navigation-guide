@@ -1,6 +1,6 @@
 # Проверки этой редакции
 
-Дата: **2026-10-23**. Коммит публикации: `0e7146043d4e`.
+Дата: **2026-10-23**. Коммит публикации: `48cec2e35cce`.
 
 Это сводка локальных проверок, а не независимая приёмка. Скрипты запускаются в рабочем проекте из
 `evidence/` и в статическую копию не входят: здесь сохранены команды, результаты и границы.
@@ -11,9 +11,9 @@
 |---|---|
 | guide_content_and_links | 84 PASS / 0 FAIL |
 | learning_regressions | 38 PASS / 0 FAIL |
-| factcheck_regressions | 35 PASS / 0 FAIL |
+| factcheck_regressions | 36 PASS / 0 FAIL |
 | print_export | 32 PASS / 0 FAIL |
-| ux_refactor | 15 PASS / 0 FAIL |
+| ux_refactor | 19 PASS / 0 FAIL |
 
 ## Печать (цифровой A4)
 
