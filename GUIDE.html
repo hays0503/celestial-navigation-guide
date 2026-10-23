@@ -6,10 +6,12 @@
 main{min-width:0}section{padding:0 0 3rem;margin:0 0 3rem;border-bottom:1px solid var(--line);scroll-margin-top:6rem}section:last-child{border-bottom:0}h1,h2,h3,h4,h5{color:var(--ink);line-height:1.28;font-weight:700}h1{font:700 clamp(2.7rem,5vw,4.1rem)/1.1 Georgia,serif;margin:.3rem 0 1.3rem;letter-spacing:-.035em}h2{font:700 clamp(1.9rem,3vw,2.7rem)/1.2 Georgia,serif;margin:.3rem 0 1.8rem}h3{font-size:1.35rem;margin:2.4rem 0 .8rem}h4{font-size:1.08rem;margin:1.8rem 0 .7rem}h5{font-size:1rem;margin:1.2rem 0 .5rem}p{margin:.8rem 0 1.1rem}li{padding-left:.1rem;margin:.38rem 0}ol,ul{padding-left:1.5rem}strong{font-weight:700;color:var(--ink)}em{color:var(--muted)}code{font: .92em ui-monospace,"Cascadia Code",Consolas,monospace;background:#eaf0ef;color:#184962;padding:.12rem .3rem;border-radius:.2rem;overflow-wrap:anywhere}pre{white-space:pre-wrap}blockquote,.warning{margin:1.4rem 0;padding:.8rem 1.2rem;background:var(--warning);border-left:4px solid var(--orange)}.check{background:var(--wash);padding:.8rem 1.1rem;border-left:3px solid #5594a1}.check-item{list-style:none;position:relative}.check-item>span{position:absolute;left:-1.2rem;color:var(--blue)}.section-kicker{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .65rem}.chapter-intro{background:var(--wash);padding:.45rem 1rem;border-radius:.3rem;margin-bottom:1.6rem;font-size:.9rem}
 figure{margin:1.7rem 0 2rem;background:var(--surface);border:1px solid var(--line);border-radius:.5rem;padding:.9rem}.figure-link{display:block;text-decoration:none}figure img{display:block;width:auto;max-width:100%;height:auto;max-height:500px;margin:0 auto;object-fit:contain}figcaption{margin:.8rem .25rem .15rem;color:var(--muted);font-size:.86rem;line-height:1.55}.table-scroll{width:100%;overflow-x:auto;margin:1.4rem 0;background:var(--surface);border:1px solid var(--line);border-radius:.35rem}table{border-collapse:collapse;width:100%;font-size:.92rem;line-height:1.5}th,td{text-align:left;vertical-align:top;padding:.7rem .8rem;border-bottom:1px solid var(--line);min-width:7rem}th{font-weight:650;background:var(--wash);color:var(--ink)}tr:last-child td{border-bottom:0}details{margin:1.6rem 0;padding:.85rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:.4rem}summary{cursor:pointer;color:var(--blue);font-weight:600;font-size:.92rem}details[open]>summary{margin-bottom:1rem}details.illustration{border-style:dashed}details figure{border:0;padding:0;margin:1rem 0}details.illustration>p{font-size:.9rem;color:var(--muted)}details.answer{background:var(--wash)}.end-note{font-size:.84rem;color:var(--muted)}.print-note{display:none}
 @media(max-width:1000px){.layout{grid-template-columns:205px minmax(0,1fr);gap:2rem;padding-left:1.3rem;padding-right:1.3rem}.sidebar{font-size:.82rem}.tools a{display:none}}
-@media(max-width:720px){body{font-size:1rem}.topbar{padding:.65rem 1rem}.brand small{font-size:.65rem}.tools{font-size:.8rem}.layout{display:block;padding:1rem 1rem 3rem}.sidebar{position:static;max-height:none;margin:0 0 2rem}.sidebar>h2,.sidebar>ul,.sidebar .edition{display:none}.sidebar.is-open>ul{display:block}.sidebar .appendices{border:0;margin:0;padding:0}.mobile-menu{display:block;width:100%;font:600 .9rem var(--font);text-align:left;padding:.7rem 0;color:var(--blue);background:transparent;border:0;border-bottom:1px solid var(--line);cursor:pointer}section{padding-bottom:2rem;margin-bottom:2rem}h1{font-size:2.6rem}h2{font-size:1.9rem}figure{padding:.5rem}figure img{max-height:330px}th,td{padding:.55rem;min-width:6rem}html{scroll-padding-top:5rem}.section-kicker{font-size:.7rem}}
+@media(max-width:720px){body{font-size:1rem}.topbar{padding:.65rem 1rem}.brand small{font-size:.65rem}.tools{font-size:.8rem}.layout{display:block;padding:1rem 1rem 3rem}.sidebar{position:static;max-height:none;margin:0 0 2rem}.sidebar>h2,.sidebar>ul,.sidebar .edition,.sidebar>p.nav-group{display:none}.sidebar.is-open>ul{display:block}.sidebar.is-open>p.nav-group{display:block}.sidebar .appendices{border:0;margin:0;padding:0}.mobile-menu{display:block;width:100%;font:600 .9rem var(--font);text-align:left;padding:.7rem 0;color:var(--blue);background:transparent;border:0;border-bottom:1px solid var(--line);cursor:pointer}section{padding-bottom:2rem;margin-bottom:2rem}h1{font-size:2.6rem}h2{font-size:1.9rem}figure{padding:.5rem}figure img{max-height:330px}th,td{padding:.55rem;min-width:6rem}html{scroll-padding-top:5rem}.section-kicker{font-size:.7rem}}
 @media print{@page{margin:17mm}html{scroll-behavior:auto}body{background:white;color:#111;font:10.5pt/1.5 Georgia,serif}.topbar,.sidebar,.tools,.skip{display:none!important}.layout{display:block;max-width:none;margin:0;padding:0}main{max-width:none}section{break-before:page;margin:0 0 1rem;padding:0;border:0}section:first-child{break-before:auto}h1{font-size:31pt}h2{font-size:23pt}h3{font-size:15pt}h4{font-size:12pt}h1,h2,h3,h4{break-after:avoid}figure{break-inside:avoid;border:1px solid #bbb}figure img{max-height:110mm}a{color:#183f5c;text-decoration:none}table{font-size:9pt}.table-scroll{overflow:visible}th{background:#eee}details:not([open])> :not(summary){display:block!important}details{break-inside:auto;border:1px solid #ccc}summary{font-size:10pt}.print-note{display:block;font-size:9pt;color:#444}.check,.warning{break-inside:avoid}p{orphans:3;widows:3}}
 
 main>section:focus{outline:none}.mobile-toc-top{display:none}.sidebar{scroll-margin-top:5.2rem}
+.sidebar .nav-group{margin:1.1rem 0 .3rem;font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:650}
+.sidebar .nav-group:first-of-type{margin-top:0}
 @media(max-width:720px){.tools .mobile-toc-top{display:inline-block}.tools{gap:.45rem}.tools button{padding:.35rem .55rem}.brand{min-width:0}}
 @media print{th,td{min-width:0;overflow-wrap:anywhere}table{table-layout:fixed}}
 .section-nav{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.86rem}.section-nav a{max-width:100%}.section-nav small{display:block;color:var(--muted)}
@@ -17,7 +19,7 @@ main>section:focus{outline:none}.mobile-toc-top{display:none}.sidebar{scroll-mar
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{@page{size:A4}}
 section{scroll-margin-top:0}
-</style></head><body><a class="skip" href="#content">Перейти к тексту</a><header class="topbar"><div class="brand">Секстант и Солнце<small>ПОСОБИЕ ДЛЯ НАЧИНАЮЩИХ</small></div><div class="tools"><a href="index.html">Главная</a><button class="mobile-toc-top" id="mobile-toc-top" type="button" aria-controls="toc" aria-expanded="false">Разделы</button><a href="#lesson-1">Урок 1</a><a href="#practice">Памятка</a><a href="FIELD.html">Карточка</a><a href="ANSWERS.html">Ключи</a><a href="WORKSHEET.html" target="_blank" rel="noopener">Лист для печати</a><a href="GUIDE.md">Текст</a><button id="print-button" type="button">Печать</button></div></header><div class="layout"><nav class="sidebar" id="toc" aria-label="Оглавление"><button class="mobile-menu" id="menu-toggle" type="button" aria-expanded="false">Оглавление · 7 уроков и приложения</button><h2>Содержание</h2><ul><li><a href="#start">Перед началом</a></li><li><a href="#lesson-1"><b>01</b> · Секстант и касание</a></li><li><a href="#lesson-2"><b>02</b> · Время наблюдения</a></li><li><a href="#lesson-3"><b>03</b> · Поправки высоты</a></li><li><a href="#lesson-4"><b>04</b> · Положение Солнца</a></li><li><a href="#lesson-5"><b>05</b> · Принятая точка и расчёт</a></li><li><a href="#lesson-6"><b>06</b> · Линия положения</a></li><li><a href="#lesson-7"><b>07</b> · Перенос и место</a></li></ul><ul class="appendices"><li><a href="#readiness">Выберите подходящую работу</a></li><li><a href="#practice">Своё наблюдение: маршрут</a></li><li><a href="#data-sources">Откуда брать исходные числа</a></li><li><a href="#worksheet">Лист записей</a></li><li><a href="#troubleshooting">Если не получается</a></li><li><a href="#full-example">Сквозной пример</a></li><li><a href="#exercises">Упражнения</a></li><li><a href="#quality">Качество результата</a></li><li><a href="#terms">Обозначения</a></li><li><a href="#self-check">Самопроверка</a></li><li><a href="#facts">Реальные факты и контекст</a></li><li><a href="#limits">Источники и ограничения</a></li><li><a href="START.html">Короткая версия</a></li><li><a href="FIELD.html">Полевая карточка</a></li><li><a href="TRAINING.html">Практикум: самостоятельная работа</a></li><li><a href="ANSWERS.html">Решения и ключи</a></li></ul><p class="edition">RadioNavigation / UBOAT<br>Рабочая редакция · 23.10.2026<br>Не для реального судовождения</p></nav><main id="content"><p class="print-note">Рабочая редакция. Не для реального судовождения. Иллюстрации не являются игровыми наблюдениями.</p><section id="start" aria-label="Перед началом"><p class="section-kicker">ПЕРЕД ПЕРВЫМ НАБЛЮДЕНИЕМ</p><h1 id="start-heading-1">Секстант и Солнце</h1>
+</style></head><body><a class="skip" href="#content">Перейти к тексту</a><header class="topbar"><div class="brand">Секстант и Солнце<small>ПОСОБИЕ ДЛЯ НАЧИНАЮЩИХ</small></div><div class="tools"><a href="index.html">Главная</a><button class="mobile-toc-top" id="mobile-toc-top" type="button" aria-controls="toc" aria-expanded="false">Разделы</button><a href="#lesson-1">Урок 1</a><a href="#practice">Памятка</a><a href="FIELD.html">Карточка</a><a href="ANSWERS.html">Ключи</a><a href="WORKSHEET.html" target="_blank" rel="noopener">Лист для печати</a><a href="GUIDE.md">Текст</a><button id="print-button" type="button">Печать</button></div></header><div class="layout"><nav class="sidebar" id="toc" aria-label="Оглавление"><button class="mobile-menu" id="menu-toggle" type="button" aria-expanded="false">Оглавление · 7 уроков и приложения</button><h2>Содержание</h2><p class="nav-group">Уроки</p><ul><li><a href="#start">Перед началом</a></li><li><a href="#lesson-1">01 · Секстант и касание</a></li><li><a href="#lesson-2">02 · Время наблюдения</a></li><li><a href="#lesson-3">03 · Поправки высоты</a></li><li><a href="#lesson-4">04 · Положение Солнца</a></li><li><a href="#lesson-5">05 · Принятая точка и расчёт</a></li><li><a href="#lesson-6">06 · Линия положения</a></li><li><a href="#lesson-7">07 · Перенос и место</a></li><li><a href="#controls">Управление прибором</a></li></ul><p class="nav-group">Практика</p><ul><li><a href="#readiness">Выберите подходящую работу</a></li><li><a href="#practice">Своё наблюдение: маршрут</a></li><li><a href="#full-example">Сквозной пример</a></li><li><a href="#exercises">Упражнения</a></li><li><a href="#worksheet">Лист записей</a></li><li><a href="#self-check">Самопроверка</a></li><li><a href="#troubleshooting">Если не получается</a></li><li><a href="START.html">Первый отсчёт</a></li><li><a href="STARTER-WORKSHEET.html">Лист первого отсчёта</a></li><li><a href="TRAINING.html">Практикум</a></li><li><a href="FIELD.html">Полевая карточка</a></li><li><a href="ANSWERS.html">Решения и ключи</a></li></ul><p class="nav-group">Справочник и QA</p><ul><li><a href="#terms">Обозначения</a></li><li><a href="#quality">Качество результата</a></li><li><a href="#facts">Реальные факты и контекст</a></li><li><a href="#data-sources">Откуда брать исходные числа</a></li><li><a href="#qa-status">Статус и границы проверки</a></li><li><a href="#limits">Источники и ограничения</a></li></ul><p class="edition">RadioNavigation / UBOAT<br>Рабочая редакция · 23.10.2026<br>Не для реального судовождения</p></nav><main id="content"><p class="print-note">Рабочая редакция. Не для реального судовождения. Иллюстрации не являются игровыми наблюдениями.</p><section id="start" aria-label="Перед началом"><p class="section-kicker">ПЕРЕД ПЕРВЫМ НАБЛЮДЕНИЕМ</p><h1 id="start-heading-1">Секстант и Солнце</h1>
 <p><strong>Практическое пособие для начинающих · RadioNavigation / UBOAT</strong><br />
 Рабочая редакция · 23 октября 2026 года</p>
 <p>Это путь от первого взгляда на морской горизонт до линии положения и определения места по двум наблюдениям. Предварительное знание астрономии не требуется. Каждое новое понятие вводится перед действием, для которого оно понадобится.</p>
@@ -137,7 +139,7 @@ section{scroll-margin-top:0}
 <p><strong>Сегодняшняя цель:</strong> самостоятельно совместить нижний край Солнца с горизонтом и записать показание прибора. Таблиц и расчёта места сегодня нет.</p>
 <p><strong>Порядок:</strong> найти море → найти Солнце → открыть прибор → опустить отражение → коснуться краем → прочитать число.</p>
 <p><strong>Приготовьте:</strong> игру UBOAT с RadioNavigation, бумагу и карандаш или <a href="#worksheet">готовый лист записей</a>. Перед практикой подготовьте учебную копию сохранения и резервную копию настроек.</p>
-<p class="warning"><strong>Граница готовности:</strong> ниже дан конкретный маршрут-кандидат по обычным средствам игры, проверенный по исходникам, но ещё не пройденный начинающим пользователем. Он не является принятой игровой инструкцией. Отличия вашей сцены фиксируем, а не обходим телепортом. Для первого знакомства достаточно <a href="#readiness">маршрута А</a>; все расчётные входы пока не нужны.</p>
+<p><strong>Статус:</strong> маршрут собран по исходникам, но ещё не пройден начинающим пользователем. Если на выходе или переходе приходится угадывать, это пробел инструкции; запишите место остановки. Подробности — в <a href="#qa-status">статусе проверки</a>.</p>
 <h3 id="lesson-1-heading-2">Сначала поймём, на что смотрим</h3>
 <p><strong>Горизонт</strong> — далёкая граница моря и неба. Это не край палубы, не берег и не полоса облаков.</p>
 <figure><a class="figure-link" href="figures/01-horizon.png" target="_blank" rel="noopener" aria-label="Открыть рисунок крупно: Горизонт — линия между морем и небом."><img src="figures/01-horizon.png" alt="Горизонт — линия между морем и небом." width="1440" height="680" loading="lazy" decoding="async"></a><figcaption>Горизонт — линия между морем и небом.</figcaption></figure>
@@ -160,7 +162,7 @@ section{scroll-margin-top:0}
 <p>Если проход закрыт, используйте только показанное самой игрой доступное взаимодействие с люком и указанное для него управление. Если подсказки нет, люк недоступен либо подъём не начинается, запишите конкретную остановку; не предполагаем невидимую кнопку открытия. Точный переход через люк — отдельный пункт будущей проверки.</p>
 <p>Если после появления курсора взгляд перестал поворачиваться, закройте раскрытое меню и верните режим обзора своей записанной командой показа интерфейса. Не пытайтесь исправить это барабаном секстанта.</p>
 <p class="check"><strong>Проверьте:</strong> видны открытые небо и море, над наблюдателем нет потолка; взгляд остаётся от лица, а не из свободной внешней камеры. Если видите только интерьер, внешний маршрут ещё не завершён. Автоматический перенос персонажа не засчитывается.</p>
-<p><strong>Снимки реального перехода:</strong> в этой редакции ещё не приложены. Схемы ниже объясняют измерение, не изображают недостающие кнопки или люк. Оператор должен будет сохранить снимки после согласованного обычного прохода, без дорисовки интерфейса.</p>
+<p><strong>Снимки перехода:</strong> в этой редакции не приложены; их можно получить только после согласованного обычного прохода.</p>
 <h4 id="lesson-1-heading-7">4. Покажите горизонт без прибора</h4>
 <p>Найдите глазами границу моря и неба. Назовите её вслух.</p>
 <p class="check"><strong>Проверьте:</strong> можете проследить эту границу в стороны. Если она скрыта волной, берегом или дымкой, для упражнения нужно другое положение или более ясная сцена. Не дорисовывайте невидимую линию.</p>
@@ -284,7 +286,7 @@ section{scroll-margin-top:0}
 <p><strong>Вход:</strong> есть собственная запись высоты и времени из <a href="#lesson-2">урока 2</a>.</p>
 <p><strong>Сегодняшняя цель:</strong> получить высоту <strong>центра</strong> Солнца после всех поправок. Место лодки пока не считаем.</p>
 <h3 id="lesson-3-heading-2">Почему прежнего числа недостаточно</h3>
-<p>Мы измерили положение <strong>нижнего края</strong> Солнца. Дальше понадобится положение его <strong>центра</strong>. На реальном приборе секстант может ещё немного завышать или занижать число. Поэтому отсчёт нужно исправить. В этой игре отдельной механической ошибки нет; ниже разберём, что это меняет.</p>
+<p>Мы измерили положение <strong>нижнего края</strong> Солнца. Дальше понадобится положение его <strong>центра</strong>. На реальном приборе секстант может ещё немного завышать или занижать число. Поэтому отсчёт нужно исправить. В этой игре отдельной механической ошибки зеркал нет; это меняет только способ получить поправку нуля.</p>
 <figure><a class="figure-link" href="figures/03-centre.png" target="_blank" rel="noopener" aria-label="Открыть рисунок крупно: От глаза направления на нижний край и на центр Солнца немного различаются."><img src="figures/03-centre.png" alt="От глаза направления на нижний край и на центр Солнца немного различаются." width="1440" height="800" loading="lazy" decoding="async"></a><figcaption>От глаза направления на нижний край и на центр Солнца немного различаются.</figcaption></figure>
 <p><strong>Покажите:</strong> какое направление идёт к центру? Это только одна причина поправок. Ещё учитываются высота глаза и влияние воздуха на видимое положение Солнца; таблица объединит нужные исправления.</p>
 <p>Меняется не только край диска. В первом уроке угол отсчитывали от <strong>видимого края моря</strong>. В расчёте нужна высота относительно <strong>горизонтальной плоскости</strong>, а видимый морской горизонт из-за кривизны Земли находится ниже неё. Поэтому нельзя считать общую поправку просто добавлением половины солнечного диаметра.</p>
@@ -296,15 +298,15 @@ section{scroll-margin-top:0}
 <figure><a class="figure-link" href="figures/03-zero-check.png" target="_blank" rel="noopener" aria-label="Открыть рисунок крупно: Прямое и отражённое изображения горизонта сначала разошлись, затем совмещены."><img src="figures/03-zero-check.png" alt="Прямое и отражённое изображения горизонта сначала разошлись, затем совмещены." width="1440" height="810" loading="lazy" decoding="async"></a><figcaption>Прямое и отражённое изображения горизонта сначала разошлись, затем совмещены.</figcaption></figure>
 <p><strong>Сначала покажите:</strong> на какой половине рисунка горизонты совпали? На реальном приборе отсчёт для проверки нуля читают только после совмещения.</p>
 <p>На реальном секстанте после сохранения солнечного отсчёта убирают Солнце из поля и совмещают прямое и отражённое изображения <strong>одного далёкого горизонта</strong>. Остаточное показание при совпадении берут с противоположным знаком. Это <strong>поправка нуля</strong> (в справочнике — ИП, индексная поправка). Прибор завышает — вычитаем; занижает — прибавляем.</p>
-<p><strong>Но в этой игре оптический нуль устроен иначе.</strong> Правая половина отклоняется <strong>точно на угол барабана</strong>, без отдельной механической ошибки зеркал. Поэтому при нуле оба изображения совпадают по построению, и такое совмещение <strong>не измеряет</strong> поправку. Записывать его как поверку прибора нельзя. Схема выше объясняет реальный прибор, а не измеримое действие этой игры.</p>
-<p><strong>Что делать в уроке.</strong> В чистом учебном профиле поправка нуля равна <strong>0,0′</strong> — это известное свойство реализации, а не результат вашей поверки. Происхождение настроек должно подтверждать, что служебной калибровки <code>C</code> не было и прежде, а не только в текущем походе. Одна копия сохранения этого не удостоверяет. Если доступное поле или карточка показывает сохранённую поправку (на карточке она может быть подписана <code>ИП</code>), перепишите её значение и источник. Если значение неизвестно или профиль не чистый, остановитесь: не подставляйте нуль.</p>
-<p>Кнопка <code>C</code> — служебная калибровка по известному светилу; в ручном методе её не используйте. В этой реализации служебная поправка ограничена <strong>±5′</strong>; неизвестное или большее значение означает остановку.</p>
+<p><strong>Но в этой игре оптический нуль точен по построению.</strong> Правая половина отклоняется точно на угол барабана, без отдельной механической ошибки зеркал. Поэтому при нуле оба изображения совпадают по построению, и такое совмещение <strong>не измеряет</strong> поправку. Схема выше объясняет реальный прибор, а не измеримое действие этой игры.</p>
+<p><strong>Что делать в уроке.</strong> В чистом учебном профиле поправка нуля равна <strong>0,0′</strong> — это известное свойство реализации, а не результат вашей поверки. Происхождение настроек должно подтверждать, что служебной калибровки <code>C</code> не было и прежде, а не только в текущем походе. Если доступное поле или карточка показывает сохранённую поправку (на карточке она может быть подписана <code>ИП</code>), перепишите её значение и источник. Если значение неизвестно или профиль не чистый, остановитесь: не подставляйте нуль.</p>
+<p>Кнопка <code>C</code> — служебная калибровка по известному светилу; в ручном методе её не используйте. Предел хранения и остальные свойства реализации — в <a href="#qa-status">статусе проверки</a>.</p>
 <p class="check"><strong>Проверьте:</strong> записано, откуда взято значение поправки. Формулировка «совместил горизонты и получил нуль» здесь не является источником: оптический нуль точен по построению.</p>
 <h4 id="lesson-3-heading-5">2. Запишите высоту глаза</h4>
 <p>Это другая высота: <strong>от воды до глаза, в метрах</strong>. Не путайте её с углом Солнца из первого урока. С высокой рубки и с низкой палубы горизонт виден немного по-разному, поэтому таблица просит это число.</p>
 <figure><a class="figure-link" href="figures/03-eye-height.png" target="_blank" rel="noopener" aria-label="Открыть рисунок крупно: Высота глаза измеряется от уровня воды до глаза наблюдателя, а не до палубы."><img src="figures/03-eye-height.png" alt="Высота глаза измеряется от уровня воды до глаза наблюдателя, а не до палубы." width="1440" height="890" loading="lazy" decoding="async"></a><figcaption>Высота глаза измеряется от уровня воды до глаза наблюдателя, а не до палубы.</figcaption></figure>
 <p><strong>Покажите:</strong> где начинается и где заканчивается зелёная стрелка?</p>
-<p>При открытом секстанте в блоке светил найдите строку <strong>«Глаз … м»</strong> и запишите её при текущем месте наблюдения. Такая строка и её единицы подтверждены по исходникам; наличие и читаемость в вашей сцене нужно проверить, не предполагать. Если вместо числа стоит тире, источник пока не получен. Другой допустимый источник — известные размеры точки над <strong>ватерлинией (линией пересечения воды с корпусом)</strong>: высота площадки плюс глаза над площадкой. Это не оценка размеров по перспективной картинке. После смены места прежнее число автоматически не переносите; полный <a href="#data-sources">реестр источников</a> держите под рукой.</p>
+<p>При открытом секстанте в блоке светил найдите строку <strong>«Глаз … м»</strong> и запишите её при текущем месте наблюдения. Если вместо числа стоит тире, источник пока не получен. Другой допустимый источник — известные размеры точки над <strong>ватерлинией (линией пересечения воды с корпусом)</strong>: высота площадки плюс глаза над площадкой. Это не оценка размеров по перспективной картинке. После смены места прежнее число автоматически не переносите; полный <a href="#data-sources">реестр источников</a> держите под рукой. Видимость строки в обычной сцене ещё проверяется — см. <a href="#qa-status">статус</a>.</p>
 <figure><a class="figure-link" href="figures/03-horizon-dip.png" target="_blank" rel="noopener" aria-label="Открыть рисунок крупно: Из-за кривизны Земли видимый морской горизонт находится ниже горизонтального направления от глаза."><img src="figures/03-horizon-dip.png" alt="Из-за кривизны Земли видимый морской горизонт находится ниже горизонтального направления от глаза." width="1440" height="1000" loading="lazy" decoding="async"></a><figcaption>Из-за кривизны Земли видимый морской горизонт находится ниже горизонтального направления от глаза.</figcaption></figure>
 <p>На этой схеме синяя линия — направление к далёкому видимому краю моря. Зелёная — «ровно горизонтально» от глаза. Разница между ними называется <strong>наклоном горизонта</strong>. На рисунке она сильно увеличена для объяснения. Чем выше глаз над водой, тем больше эта разница; её исправление уже входит в выбранную таблицу.</p>
 <p class="check"><strong>Проверьте:</strong> известен источник числа. Оценка по виду из окуляра или чтение скрытых координат камеры не подходят. При отсутствии данных остановитесь: поправку по высоте глаза пока получить нельзя. Рабочая область курса — 1–14 м; историческая таблица продолжается до 30 м.</p>
@@ -410,7 +412,7 @@ section{scroll-margin-top:0}
 <p>Разбираем сохранённые условия на <strong>2 сентября 1939 года</strong>, с меткой <strong>10:03:07Z</strong>. Это упражнение на чтение книги и арифметику, не новое наблюдение. Для новой условной задачи <a href="TRAINING.html">практикума</a> нужна только её собственная карточка, не числа этого разбора.</p>
 <h4 id="lesson-4-heading-6">1. Найдите день, год и нужную таблицу</h4>
 <p>Откройте <strong>PDF 57</strong>, найдите блок <strong>2-Sep</strong> и под заголовком <strong>1939</strong> — пару столбцов <strong>GHA</strong> и <strong>δ</strong>. На странице <strong>одна непрерывная числовая сетка</strong>. Над ней напечатано <strong>Time = GMT-1</strong> с одним перечнем портов отправления; под ней — <strong>Time = GMT</strong> с другим перечнем портов. Это не две разные таблицы, между которыми можно выбрать готовый ответ.</p>
-<p><strong>Ограничение образца:</strong> временная привязка к новой игровой сцене не подтверждена; склонение книги расходится с независимым расчётом примерно на <strong>1,8′</strong>. Причина этого отличия не установлена. Сохраняем заданные клетки и метку, не прибавляем час по положению подписи GMT-1. Числовая история проверки вынесена в <a href="#limits">приложение</a>.</p>
+<p><strong>Ограничение образца:</strong> временная привязка к новой игровой сцене не подтверждена; склонение книги расходится с независимым расчётом примерно на <strong>1,8′</strong>, причина не установлена. Сохраняем заданные клетки и метку, не прибавляем час по положению подписи GMT-1. Подробности — в <a href="#qa-status">статусе проверки</a>.</p>
 <p><strong>Для собственного наблюдения</strong> сначала установите, как часы игры связаны со строками выбранного альманаха. Совпадения слов GMT в заголовках недостаточно. Если соответствие неизвестно, остановитесь: нельзя добавлять или вычитать час по удобному ответу. Сборник покрывает 1939–1945 годы; для другой даты этих страниц недостаточно.</p>
 <p class="check"><strong>Проверьте:</strong> выбран нужный день, пара столбцов своего года и нужная строка времени; верхняя и нижняя портовые подписи не приняты за два набора чисел.</p>
 <p><strong>Дальше работаем только по условиям образца.</strong> Собственные данные и его числа на одном листе не смешиваем.</p>
@@ -436,7 +438,7 @@ section{scroll-margin-top:0}
 <h4 id="lesson-4-heading-9">4. Получите часовой угол на момент наблюдения</h4>
 <p>300°01,1′ + 30°46,75′ = <strong>330°47,85′</strong>.</p>
 <p>Получено <strong>GHA (гринвичский часовой угол Солнца) = 330°47,85′</strong> по заданным клеткам образца. При переходе через 360° вычитают полный оборот; здесь он не понадобился.</p>
-<p><strong>Предел этого правила:</strong> 15°/ч — ровный шаг таблицы приращений, но реальный GHA Солнца меняется не строго равномерно. Даже дневная сетка образца даёт в 12:00 <strong>0°01,9′</strong>: от 08:00 накопилось <strong>60°00,8′</strong>, а не ровно 60°. Если линейно интерполировать сами полные строки GHA, за нашу долю интервала добавится ещё <strong>0,41′</strong>, и получится <strong>330°48,26′</strong>. Это другой расчёт, не значение сохранённого контроля. Здесь оставляем заданное упражнение и его 330°47,85′; для собственного наблюдения нужен согласованный с источником способ приращений, а не предположение, что 15°/ч всегда точно. Склонение проверяется отдельно.</p>
+<p><strong>Предел этого правила:</strong> 15°/ч — ровный шаг таблицы приращений, но реальный GHA Солнца меняется не строго равномерно. Для этого упражнения оставляем заданные 330°47,85′; для собственного наблюдения нужен согласованный с источником способ приращений, а не предположение, что 15°/ч всегда точно. Числовое сравнение с независимой эфемеридой — в <a href="#qa-status">статусе проверки</a>.</p>
 <h4 id="lesson-4-heading-10">5. Найдите изменение склонения</h4>
 <p>За весь интервал от 08:00 до 12:00 изменение равно:</p>
 <p>8°07,5′ − 8°11,1′ = <strong>−3,6′</strong>.</p>
@@ -1503,7 +1505,125 @@ section{scroll-margin-top:0}
 <li class="check-item"><span aria-hidden="true">□</span> Результат подписан по смыслу: упражнение / одна линия / оценка места / остановка.</li>
 </ul>
 <p><strong>Не заполняйте лист задним числом.</strong> Если наблюдение не удалось, честный результат — «остановка» и причина, а не красивая координата.</p>
-<nav class="section-nav" aria-label="Соседние разделы"><a href="#data-sources"><small>Предыдущий раздел</small>Откуда брать исходные числа</a><a href="#troubleshooting"><small>Следующий раздел</small>Если не получается</a></nav></section><section id="troubleshooting" aria-label="Если не получается"><p class="section-kicker">ПРИЛОЖЕНИЕ</p><h2 id="troubleshooting-heading-1">Если результат не получается</h2>
+<nav class="section-nav" aria-label="Соседние разделы"><a href="#data-sources"><small>Предыдущий раздел</small>Откуда брать исходные числа</a><a href="#controls"><small>Следующий раздел</small>Управление прибором</a></nav></section><section id="controls" aria-label="Управление прибором"><p class="section-kicker">ПРИЛОЖЕНИЕ</p><h2 id="controls-heading-1">Управление прибором</h2>
+<p>Справочная карточка, не урок. Клавиши — <strong>назначения по умолчанию</strong>; если вы их меняли, используйте свои. Названия действий есть в настройках управления и в справке <code>P</code>.</p>
+<h3 id="controls-heading-2">Самое необходимое</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Клавиша</th>
+<th>Действие</th>
+<th>Когда нужна</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Z</code></td>
+<td>открыть или закрыть секстант</td>
+<td>начало и конец упражнения</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>сильный правый фильтр</td>
+<td>первый выбор, чтобы увидеть диск</td>
+</tr>
+<tr>
+<td><code>2</code>, <code>1</code></td>
+<td>слабее затемнение справа</td>
+<td>если диск слишком тёмный</td>
+</tr>
+<tr>
+<td><code>↑</code></td>
+<td>увеличить угол: отражение опускается</td>
+<td>поиск горизонта</td>
+</tr>
+<tr>
+<td><code>Shift+↑</code></td>
+<td>то же быстрее</td>
+<td>пока Солнце далеко</td>
+</tr>
+<tr>
+<td><code>↓</code></td>
+<td>уменьшить угол: отражение поднимается</td>
+<td>если проскочили</td>
+</tr>
+<tr>
+<td><code>Ctrl+↑</code>, <code>Ctrl+↓</code></td>
+<td>точный шаг</td>
+<td>последние десятые минуты</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td>вернуть барабан к нулю</td>
+<td>только как настройка поиска</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="controls-heading-3">Дополнительно</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Клавиша</th>
+<th>Действие</th>
+<th>Ограничение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>снять правый фильтр</td>
+<td>не влияет на левый</td>
+</tr>
+<tr>
+<td><code>Ctrl+1</code>, <code>Ctrl+2</code>, <code>Ctrl+3</code></td>
+<td>левый фильтр</td>
+<td>нужен редко</td>
+</tr>
+<tr>
+<td><code>Ctrl+0</code></td>
+<td>снять левый фильтр</td>
+<td>одна <code>Ctrl</code> фильтр не выбирает</td>
+</tr>
+<tr>
+<td><code>+</code>, <code>−</code></td>
+<td>увеличение изображения</td>
+<td>не меняет измеренный угол</td>
+</tr>
+<tr>
+<td><code>←</code>, <code>→</code></td>
+<td>поворот взгляда</td>
+<td>не настройка высоты</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td>справка по прибору</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>I</code></td>
+<td>встроенная запись наблюдения</td>
+<td>для урока 1 не требуется</td>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td>служебная калибровка по светилу</td>
+<td>не ручная поверка нуля</td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td>сброс серии</td>
+<td>для урока 1 не требуется</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="controls-heading-4">Три правила, чтобы не спутать</h3>
+<ol>
+<li><strong><code>R</code> — не поверка.</strong> Он возвращает барабан к исходной настройке, но не измеряет и не удостоверяет поправку нуля.</li>
+<li><strong><code>C</code> — не шаг ручного расчёта.</strong> Это служебная калибровка по известному светилу.</li>
+<li><strong>Увеличение не умножает угол.</strong> Оно меняет только размер изображения.</li>
+</ol>
+<p>Что именно проверено в реализации и что ещё нет — в <a href="QA-STATUS.html">статусе проверки</a>.</p>
+<nav class="section-nav" aria-label="Соседние разделы"><a href="#worksheet"><small>Предыдущий раздел</small>Лист записей</a><a href="#troubleshooting"><small>Следующий раздел</small>Если не получается</a></nav></section><section id="troubleshooting" aria-label="Если не получается"><p class="section-kicker">ПРИЛОЖЕНИЕ</p><h2 id="troubleshooting-heading-1">Если результат не получается</h2>
 <p>Проверяйте сначала исходные данные и переход между действиями, а не сходство с готовым ответом. Сохраните исходную запись, отметьте место остановки и исправляйте причину по одному шагу.</p>
 <h3 id="troubleshooting-heading-2">Найдите первый разрыв цепочки</h3>
 <p>Не пересчитывайте всё сразу. Пройдите по своей записи до <strong>первой невыполненной проверки</strong>:</p>
@@ -1693,7 +1813,7 @@ section{scroll-margin-top:0}
 <li><strong>Неизвестно:</strong> какое поле нельзя обоснованно заполнить.</li>
 </ul>
 <p>Сохраните собственную высоту и время, если они уже получены. Не дописывайте измерение задним числом. Остановка может указывать на ограничение текущей игры или пробел пособия, а не на вашу ошибку.</p>
-<nav class="section-nav" aria-label="Соседние разделы"><a href="#worksheet"><small>Предыдущий раздел</small>Лист записей</a><a href="#full-example"><small>Следующий раздел</small>Сквозной пример</a></nav></section><section id="full-example" aria-label="Сквозной пример"><p class="section-kicker">ПРИЛОЖЕНИЕ</p><h2 id="full-example-heading-1">Сквозной бумажный пример: два наблюдения и место</h2>
+<nav class="section-nav" aria-label="Соседние разделы"><a href="#controls"><small>Предыдущий раздел</small>Управление прибором</a><a href="#full-example"><small>Следующий раздел</small>Сквозной пример</a></nav></section><section id="full-example" aria-label="Сквозной пример"><p class="section-kicker">ПРИЛОЖЕНИЕ</p><h2 id="full-example-heading-1">Сквозной бумажный пример: два наблюдения и место</h2>
 <p><strong>Это синтетическое упражнение, а не игровые измерения.</strong> Оба отсчёта Hs, оба момента, начальное счислимое место и путь заданы условием. Только синтетическое «истинное» место скрыто в ключе. Игра, сохранения и настройки не участвуют.</p>
 <p><strong>Что получите:</strong> две линии положения, перенос первой ко второму времени и координаты пересечения. Это обучающий пример с подсказками, не итоговая проверка самостоятельности. После него выполните новую задачу в <a href="TRAINING.html">практикуме</a>: там нет готовых строк, колонок и знаков сдвига.</p>
 <p><strong>Нужно:</strong> этот лист, <a href="#worksheet">лист записей</a>, оригинальные <a href="source-tables/%5B2%5D%20F-Tafel.pdf#page=34">F-Tafel, PDF 34 (F I)</a>, <a href="source-tables/%5B2%5D%20F-Tafel.pdf#page=79">PDF 79 (F II)</a>, <a href="source-tables/%5B2%5D%20F-Tafel.pdf#page=98">PDF 98 (F VIII)</a>, <a href="source-tables/%5B2%5D%20F-Tafel.pdf#page=104">PDF 104–105 (F XI)</a>, линейка, транспортир или угольник, бумага в клетку.</p>
@@ -2317,7 +2437,84 @@ section{scroll-margin-top:0}
 <li><a href="https://flaterco.com/files/xtide/202106_Bowditch_vol1.pdf">Bowditch, American Practical Navigator, 2019, том I</a></li>
 <li><a href="https://www.uboatarchive.net/F-Tafel/F-Tafel.htm">U-boat Archive — F-Tafel, немецкий оригинал и перевод</a></li>
 </ul>
-<nav class="section-nav" aria-label="Соседние разделы"><a href="#self-check"><small>Предыдущий раздел</small>Самопроверка</a><a href="#limits"><small>Следующий раздел</small>Источники и ограничения</a></nav></section><section id="limits" aria-label="Источники и ограничения"><p class="section-kicker">ПРИЛОЖЕНИЕ</p><h2 id="limits-heading-1">Источники и границы применения</h2>
+<nav class="section-nav" aria-label="Соседние разделы"><a href="#self-check"><small>Предыдущий раздел</small>Самопроверка</a><a href="#qa-status"><small>Следующий раздел</small>Статус и границы проверки</a></nav></section><section id="qa-status" aria-label="Статус и границы проверки"><p class="section-kicker">ПРИЛОЖЕНИЕ</p><h2 id="qa-status-heading-1">Статус и границы проверки</h2>
+<p><strong>Это не урок.</strong> Здесь собрано то, что в уроках мешало бы первому действию: состояние игрового маршрута, известные ограничения полей и таблиц, а также что именно проверено. Учебные шаги остаются в уроках; полный технический разбор — в разделе <a href="#limits">«Источники и ограничения»</a> и в <a href="FACTCHECK.html">FACTCHECK.html</a>.</p>
+<p><strong>Коротко:</strong> расчётная часть проверена по таблицам и независимым формулам; полный обычный проход игры и понятность курса начинающему <strong>не подтверждены</strong>. Игра при подготовке этой редакции не запускалась.</p>
+<h3 id="qa-status-heading-2">1. Игровой маршрут урока 1</h3>
+<p>Маршрут выхода наружу и перехода к виду от первого лица собран по исходникам, но не пройден начинающим пользователем от загрузки до первого касания. Реальные снимки этого перехода отсутствуют.</p>
+<p>Что это значит на практике:</p>
+<ul>
+<li>если на выходе, у люка или при включении вида от первого лица приходится угадывать — это пробел инструкции, а не ошибка читателя;</li>
+<li>место остановки записывают словами («не открылся люк», «остался общий вид»), а не обходят телепортом или программным наведением;</li>
+<li>отдельно не подтверждены режим «только капитан», работа с курсором после меню и поведение камеры на конкретной лодке.</li>
+</ul>
+<p>Первая планируемая игровая проверка ограничена <strong>только уроком 1</strong> и требует отдельного согласования, оператора, учебной копии сохранения и свежего отката.</p>
+<h3 id="qa-status-heading-3">2. Поле «Глаз … м»</h3>
+<p>Строка существует в блоке светил при открытом приборе и подтверждена по исходникам. Число требует действительной позиции и готовой солнечной оптики.</p>
+<ul>
+<li>при неготовой оптике выводится тире;</li>
+<li>при отсутствии позиции блок может быть пустым;</li>
+<li>ни тире, ни пустой блок не означают нуль.</li>
+</ul>
+<p>Видимость строки в обычной сцене, её значение и переходы «внутрь лодки / на карту» игровым проходом не подтверждены. Другой допустимый источник — известная высота площадки над ватерлинией плюс высота глаза.</p>
+<h3 id="qa-status-heading-4">3. Дата, GMT и пауза</h3>
+<p>Код добавляет секунды именно к гринвичской строке журнала. Видимость даты, фактическая остановка часов и привязка секунды к новому касанию требуют отдельной проверки.</p>
+<p>Правило урока 2 остаётся: высота и время должны относиться к одному моменту. Нельзя приписать позднее время старому отсчёту.</p>
+<h3 id="qa-status-heading-5">4. Поправка нуля и служебная калибровка</h3>
+<p>В этой реализации правая половина отклоняется точно на угол барабана, без отдельной механической ошибки зеркал. Поэтому совмещение прямого и отражённого горизонтов <strong>не измеряет</strong> поправку и не является поверкой.</p>
+<ul>
+<li><code>R</code> возвращает барабан к исходной настройке, но не измеряет и не удостоверяет сохранённую поправку.</li>
+<li><code>C</code> — служебная калибровка по известному светилу; в ручном расчёте её не используют.</li>
+<li>Сохранённое значение по умолчанию 0,0′, хранится между сеансами и ограничено ±5′.</li>
+<li>Штатный показ текущего значения без встроенной записи не подтверждён; это не доказательство, что показа нет.</li>
+</ul>
+<p>Если происхождение поправки неизвестно, собственный полный расчёт останавливают. Нельзя подставлять нуль или сбрасывать рабочий профиль ради удобного ответа.</p>
+<h3 id="qa-status-heading-6">5. Альманах SH5 и эфемерида</h3>
+<p>Страница PDF 57 — <strong>одна непрерывная сетка</strong> чисел. Сверху и снизу у неё разные подписи времени с перечнями портов; это не две таблицы, между которыми выбирают готовый ответ.</p>
+<p>Что проверено и что нет:</p>
+<ul>
+<li>сохранённая метка <strong>10:03:07Z</strong> и заданные клетки оставлены как условный контроль;</li>
+<li><strong>15°/ч</strong> — ровный шаг таблицы приращений, не физический закон. Полные строки дают за четыре часа <strong>60°00,8′</strong>; линейная интерполяция самих строк добавляет к сохранённому GHA около <strong>0,41′</strong>, то есть примерно <strong>330°48,26′</strong> вместо 330°47,85′;</li>
+<li>независимая сверка по JPL DE421 при GMT, принятом за UT1, даёт расхождение GHA около <strong>0,45′</strong> до этой поправки и около <strong>0,04′</strong> после;</li>
+<li>склонение расходится примерно на <strong>1,8′</strong>; причина не установлена;</li>
+<li>перенос метки на час не поддерживается: GHA уходит примерно на 15°.</li>
+</ul>
+<p>Происхождение конкретного PDF с подписью Silent Hunter 5, его авторство и отношение к официальному изданию альманаха не установлены. Числа сборника не объявляются исторической эфемеридой.</p>
+<h3 id="qa-status-heading-7">6. Что считается проверкой</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Проверено</th>
+<th>Чем</th>
+<th>Чего это не доказывает</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Арифметика и клетки таблиц</td>
+<td>пересчёт из напечатанных клеток, сферические формулы</td>
+<td>точность реального прибора и игрового наведения</td>
+</tr>
+<tr>
+<td>История и определения</td>
+<td>музейные и архивные публикации</td>
+<td>поведение игры</td>
+</tr>
+<tr>
+<td>Ссылки, сборка, A4</td>
+<td>автоматические проверки и цифровой экспорт</td>
+<td>понятность человеку и физическую печать</td>
+</tr>
+<tr>
+<td>Управление и поля</td>
+<td>чтение исходников</td>
+<td>видимость и работу в обычной сцене</td>
+</tr>
+</tbody>
+</table></div>
+<p>Не выполнены: самостоятельный проход начинающего пользователя, реальная пара солнечных наблюдений с записанным путём, физическая печать, доступ с другого устройства как проверка удобства. Ни один урок не отмечен как принятый в игре.</p>
+<p><strong>Не для реального судовождения.</strong> Игровые фильтры и цвета нельзя переносить на настоящий прибор.</p>
+<nav class="section-nav" aria-label="Соседние разделы"><a href="#facts"><small>Предыдущий раздел</small>Реальные факты и контекст</a><a href="#limits"><small>Следующий раздел</small>Источники и ограничения</a></nav></section><section id="limits" aria-label="Источники и ограничения"><p class="section-kicker">ПРИЛОЖЕНИЕ</p><h2 id="limits-heading-1">Источники и границы применения</h2>
 <h3 id="limits-heading-2">На каких книгах основан расчёт</h3>
 <p>Пособие использует <a href="source-tables/">оригинальные таблицы из набора SH5</a>:</p>
 <ul>
@@ -2407,7 +2604,7 @@ section{scroll-margin-top:0}
 <p>клетки и арифметика табличного образца сверены с исходным примером и справочником. Самостоятельное чтение новичком и обычная прокладка на игровой карте ещё не проверены. Рисунок направления не является приборным пеленгом, а схема линии — новым определением места.</p>
 <h4 id="limits-heading-16">Перенос и место</h4>
 <p>реальная пара наблюдений для этого урока не снята; самостоятельный проход новичком и доступность всех игровых источников пути ещё не проверены. Рисунки переноса и пересечения объясняют действия, не добавляя отсутствующего второго отсчёта.</p>
-<nav class="section-nav" aria-label="Соседние разделы"><a href="#facts"><small>Предыдущий раздел</small>Реальные факты и контекст</a></nav></section><p class="end-note">Конец пособия · <a href="#start">Вернуться к началу</a></p></main></div><script>
+<nav class="section-nav" aria-label="Соседние разделы"><a href="#qa-status"><small>Предыдущий раздел</small>Статус и границы проверки</a></nav></section><p class="end-note">Конец пособия · <a href="#start">Вернуться к началу</a></p></main></div><script>
 (() => {
   const menu = document.getElementById('menu-toggle');
   const side = document.querySelector('.sidebar');
