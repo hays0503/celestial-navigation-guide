@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Перед расчётом — Секстант и Солнце</title><style>
+:root{--paper:#f5f3ed;--surface:#fffefa;--ink:#173b55;--text:#243d4a;--muted:#586d78;--line:#d6dfdf;--blue:#1e638d;--orange:#b8660e;--wash:#eaf3f4;--warning:#fff1d9;--font:system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:6rem}body{margin:0;background:var(--paper);color:var(--text);font:1rem/1.75 var(--font)}a{color:var(--blue);text-underline-offset:.18em}a:hover{color:var(--orange)}:focus-visible{outline:3px solid var(--orange);outline-offset:4px}.skip{position:absolute;left:1rem;top:-5rem}.skip:focus{top:.5rem;z-index:5;background:var(--surface);padding:.5rem}
+.topbar{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem max(1rem,calc((100vw - 1400px)/2));background:var(--surface);border-bottom:1px solid var(--line)}.brand{font-weight:750;line-height:1.3;letter-spacing:.02em;color:var(--ink)}.brand small{display:block;font-size:.73rem;letter-spacing:.08em;color:var(--muted);font-weight:550}.tools{display:flex;gap:.7rem;align-items:center;font-size:.85rem}.tools button{font:inherit;color:var(--ink);border:1px solid var(--line);border-radius:.4rem;background:var(--surface);padding:.35rem .75rem;cursor:pointer}.layout{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:245px minmax(0,860px);gap:3.5rem;padding:2.5rem 2rem 6rem}.sidebar{position:sticky;top:6rem;align-self:start;max-height:calc(100vh - 7rem);overflow:auto;font-size:.88rem;line-height:1.55}.sidebar h2{font-size:.72rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin:.2rem 0 .9rem}.sidebar ul{list-style:none;margin:0;padding:0}.sidebar li{margin:.15rem 0}.sidebar a{display:block;padding:.35rem .55rem;border-radius:.35rem;color:var(--text);text-decoration:none;border-left:3px solid transparent}.sidebar a[aria-current="location"]{background:var(--wash);color:var(--blue);border-left-color:var(--blue)}.sidebar .appendices{border-top:1px solid var(--line);margin-top:.9rem;padding-top:.9rem}.sidebar .edition{margin-top:1.2rem;color:var(--muted);font-size:.77rem}.mobile-menu{display:none}
+main{min-width:0}section{padding:0 0 3rem;margin:0 0 3rem;border-bottom:1px solid var(--line);scroll-margin-top:6rem}section:last-child{border-bottom:0}h1,h2,h3,h4,h5{color:var(--ink);line-height:1.28;font-weight:700}h1{font:700 clamp(2.7rem,5vw,4.1rem)/1.1 Georgia,serif;margin:.3rem 0 1.3rem;letter-spacing:-.035em}h2{font:700 clamp(1.9rem,3vw,2.7rem)/1.2 Georgia,serif;margin:.3rem 0 1.8rem}h3{font-size:1.35rem;margin:2.4rem 0 .8rem}h4{font-size:1.08rem;margin:1.8rem 0 .7rem}h5{font-size:1rem;margin:1.2rem 0 .5rem}p{margin:.8rem 0 1.1rem}li{padding-left:.1rem;margin:.38rem 0}ol,ul{padding-left:1.5rem}strong{font-weight:700;color:var(--ink)}em{color:var(--muted)}code{font: .92em ui-monospace,"Cascadia Code",Consolas,monospace;background:#eaf0ef;color:#184962;padding:.12rem .3rem;border-radius:.2rem;overflow-wrap:anywhere}pre{white-space:pre-wrap}blockquote,.warning{margin:1.4rem 0;padding:.8rem 1.2rem;background:var(--warning);border-left:4px solid var(--orange)}.check{background:var(--wash);padding:.8rem 1.1rem;border-left:3px solid #5594a1}.check-item{list-style:none;position:relative}.check-item>span{position:absolute;left:-1.2rem;color:var(--blue)}.section-kicker{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .65rem}.chapter-intro{background:var(--wash);padding:.45rem 1rem;border-radius:.3rem;margin-bottom:1.6rem;font-size:.9rem}
+figure{margin:1.7rem 0 2rem;background:var(--surface);border:1px solid var(--line);border-radius:.5rem;padding:.9rem}.figure-link{display:block;text-decoration:none}figure img{display:block;width:auto;max-width:100%;height:auto;max-height:500px;margin:0 auto;object-fit:contain}figcaption{margin:.8rem .25rem .15rem;color:var(--muted);font-size:.86rem;line-height:1.55}.table-scroll{width:100%;overflow-x:auto;margin:1.4rem 0;background:var(--surface);border:1px solid var(--line);border-radius:.35rem}table{border-collapse:collapse;width:100%;font-size:.92rem;line-height:1.5}th,td{text-align:left;vertical-align:top;padding:.7rem .8rem;border-bottom:1px solid var(--line);min-width:7rem}th{font-weight:650;background:var(--wash);color:var(--ink)}tr:last-child td{border-bottom:0}details{margin:1.6rem 0;padding:.85rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:.4rem}summary{cursor:pointer;color:var(--blue);font-weight:600;font-size:.92rem}details[open]>summary{margin-bottom:1rem}details.illustration{border-style:dashed}details figure{border:0;padding:0;margin:1rem 0}details.illustration>p{font-size:.9rem;color:var(--muted)}details.answer{background:var(--wash)}.end-note{font-size:.84rem;color:var(--muted)}.print-note{display:none}
+@media(max-width:1000px){.layout{grid-template-columns:205px minmax(0,1fr);gap:2rem;padding-left:1.3rem;padding-right:1.3rem}.sidebar{font-size:.82rem}.tools a{display:none}}
+@media(max-width:720px){body{font-size:1rem}.topbar{padding:.65rem 1rem}.brand small{font-size:.65rem}.tools{font-size:.8rem}.layout{display:block;padding:1rem 1rem 3rem}.sidebar{position:static;max-height:none;margin:0 0 2rem}.sidebar>h2,.sidebar>ul,.sidebar .edition,.sidebar>p.nav-group{display:none}.sidebar.is-open>ul{display:block}.sidebar.is-open>p.nav-group{display:block}.sidebar .appendices{border:0;margin:0;padding:0}.mobile-menu{display:block;width:100%;font:600 .9rem var(--font);text-align:left;padding:.7rem 0;color:var(--blue);background:transparent;border:0;border-bottom:1px solid var(--line);cursor:pointer}section{padding-bottom:2rem;margin-bottom:2rem}h1{font-size:2.6rem}h2{font-size:1.9rem}figure{padding:.5rem}figure img{max-height:330px}th,td{padding:.55rem;min-width:6rem}html{scroll-padding-top:5rem}.section-kicker{font-size:.7rem}}
+@media print{@page{margin:17mm}html{scroll-behavior:auto}body{background:white;color:#111;font:10.5pt/1.5 Georgia,serif}.topbar,.sidebar,.tools,.skip{display:none!important}.layout{display:block;max-width:none;margin:0;padding:0}main{max-width:none}section{break-before:page;margin:0 0 1rem;padding:0;border:0}section:first-child{break-before:auto}h1{font-size:31pt}h2{font-size:23pt}h3{font-size:15pt}h4{font-size:12pt}h1,h2,h3,h4{break-after:avoid}figure{break-inside:avoid;border:1px solid #bbb}figure img{max-height:110mm}a{color:#183f5c;text-decoration:none}table{font-size:9pt}.table-scroll{overflow:visible}th{background:#eee}details:not([open])> :not(summary){display:block!important}details{break-inside:auto;border:1px solid #ccc}summary{font-size:10pt}.print-note{display:block;font-size:9pt;color:#444}.check,.warning{break-inside:avoid}p{orphans:3;widows:3}}
+
+main>section:focus{outline:none}.mobile-toc-top{display:none}.sidebar{scroll-margin-top:5.2rem}
+.sidebar .nav-group{margin:1.1rem 0 .3rem;font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:650}
+.sidebar .nav-group:first-of-type{margin-top:0}
+@media(max-width:720px){.tools .mobile-toc-top{display:inline-block}.tools{gap:.45rem}.tools button{padding:.35rem .55rem}.brand{min-width:0}}
+@media print{th,td{min-width:0;overflow-wrap:anywhere}table{table-layout:fixed}}
+.section-nav{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.86rem}.section-nav a{max-width:100%}.section-nav small{display:block;color:var(--muted)}
+@media print{.section-nav{display:none}thead{display:table-header-group}tr{break-inside:avoid}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{@page{size:A4}}
+section{scroll-margin-top:0}
+.basics-layout{max-width:860px;margin:0 auto;padding:2rem 1.5rem 4rem;overflow-wrap:anywhere}.basics-layout h1{font-size:clamp(2rem,4.5vw,3rem)}.basics-layout h2{font-size:1.8rem;scroll-margin-top:0}.basics-layout h3{font-size:1.2rem}.basics-layout figure img{max-height:none}.basics-map{display:flex;flex-wrap:wrap;gap:.5rem 1rem;margin:1.5rem 0}a:focus-visible,button:focus-visible{outline:3px solid #9b570c;outline-offset:4px}@media print{.basics-layout{padding:0;margin:0;font:10.5pt/1.4 Georgia,serif}.basics-layout h1{font-size:25pt}.basics-layout h2{font-size:19pt}.basics-layout h3{font-size:13pt}.basics-layout p{margin:.4em 0 .55em}.basics-layout li{margin:.25em 0}.basics-layout h2{margin:.2em 0 .7em}.basics-layout h3{margin:.9em 0 .35em}.basics-layout figure{margin:.7em 0;padding:.3em}.basics-layout figcaption{font-size:9pt;margin:.4em 0}.basics-layout .table-scroll{break-inside:avoid;margin:.7em 0}.basics-layout .mini-topic{break-before:page}.basics-layout #check-in{break-before:auto}.basics-map{display:none}.basics-layout figure img{max-height:60mm}}</style><style id="course-nav-style">.course-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.4rem;padding:.65rem 1rem;font-size:.9rem}.course-nav a{color:inherit}@media print{.course-nav{display:none}}</style></head><body><a class="skip" href="#basics-content">Перейти к тексту</a><header class="topbar"><div class="brand">Перед расчётом<small>ПОДГОТОВКА · РАБОЧАЯ РЕДАКЦИЯ</small></div><div class="tools"><a href="index.html">Главная</a><a href="TRAINING.html">Практикум</a><button type="button" onclick="window.print()">Печать</button></div></header><!-- course-nav --><nav aria-label="Маршруты курса" class="course-nav"><a href="START.html">Учиться</a><a href="TRAINING.html">Практика</a><a href="CONTROLS.html">Справка</a><a href="QA-STATUS.html">QA</a></nav><!-- /course-nav --><main id="basics-content" class="basics-layout"><p class="chapter-intro">Необязательная подготовка перед расчётами. Для первого отсчёта секстантом проходить её заранее не требуется; проверка понятности человеком ещё не проводилась.</p><nav class="basics-map" aria-label="Темы подготовки"><a href="#check-in">С чего начать</a><a href="#turn">Поворот</a><a href="#angle-reading">Запись угла</a><a href="#angle-arithmetic">Через 60</a><a href="#angle-subtraction">Вычитание</a><a href="#time">Время</a><a href="#table">Клетка</a><a href="#between">Доля</a><a href="#direction">Направление</a></nav><h1 id="basics-heading-1">Перед расчётом: семь маленьких навыков</h1>
+<p><strong>Для игры и учёбы, не для реального судовождения.</strong> Здесь только условные бумажные примеры, не показания игры. Не смотрите на настоящее Солнце через незащищённую оптику.</p>
+<p>Хотите просто получить первый отсчёт? <a href="START.html">Начните с прибора</a>: эту страницу проходить заранее не нужно.</p>
+<p>Если готовитесь к расчётам, выберите знакомую и незнакомую тему. Можно пользоваться карандашом, калькулятором для арифметики и текстом объяснения. Настоящие навигационные таблицы позже будем читать вручную.</p>
+<p><strong>Как пользоваться:</strong> попробуйте один вопрос ниже → при затруднении откройте указанную тему → выполните её короткое задание → сверьтесь с отдельным ключом. Баллы считать не нужно.</p>
+<h2 class="mini-topic" id="check-in">С чего начать: шесть коротких вопросов</h2>
+<p>Запишите ответы на бумаге. Все числа здесь заданы для тренировки. <a href="ANSWERS.html#basics-diagnostic">Ключ диагностики</a> открывайте после своей попытки.</p>
+<ol>
+<li><strong>Д0.1 — запись.</strong> Прочитайте <code>16°42,7′</code>: что стоит до знака °, что — перед ′? Это то же самое, что <code>16,427°</code>? <a href="#angle-reading">Разобраться с записью</a>.</li>
+<li><strong>Д0.2 — единицы.</strong> В записи <code>08:09:10</code> и в записи <code>11′</code> речь о времени или об угле? В первой записи используем формат часы:минуты:секунды. <a href="#time">Различить минуты</a>.</li>
+<li><strong>Д0.3 — сложение.</strong> Найдите <code>18°56,8′ + 7,5′</code>. Что делать, если минут получилось больше 60? <a href="#angle-arithmetic">Переход через 60</a>.</li>
+<li><strong>Д0.4 — клетка.</strong> По сетке ниже выпишите значение на пересечении строки <strong>32°</strong> и столбца <strong>6 м</strong>. <a href="#table">Читать сетку</a>.</li>
+<li><strong>Д0.5 — промежуток.</strong> В условной таблице для 3 м дано 11′, для 5 м — 9′. Только в этом задании изменение между ними считаем равномерным. Найдите значение для 3,5 м. <a href="#between">Найти долю</a>.</li>
+<li><strong>Д0.6 — направление.</strong> На нашей сетке север сверху, восток справа. В какой четверти окажется направление 135°, отсчитанное от севера по часовой стрелке? <a href="#direction">Разобрать направление</a>.</li>
+</ol>
+<p>Сетка для Д0.4 — только учебная, не выписка из морской таблицы:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Угол</th>
+<th style="text-align:right">4 м</th>
+<th style="text-align:right">6 м</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30°</td>
+<td style="text-align:right">9,8′</td>
+<td style="text-align:right">9,4′</td>
+</tr>
+<tr>
+<td>32°</td>
+<td style="text-align:right">10,2′</td>
+<td style="text-align:right">9,8′</td>
+</tr>
+</tbody>
+</table></div>
+<p>Затруднение означает, что полезно разобрать соответствующую мини-тему. Если всё знакомо, переходите к <a href="TRAINING.html">практикуму</a>.</p>
+<h2 class="mini-topic" id="turn">1. Измеряем поворот взгляда</h2>
+<p><strong>Что получим:</strong> сможем объяснить, почему высота Солнца — угол, а не метры.</p>
+<p>Представьте две линии от глаза. Одна направлена к видимому морскому горизонту, другая — к нижнему краю Солнца. Чтобы перевести взгляд с первой на вторую, нужно повернуть его вверх. Секстант измеряет этот угол.</p>
+<figure><a class="figure-link" href="figures/01-altitude-angle.png" target="_blank" rel="noopener" aria-label="Открыть рисунок крупно: Два направления от глаза: на видимый морской горизонт и на нижний край Солнца. Угол между ними не является высотой в метрах."><img src="figures/01-altitude-angle.png" alt="Два направления от глаза: на видимый морской горизонт и на нижний край Солнца. Угол между ними не является высотой в метрах." width="1440" height="850" loading="lazy" decoding="async"></a><figcaption>Два направления от глаза: на видимый морской горизонт и на нижний край Солнца. Угол между ними не является высотой в метрах.</figcaption></figure>
+<p>На этой учебной схеме размеры условные. Различие видимого горизонта и строго горизонтального направления разберём позже, в поправках высоты.</p>
+<p><strong>Образец объяснения:</strong> «Я измеряю, на какой угол нужно повернуть взгляд от горизонта к нижнему краю Солнца. Расстояние до Солнца я так не измеряю».</p>
+<p><strong>Б1 — попробуйте:</strong> высота глаза над водой записана в метрах. Может ли она заменить угол, прочитанный по секстанту? Объясните одним предложением. <a href="ANSWERS.html#basics-turn">Проверить Б1</a>.</p>
+<p><a href="START.html">Вернуться к первому отсчёту</a> или <a href="GUIDE.html#lesson-1">разобрать полный урок 1</a>.</p>
+<h2 class="mini-topic" id="angle-reading">2. Как прочитать запись угла</h2>
+<p><strong>Что получим:</strong> прочитаем градусы и угловые минуты, не смешав их с десятичными градусами.</p>
+<p><strong>Нужно только одно правило: в одном градусе 60 угловых минут.</strong> Градусы обозначают знаком <strong>°</strong>, угловые минуты — знаком <strong>′</strong>. Минуты здесь делят угол, а не час.</p>
+<h3 id="basics-heading-5">Посмотрите на запись</h3>
+<figure><a class="figure-link" href="figures/01-reading.png" target="_blank" rel="noopener" aria-label="Открыть рисунок крупно: Образец записи 39°13,4′: слева 39 градусов, справа 13,4 угловой минуты. Это учебный пример, не цель наведения."><img src="figures/01-reading.png" alt="Образец записи 39°13,4′: слева 39 градусов, справа 13,4 угловой минуты. Это учебный пример, не цель наведения." width="1440" height="660" loading="lazy" decoding="async"></a><figcaption>Образец записи 39°13,4′: слева 39 градусов, справа 13,4 угловой минуты. Это учебный пример, не цель наведения.</figcaption></figure>
+<p>В этой записи <strong>39°</strong> — целые градусы, <strong>13,4′</strong> — минуты и доли минуты. Десятичная запятая относится к минутам: <code>13,4′ = 13′ + 0,4′</code>.</p>
+<h3 id="basics-heading-6">Прочитайте по частям</h3>
+<ol>
+<li>Найдите знак °. Слева от него — <strong>39 градусов</strong>.</li>
+<li>Найдите знак ′. Между ° и ′ записано <strong>13,4 угловой минуты</strong>.</li>
+<li>Соедините: «тридцать девять градусов, тринадцать целых четыре десятых угловой минуты».</li>
+</ol>
+<p>Это <strong>не 39,134°</strong>: градусы и минуты нельзя склеивать в одно десятичное число. Сейчас сохраняйте запись с двумя единицами; перевод не требуется.</p>
+<p><strong>Если запутались:</strong> сначала подпишите под каждым знаком его единицу. Число после запятой — часть той единицы, рядом с которой оно записано.</p>
+<h3 id="basics-heading-7">Б2 — теперь сами</h3>
+<p>Прочитайте <code>27°46,2′</code>. Выпишите отдельно градусы и минуты. Что означает <code>0,2′</code>: часть минуты или часть градуса? <a href="ANSWERS.html#basics-reading">Ключ Б2</a>.</p>
+<p><strong>Результат:</strong> вы можете прочитать обе части записи и назвать их единицы. Следующий шаг — <a href="#angle-arithmetic">сложить минуты</a>. Для собственного отсчёта — <a href="START.html#lesson-1">шаг записи Hs в START</a>.</p>
+<h2 class="mini-topic" id="angle-arithmetic">3. Что делать, когда минут больше 60</h2>
+<p><strong>Что получим:</strong> сложим углы и заменим полные 60′ одним градусом. Вычитание разберём отдельно следующим шагом.</p>
+<p>Уже известно: <code>60′ = 1°</code>. Значит, каждые полные 60′ можно заменить одним градусом. Нельзя переносить десятку, как при обычном десятичном сложении.</p>
+<h3 id="basics-heading-9">Разобранный пример</h3>
+<p>Нужно найти <strong>12°57,8′ + 5,6′</strong>. Это условная арифметика, не поправка к вашему наблюдению.</p>
+<figure><a class="figure-link" href="figures/learning/carry-60-v2.png" target="_blank" rel="noopener" aria-label="Открыть рисунок крупно: Полоса 63,4′ разделена на полные 60′ и остаток 3,4′. Полные 60′ становятся одним градусом; остаток остаётся минутами."><img src="figures/learning/carry-60-v2.png" alt="Полоса 63,4′ разделена на полные 60′ и остаток 3,4′. Полные 60′ становятся одним градусом; остаток остаётся минутами." width="960" height="700" loading="lazy" decoding="async"></a><figcaption>Полоса 63,4′ разделена на полные 60′ и остаток 3,4′. Полные 60′ становятся одним градусом; остаток остаётся минутами.</figcaption></figure>
+<ol>
+<li>Складываем минуты: <code>57,8′ + 5,6′ = 63,4′</code>.</li>
+<li>Отделяем полный градус: <code>63,4′ = 60′ + 3,4′ = 1°03,4′</code>.</li>
+<li>Прибавляем его к прежним 12°: <strong>13°03,4′</strong>. Нуль перед 3,4 помогает видеть запись минут; <code>3,4′</code> означает то же число.</li>
+</ol>
+<p>Проверка смысла: добавили немного больше 5′, поэтому результат чуть больше 13°, а не 18°.</p>
+<h3 id="basics-heading-10">Б3а — закончите сложение</h3>
+<p><code>6°58,6′ + 3,7′</code>. Минуты дают <code>62,3′</code>; отделите 60′ и запишите итог. <a href="ANSWERS.html#basics-arithmetic">Ключ Б3а</a>.</p>
+<p><strong>Результат:</strong> после переноса минуты меньше 60′. Теперь попробуйте обратное действие — <a href="#angle-subtraction">вычитание</a>.</p>
+<h2 class="mini-topic" id="angle-subtraction">3б. Если минут не хватает для вычитания</h2>
+<p><strong>Что получим:</strong> заменим один градус минутами, не изменив сам угол.</p>
+<p>Нужно найти <strong>9°02,0′ − 4,5′</strong>. Из 2,0′ нельзя вычесть 4,5′ и оставить прежние 9°. Но один из девяти градусов можно записать как 60′.</p>
+<h3 id="basics-heading-12">Разберите обмен по шагам</h3>
+<ol>
+<li>Отделите один градус: <code>9°02,0′ = 8° + 1° + 2,0′</code>.</li>
+<li>Замените его минутами: <code>8° + 60′ + 2,0′ = 8°62,0′</code>. Угол остался прежним: изменился только способ записи.</li>
+<li>Вычтите минуты: <code>62,0′ − 4,5′ = 57,5′</code>.</li>
+<li>Соедините оставшиеся градусы и минуты: <strong>8°57,5′</strong>.</li>
+</ol>
+<p>Запись <code>8°62,0′</code> — промежуточная, для вычисления. В итоговой записи минуты должны быть меньше 60′.</p>
+<p class="check"><strong>Проверьте обратным действием:</strong> <code>8°57,5′ + 4,5′ = 8°62,0′ = 9°02,0′</code>. Получили исходный угол — обмен выполнен верно.</p>
+<h3 id="basics-heading-13">Б3б — закончите с подсказкой</h3>
+<p><code>14°03,0′ − 7,0′</code>. Один градус уже обменяли: <code>13°63,0′ − 7,0′</code>. Вычтите минуты и сохраните оставшиеся градусы.</p>
+<h3 id="basics-heading-14">Б3в — теперь самостоятельно</h3>
+<p><code>21°04,2′ − 8,6′</code>. Запишите обмен одного градуса на 60′, выполните вычитание и проверьте обратным сложением. <a href="ANSWERS.html#basics-arithmetic">Ключи Б3б и Б3в</a>.</p>
+<p><strong>Если запутались:</strong> после обмена градусов станет на один меньше, минут — на 60 больше. Общая величина не меняется.</p>
+<p><strong>Результат:</strong> можете показать промежуточный обмен и проверить ответ. Дальше — <a href="#time">время</a> или <a href="GUIDE.html#lesson-3">поправки в уроке 3</a>.</p>
+<h2 class="mini-topic" id="time">4. Минуты на часах и минуты угла</h2>
+<p><strong>Что получим:</strong> различим единицы и не потеряем дату при переходе через полночь.</p>
+<p>В записи <strong>07:12:30</strong> используем формат часы:минуты:секунды. В записи <strong>7°12,3′</strong> — градусы и угловые минуты. Одинаковое слово «минута» не делает их одной величиной.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Запись</th>
+<th>Что измеряем</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 ч 15 мин</td>
+<td>Длительность</td>
+</tr>
+<tr>
+<td>2°15′</td>
+<td>Угол</td>
+</tr>
+</tbody>
+</table></div>
+<p>Один час содержит 60 минут <strong>времени</strong>. Когда понадобится выразить длительность в часах, <code>1 ч 30 мин = 1 + 30 ÷ 60 = 1,5 ч</code>. В навигационных таблицах встретится ещё часовая мера <strong>угла</strong>; её отдельно объясняет урок 5. Здесь не переводим любые минуты часов напрямую в минуты угла.</p>
+<p><strong>Разбор образца:</strong> от 3 мая 23:50 до 4 мая 00:10 прошло 10 минут до полуночи и 10 после — всего <strong>20 минут</strong>, а не отрицательное время. Обе отметки заданы в одной шкале.</p>
+<p><strong>Б4 — попробуйте:</strong> сколько времени прошло от 5 мая 23:45 до 6 мая 00:20 в той же шкале? Запишите длительность в минутах. <a href="ANSWERS.html#basics-time">Ключ Б4</a>.</p>
+<p>Если запутались, разбейте промежуток в полночь. Условная задача не подтверждает доступность GMT и паузы в игре: для своих данных используйте <a href="GUIDE.html#lesson-2">урок 2</a>.</p>
+<h2 class="mini-topic" id="table">5. Строка, столбец, клетка</h2>
+<p><strong>Что получим:</strong> выпишем число по двум заголовкам.</p>
+<p>Строка идёт поперёк таблицы, столбец — сверху вниз. Клетка на их пересечении соответствует сразу обоим заголовкам. Сначала читаем названия и единицы, потом число.</p>
+<p>Учебная сетка ниже показывает <strong>заданную добавку в угловых минутах</strong> для условных угла и высоты. Это не морская поправка и не выписка из F-Tafel.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Угол</th>
+<th style="text-align:right">Высота 2 м</th>
+<th style="text-align:right">Высота 4 м</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20°</td>
+<td style="text-align:right">+6,0′</td>
+<td style="text-align:right">+5,0′</td>
+</tr>
+<tr>
+<td>22°</td>
+<td style="text-align:right">+6,4′</td>
+<td style="text-align:right">+5,4′</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Разобранный поиск:</strong> для угла 20° и высоты 4 м найдите строку 20°, ведите по ней до столбца 4 м: <strong>+5,0′</strong>. Перепишите вместе со знаком и единицей, не только цифру 5.</p>
+<p><strong>Б5 — попробуйте:</strong> найдите добавку для угла 22° и высоты 2 м. Укажите строку, столбец и прочитанную клетку. <a href="ANSWERS.html#basics-table">Ключ Б5</a>.</p>
+<p>Если число не находится, вернитесь к двум заголовкам. Не переставляйте аргументы ради знакомого ответа. В настоящих таблицах вид записи и правила чтения могут быть другими: продолжение — <a href="GUIDE.html#lesson-3">урок 3, F VIII</a> и <a href="GUIDE.html#lesson-5">урок 5, F I/F II</a>. Учебная сетка их не заменяет.</p>
+<h2 class="mini-topic" id="between">6. Между двумя строками</h2>
+<p><strong>Что получим:</strong> найдём нужную долю промежутка, а не будем всегда брать половину.</p>
+<p>Половина пути от 5 до 6 — 5,5. Но от 7 до 7,2 пройдена только пятая часть пути до 8: <code>0,2 ÷ 1 = 0,2</code>.</p>
+<figure><a class="figure-link" href="figures/03-between-values.png" target="_blank" rel="noopener" aria-label="Открыть рисунок крупно: 5,5 м лежат посередине между 5 и 6 м; 7,2 м — только на одной пятой пути от 7 до 8 м."><img src="figures/03-between-values.png" alt="5,5 м лежат посередине между 5 и 6 м; 7,2 м — только на одной пятой пути от 7 до 8 м." width="1440" height="900" loading="lazy" decoding="async"></a><figcaption>5,5 м лежат посередине между 5 и 6 м; 7,2 м — только на одной пятой пути от 7 до 8 м.</figcaption></figure>
+<p><strong>Условный пример:</strong> для 7 м дана добавка 12′, для 8 м — 10′. Только на этом интервале примем равномерное изменение. Нужно значение для 7,2 м.</p>
+<ol>
+<li>Доля пути: <code>(7,2 − 7) ÷ (8 − 7) = 0,2</code>.</li>
+<li>Изменение добавки на всём промежутке: <code>10′ − 12′ = −2′</code>.</li>
+<li>Нужная часть изменения: <code>−2′ × 0,2 = −0,4′</code>.</li>
+<li>От нижнего аргумента 7 м: <code>12′ − 0,4′ = 11,6′</code>.</li>
+</ol>
+<p>Такой поиск промежуточного числа называется <strong>линейной интерполяцией</strong>. Наш результат лежит между 10′ и 12′ и ближе к 12′, как 7,2 м ближе к 7 м.</p>
+<p><strong>Б6 — попробуйте:</strong> в другой условной сетке для 4 м дано 14′, для 6 м — 10′. При равномерном изменении найдите значение для 4,5 м. Сначала запишите долю, потом ответ. <a href="ANSWERS.html#basics-between">Ключ Б6</a>.</p>
+<p>Если запутались, сравните пройденную часть с <strong>полным интервалом</strong>, не с верхним числом. За его границы не продолжайте. Для настоящих таблиц действуют правила выбранной страницы: <a href="GUIDE.html#lesson-3">поправки, урок 3</a>, <a href="GUIDE.html#lesson-6">F XI, урок 6</a>.</p>
+<h2 class="mini-topic" id="direction">7. Направление и масштаб</h2>
+<p><strong>Что получим:</strong> отличим направление от расстояния на учебной сетке.</p>
+<p>На нашей сетке истинный север специально направлен вверх. Направления считаем от него по часовой стрелке: север 0°, восток 90°, юг 180°, запад 270°. Направление 360° совпадает с 0°.</p>
+<figure><a class="figure-link" href="figures/06-compass.png" target="_blank" rel="noopener" aria-label="Открыть рисунок крупно: Направления от севера по часовой стрелке. Стрелка 149,8° относится к прежнему учебному образцу, не к вашему наблюдению и не к заданию ниже."><img src="figures/06-compass.png" alt="Направления от севера по часовой стрелке. Стрелка 149,8° относится к прежнему учебному образцу, не к вашему наблюдению и не к заданию ниже." width="1440" height="1040" loading="lazy" decoding="async"></a><figcaption>Направления от севера по часовой стрелке. Стрелка 149,8° относится к прежнему учебному образцу, не к вашему наблюдению и не к заданию ниже.</figcaption></figure>
+<p><strong>Образец:</strong> направление 90° ведёт вправо, на восток. Но длина линии из числа 90° не следует. Если <strong>масштаб</strong> задан как <code>1 см = 2 морские мили</code>, расстоянию 6 миль соответствует <code>6 ÷ 2 = 3 см</code>.</p>
+<p><strong>Перпендикуляр</strong> — линия под прямым углом, 90°, к другой линии, как две соседние стороны листа. Само слово не задаёт, через какую точку её нужно провести: точку укажет условие построения.</p>
+<p><strong>Б7 — попробуйте:</strong> от точки проведите отрезок на юг длиной 4 морские мили при масштабе <code>1 см = 2 морские мили</code>. Какой угол направления и какую длину на бумаге выберете? <a href="ANSWERS.html#basics-direction">Ключ Б7</a>.</p>
+<p>На произвольной карте верх не обязательно означает истинный север. Угловую минуту долготы нельзя автоматически считать морской милей: её длина зависит от широты. Масштаб и север проверяйте отдельно. Подробная прокладка — в <a href="GUIDE.html#lesson-6">уроке 6</a>.</p>
+<h2 id="basics-heading-19">Что дальше</h2>
+<p>Выберите только нужное продолжение: <a href="START.html">первый отсчёт</a>, <a href="TRAINING.html">бумажный практикум</a> или <a href="GUIDE.html#readiness">условия собственного расчёта</a>. Эти задания готовят к работе, но не подтверждают игровые источники данных и не заменяют наблюдения.</p>
+</main><script>
+(() => {
+  const visit = id => {
+    const target = document.getElementById(id);
+    if (!target) return;
+    target.scrollIntoView({ block: 'start', behavior: 'instant' });
+    target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+  };
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', event => {
+      const id = link.hash.slice(1);
+      if (!document.getElementById(id)) return;
+      event.preventDefault();
+      if (window.location.hash !== link.hash) history.pushState(null, '', link.hash);
+      visit(id);
+    });
+  });
+  const current = () => visit(window.location.hash.slice(1));
+  window.addEventListener('load', current);
+  window.addEventListener('popstate', current);
+  window.addEventListener('hashchange', current);
+})();
+</script></body></html>
