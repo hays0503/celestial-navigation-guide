@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-23",
+  "commit": "0e7146043d4e073c80b75a501ca283472c46eaf9",
+  "scope": {
+    "protected_originals": 25,
+    "production_files": 295,
+    "note": "SHA-256 checked against evidence baselines; originals and production code untouched."
+  },
+  "results": {
+    "guide_content_and_links": "84 PASS / 0 FAIL",
+    "learning_regressions": "38 PASS / 0 FAIL",
+    "factcheck_regressions": "35 PASS / 0 FAIL",
+    "print_export": "32 PASS / 0 FAIL",
+    "ux_refactor": "15 PASS / 0 FAIL"
+  },
+  "print_pages": {
+    "guide_pages": 121,
+    "answers_pages": 12,
+    "start_pages": 4,
+    "field_pages": 5,
+    "worksheet_pages": 4,
+    "training_pages": 5
+  },
+  "browser": {
+    "engine": "Chrome headless, isolated profile, CDP emulation",
+    "viewports": [
+      "1360x960",
+      "390x844",
+      "1360x960",
+      "1360x960"
+    ],
+    "js_errors": 0,
+    "horizontal_overflow": 0,
+    "physical_phone": "not tested"
+  },
+  "not_run": [
+    "LIVE game pass",
+    "beginner usability pilot",
+    "physical print",
+    "other physical device"
+  ],
+  "limits": "Automated checks confirm structure, links, arithmetic, print PDF and page bytes. They do not confirm game behaviour, human comprehension or physical printing.",
+  "commit_note": "Checks ran in the working project on this tree; the QA summary files themselves were added in the following commit and do not affect the site."
+}
