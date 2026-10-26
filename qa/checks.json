@@ -1,9 +1,9 @@
 {
-  "recorded_at_utc": "2026-10-26T13:53:34.138976+00:00",
-  "published_base_commit": "4b3909e4cf25224b95cf65f82deb7555703a53b9",
-  "verified_site_tree_sha256": "07c2cf76f566e211876c8c96d0ebe0b6a5663f3d18e726455080f1a6daaa9989",
+  "recorded_at_utc": "2026-10-26T15:04:31.016463+00:00",
+  "published_base_commit": "514ac77fc08dacb55bc2a4e5aad7d2365e255da8",
+  "verified_site_tree_sha256": "4c02dd6e9371f66ae6aa312c6c8a0dbf107423a32c687252bb4132ce2bad1103",
   "verified_file_count": 108,
-  "tree_status": "Published reader tree in commit 4b3909e4cf25; served bytes re-verified against this manifest.",
+  "tree_status": "Published reader tree in commit 514ac77fc08d; served bytes re-verified against this manifest.",
   "scope": {
     "protected_originals": 25,
     "production_files": 295,
@@ -20,12 +20,12 @@
     },
     "digital_print_inspection": {
       "state": "PASS",
-      "passed": 466,
+      "passed": 469,
       "failed": 0
     },
     "browser_preview_and_negative_probes": {
       "state": "PASS",
-      "screens": 35,
+      "screens": 36,
       "dark_screens": 15,
       "negative_probes_rejected": 3,
       "nojs_route_verified": true
@@ -37,8 +37,8 @@
     },
     "interactive_diagrams": {
       "state": "PASS",
-      "geometry_checks": 79,
-      "browser_checks": 109,
+      "geometry_checks": 86,
+      "browser_checks": 120,
       "not_run": "Human comprehension, physical print and physical touch devices."
     }
   },
@@ -53,7 +53,7 @@
     "answers": 17,
     "factcheck": 5,
     "walkthrough": 18,
-    "guide": 144
+    "guide": 145
   },
   "browser": {
     "engine": "Chrome headless, isolated user-data-dir, local HTTP server + CDP",
@@ -88,6 +88,7 @@
       "GUIDE.html#diagram-fviii @390 (light)",
       "GUIDE.html#diagram-fxi @390 (light)",
       "GUIDE.html#diagram-gha @390 (light)",
+      "GUIDE.html#diagram-fii-inverse @390 (light)",
       "TRAINING.html#diagram-twoap @390 (dark)",
       "GUIDE.html#diagram-contact @390 (light)",
       "START.html#diagram-contact @390 (dark)",
@@ -150,15 +151,16 @@
     "remote": "https://github.com/hays0503/celestial-navigation-guide",
     "site": "https://hays0503.github.io/celestial-navigation-guide/",
     "branch": "main",
-    "reader_commit": "4b3909e4cf25224b95cf65f82deb7555703a53b9",
-    "reader_tree_sha256": "07c2cf76f566e211876c8c96d0ebe0b6a5663f3d18e726455080f1a6daaa9989",
-    "previous_commit": "a73e863",
-    "pushed_at_utc": "2026-10-26T12:35:00Z",
+    "reader_commit": "514ac77fc08dacb55bc2a4e5aad7d2365e255da8",
+    "reader_tree_sha256": "4c02dd6e9371f66ae6aa312c6c8a0dbf107423a32c687252bb4132ce2bad1103",
+    "previous_commit": "797d527",
+    "pushed_at_utc": "2026-10-26T14:55:00Z",
     "served_bytes_verified": {
       "GUIDE.html": true,
       "TRAINING.html": true,
       "START.html": true,
       "WALKTHROUGH.md": true,
+      "05-CALCULATED-HEIGHT.md": true,
       "assets/navigation-diagrams.js": true,
       "assets/navigation-diagrams.css": true
     },
@@ -183,7 +185,7 @@
     },
     "05-CALCULATED-HEIGHT.md": {
       "before": 2632,
-      "current": 2429
+      "current": 2433
     },
     "06-POSITION-LINE.md": {
       "before": 2372,
@@ -316,12 +318,12 @@
     "02-TIME.md": "8dda6c13d2dd61a0570eee24f33f03d594b85fccbe5ec92d7e6b5631bd2d80f2",
     "03-HEIGHT-CORRECTIONS.md": "ef524a8ae8c15e56bcaa428fc3c088db1b6266c2ee31552f1de03757c8f9a6e4",
     "04-ALMANAC.md": "d6f5a25d5d44654cdb2b0be6905d6850951c98cce38ba00558ec06133cda0238",
-    "05-CALCULATED-HEIGHT.md": "b4c9a7dcb819ed7bf0270d9d3862aaa8beda691f363700936321a274d5b4b17b",
+    "05-CALCULATED-HEIGHT.md": "ba60f96e09b1d48d7c9ba54574a241d4f3d64d7d261806d4ddb60e853bb9f960",
     "06-POSITION-LINE.md": "8d0be80560110dfaa55708ed83c00e5575c03a788c924fd32fe646f1a2a7d604",
     "07-RUNNING-FIX.md": "13e45d3db6216c1cdbc855780165be75a75410e846851dc757566b34444f5552",
     "ANSWERS.html": "9487767cc8aaf1e2a4474f922038e4febef7024ad4ba0507348df643d4275eba",
     "ANSWERS.md": "04632f5cac8cbba59f66d8eee23dabbcb081461568996e3d22a3b2babba6e8a2",
-    "assets/navigation-diagrams.css": "f2e62d82260b475defbc319fa19cddab35500ce350876e0945714c1f33af30ea",
+    "assets/navigation-diagrams.css": "6e3d0be7d71c0b76ae7fe73298a901d6c28e968d78c39c703f3a8fe8e5c4188b",
     "assets/navigation-diagrams.js": "5afe38ad32feaf44aa9c835601f9093a58f80059ea8cb02cd37b9a380668f03a",
     "BASICS-ANSWERS.md": "9f6462cfe54f97d3969e26053d05417bd37621a6649a39b967cd1c4d601735e8",
     "BASICS.html": "e8962ff1f059e6e33932bd48661ac869514a17867f48942372cdb81dbaf37d8c",
@@ -384,8 +386,8 @@
     "figures/learning/README.md": "b4ead2174b87d80bc94eeda12e0985f145a64687f18bfa22beadf4ac1a64bb15",
     "FULL-EXAMPLE-SOLUTION.md": "e94f0a0b32041c6f27b2eddf01e4e72947b79681bccf632a6bb6b4b08a7d9e8f",
     "FULL-EXAMPLE.md": "efc5281292622fe69847d232fc4599917418c14acac8e58358b0b4e7d4aac21a",
-    "GUIDE.html": "6089ea334e34dd69c72a4bd73efa9206fbf1a635ade1775bf7a4684a7f3a36ba",
-    "GUIDE.md": "1d2a5dc19e1efbb6e83cc55145968885e73cce37bc8617bcd87b059bfda08ed3",
+    "GUIDE.html": "60294d6a1cdd85aa27df67c17d348d11b464efc5c21f9b10b46dc638061c2c1e",
+    "GUIDE.md": "d065fac63a73f0d780c974d2480be000613cf9fd6e9eaf07ba9e185485d1dd0c",
     "index.html": "029905996cd2023cacfe594c9000402c0d83287d50b4a6500d166d5193ec028d",
     "INTRO.md": "b7f8f40d2288417c1a39873c84ed34fbeb513f503593ac93332e08a09820cecc",
     "LIMITS.md": "5e16ff071abb2dac019e35b0a88f9da58efb38042f41ca5dc23a12c900c76614",
