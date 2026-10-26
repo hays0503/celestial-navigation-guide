@@ -1,9 +1,9 @@
 {
-  "recorded_at_utc": "2026-10-26T15:04:31.016463+00:00",
-  "published_base_commit": "514ac77fc08dacb55bc2a4e5aad7d2365e255da8",
-  "verified_site_tree_sha256": "4c02dd6e9371f66ae6aa312c6c8a0dbf107423a32c687252bb4132ce2bad1103",
+  "recorded_at_utc": "2026-10-26T15:51:01.438178+00:00",
+  "published_base_commit": "6358b21c49c0116aa36a9923b30363e676108cf1",
+  "verified_site_tree_sha256": "0c92f0e37a911dc662657bda25d440893f8c29179c0055d8e83da79d8cca92e5",
   "verified_file_count": 108,
-  "tree_status": "Published reader tree in commit 514ac77fc08d; served bytes re-verified against this manifest.",
+  "tree_status": "Published reader tree in commit 6358b21c49c0; served bytes re-verified against this manifest.",
   "scope": {
     "protected_originals": 25,
     "production_files": 295,
@@ -38,7 +38,7 @@
     "interactive_diagrams": {
       "state": "PASS",
       "geometry_checks": 86,
-      "browser_checks": 120,
+      "browser_checks": 237,
       "not_run": "Human comprehension, physical print and physical touch devices."
     }
   },
@@ -48,12 +48,12 @@
     "starter-sheet": 1,
     "field": 4,
     "start": 5,
-    "training": 11,
+    "training": 10,
     "basics": 9,
     "answers": 17,
     "factcheck": 5,
     "walkthrough": 18,
-    "guide": 145
+    "guide": 146
   },
   "browser": {
     "engine": "Chrome headless, isolated user-data-dir, local HTTP server + CDP",
@@ -151,20 +151,18 @@
     "remote": "https://github.com/hays0503/celestial-navigation-guide",
     "site": "https://hays0503.github.io/celestial-navigation-guide/",
     "branch": "main",
-    "reader_commit": "514ac77fc08dacb55bc2a4e5aad7d2365e255da8",
-    "reader_tree_sha256": "4c02dd6e9371f66ae6aa312c6c8a0dbf107423a32c687252bb4132ce2bad1103",
-    "previous_commit": "797d527",
-    "pushed_at_utc": "2026-10-26T14:55:00Z",
+    "reader_commit": "6358b21c49c0116aa36a9923b30363e676108cf1",
+    "reader_tree_sha256": "0c92f0e37a911dc662657bda25d440893f8c29179c0055d8e83da79d8cca92e5",
+    "previous_commit": "9d90d4c",
+    "verified_at_utc": "2026-10-26T15:50:54.316172+00:00",
     "served_bytes_verified": {
       "GUIDE.html": true,
-      "TRAINING.html": true,
       "START.html": true,
-      "WALKTHROUGH.md": true,
-      "05-CALCULATED-HEIGHT.md": true,
-      "assets/navigation-diagrams.js": true,
-      "assets/navigation-diagrams.css": true
+      "TRAINING.html": true,
+      "assets/navigation-diagrams.css": true,
+      "assets/navigation-diagrams.js": true
     },
-    "note": "Reader files served from the publication commit above. QA status page is updated in a follow-up commit; exact-byte checks compared SHA-256 of each served response with the local canonical file."
+    "note": "Five changed reader files matched by full SHA-256; QA follows in a separate commit."
   },
   "source_wordlike_tokens": {
     "01-SEXTANT.md": {
@@ -323,8 +321,8 @@
     "07-RUNNING-FIX.md": "13e45d3db6216c1cdbc855780165be75a75410e846851dc757566b34444f5552",
     "ANSWERS.html": "9487767cc8aaf1e2a4474f922038e4febef7024ad4ba0507348df643d4275eba",
     "ANSWERS.md": "04632f5cac8cbba59f66d8eee23dabbcb081461568996e3d22a3b2babba6e8a2",
-    "assets/navigation-diagrams.css": "6e3d0be7d71c0b76ae7fe73298a901d6c28e968d78c39c703f3a8fe8e5c4188b",
-    "assets/navigation-diagrams.js": "5afe38ad32feaf44aa9c835601f9093a58f80059ea8cb02cd37b9a380668f03a",
+    "assets/navigation-diagrams.css": "98fc90813a16b45e6f599656f66be1c254787ad59f4150cceba1666d3e1f4c75",
+    "assets/navigation-diagrams.js": "33e6042c725f8a6fdd35cb19a6c44c392cf65478c9402a7a6bdc3418e7b602f1",
     "BASICS-ANSWERS.md": "9f6462cfe54f97d3969e26053d05417bd37621a6649a39b967cd1c4d601735e8",
     "BASICS.html": "e8962ff1f059e6e33932bd48661ac869514a17867f48942372cdb81dbaf37d8c",
     "BASICS.md": "2487c61c947a737fe67cf681075c0dc580e53872f43196ea31bdc0749c2e234a",
@@ -386,7 +384,7 @@
     "figures/learning/README.md": "b4ead2174b87d80bc94eeda12e0985f145a64687f18bfa22beadf4ac1a64bb15",
     "FULL-EXAMPLE-SOLUTION.md": "e94f0a0b32041c6f27b2eddf01e4e72947b79681bccf632a6bb6b4b08a7d9e8f",
     "FULL-EXAMPLE.md": "efc5281292622fe69847d232fc4599917418c14acac8e58358b0b4e7d4aac21a",
-    "GUIDE.html": "60294d6a1cdd85aa27df67c17d348d11b464efc5c21f9b10b46dc638061c2c1e",
+    "GUIDE.html": "11a2f64425bd3162dacdcc8997586c90dc5b967c7693277c8edad77d05529b43",
     "GUIDE.md": "d065fac63a73f0d780c974d2480be000613cf9fd6e9eaf07ba9e185485d1dd0c",
     "index.html": "029905996cd2023cacfe594c9000402c0d83287d50b4a6500d166d5193ec028d",
     "INTRO.md": "b7f8f40d2288417c1a39873c84ed34fbeb513f503593ac93332e08a09820cecc",
@@ -409,13 +407,13 @@
     "SELF-CHECK.md": "6163e2b9252d9d7dc57f9bbdbd5e73d8d3b5a40646ec478212f164d891d758d3",
     "START-INTRO.md": "457d26a8ef7f81905853a39c60c0cc3ef398ea9f6919b6f92927dee294294fc1",
     "START-LESSON.md": "036dd701bc93bdd7a1407c313cdd63ca07ca2fb07f18ec6871c36823bf8987af",
-    "START.html": "463392cdef9874066ab8f2e905261b6ac40bed61a73096ef350c573020074403",
+    "START.html": "a9eb2589838a286d898c2c2ceee5737532f14e99c3c1ae2190265d2c48333c79",
     "START.md": "3dda458c968c02374576d588af572c800e202712a732316fd35a21b7e202d36c",
     "STARTER-WORKSHEET.html": "589582482a21769d98510339d7c8b8bd3f71b4572282a6230c935e3cb8bd84c7",
     "STARTER-WORKSHEET.md": "48c8ddbdc4a1857a9ec15cc6d7416120e11629cf76c2a32a5fe0c3b51cfddda0",
     "TERMS.md": "892323061145085568ec891ec097d84fbfc8f082b6801a09d09df604c3a2b820",
     "TRAINING-SOLUTION.md": "203553ba86752cf0f5599a52d442dd7a1bdc960c669ffe2826fd8219fb561e74",
-    "TRAINING.html": "1cdacd0bfefa43a8cbb035c37345bf800ae06389448c00513a97b577c4a1de82",
+    "TRAINING.html": "e407b02605bbe9d0b968e716c089878adb89f5fb68c2e34d6305c40af3f2b102",
     "TRAINING.md": "5ea88b28f72a0422936a44afcfd3b00fbf1d85ddc8235d1436a0e1ad1d2a7b73",
     "TROUBLESHOOTING.md": "286457e5fd939521376996f84aa59034dfcded688c5af5ce48e7250f341fbd1b",
     "WALKTHROUGH.md": "90e1c0a5c01907da9744833c06126eb9344b974a78a866f07503e5d42e41f6bc",
