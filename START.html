@@ -10,10 +10,11 @@ figure{margin:1.7rem 0 2rem;background:var(--surface);border:1px solid var(--lin
 @media print{@page{margin:17mm}html{scroll-behavior:auto}body{background:white;color:#111;font:10.5pt/1.5 Georgia,serif}.topbar,.sidebar,.tools,.skip{display:none!important}.layout{display:block;max-width:none;margin:0;padding:0}main{max-width:none}section{break-before:page;margin:0 0 1rem;padding:0;border:0}section:first-child{break-before:auto}h1{font-size:31pt}h2{font-size:23pt}h3{font-size:15pt}h4{font-size:12pt}h1,h2,h3,h4{break-after:avoid}figure{break-inside:avoid;border:1px solid #bbb}figure img{max-height:110mm}a{color:#183f5c;text-decoration:none}table{font-size:9pt}.table-scroll{overflow:visible}th{background:#eee}details:not([open])> :not(summary){display:block!important}details{break-inside:auto;border:1px solid #ccc}summary{font-size:10pt}.print-note{display:block;font-size:9pt;color:#444}.check,.warning{break-inside:avoid}p{orphans:3;widows:3}}
 
 main>section:focus{outline:none}.mobile-toc-top{display:none}.sidebar{scroll-margin-top:5.2rem}
+h1,h2,h3,h4,h5,p,li,td,th{overflow-wrap:anywhere}.topbar{flex-wrap:wrap}
 .sidebar .nav-group{margin:1.1rem 0 .3rem;font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:650}
 .sidebar .nav-group:first-of-type{margin-top:0}
 @media(max-width:720px){.tools .mobile-toc-top{display:inline-block}.tools{gap:.45rem}.tools button{padding:.35rem .55rem}.brand{min-width:0}}
-@media print{th,td{min-width:0;overflow-wrap:anywhere}table{table-layout:fixed}}
+@media print{th,td{min-width:0;overflow-wrap:anywhere}table{table-layout:fixed}#walkthrough .table-scroll{break-inside:avoid}main>section#start{break-before:auto}}
 .section-nav{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.86rem}.section-nav a{max-width:100%}.section-nav small{display:block;color:var(--muted)}
 @media print{.section-nav{display:none}thead{display:table-header-group}tr{break-inside:avoid}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -37,12 +38,12 @@ section{scroll-margin-top:0}
   --muted:#444;--line:#ccc;--blue:#183f5c;--orange:#6b3b00;--wash:#f2f2f2;
   --warning:#fff8ec;--code-bg:#f4f4f4;--code-fg:#111;--check-line:#666;--figure-mat:#fff}
 }
-.start-layout{max-width:860px;margin:0 auto;padding:2rem 1.5rem 4rem}.start-layout section{padding-bottom:2rem;margin-bottom:2rem}@media print{.start-layout{margin:0;padding:0}.start-layout section{break-before:auto}.start-layout h1{font-size:26pt}.start-layout h2{font-size:18pt}.start-layout figure img{max-height:95mm}}</style><style id="course-nav-style">.course-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.4rem;padding:.65rem 1rem;font-size:.9rem}.course-nav a{color:inherit}@media print{.course-nav{display:none}}</style></head><body><header class="topbar"><div class="brand">Секстант и Солнце<small>ПЕРВЫЙ ОТСЧЁТ · КОРОТКАЯ ВЕРСИЯ</small></div><div class="tools"><a href="index.html">Главная</a><a href="GUIDE.html">Уроки</a><a href="CONTROLS.html">Управление</a><a href="STARTER-WORKSHEET.html" target="_blank" rel="noopener">Лист первого отсчёта</a><button type="button" onclick="window.print()">Печать</button></div></header><!-- course-nav --><nav aria-label="Маршруты курса" class="course-nav"><a href="START.html">Учиться</a><a href="TRAINING.html">Практика</a><a href="CONTROLS.html">Справка</a><a href="QA-STATUS.html">QA</a></nav><!-- /course-nav --><p class="print-note">Рабочая редакция. Не для реального судовождения. Иллюстрации не являются игровыми наблюдениями.</p><main class="start-layout"><section id="start" aria-label="Перед началом"><h1 id="start-heading-1">Секстант и Солнце: первый отсчёт</h1>
+.start-layout{max-width:860px;margin:0 auto;padding:2rem 1.5rem 4rem}.start-layout section{padding-bottom:2rem;margin-bottom:2rem}@media print{.start-layout{margin:0;padding:0}.start-layout section{break-before:auto}.start-layout h1{font-size:26pt}.start-layout h2{font-size:18pt}.start-layout figure img{max-height:95mm}}</style><noscript id="course-nojs"><style>@media screen and (max-width:720px){.sidebar>ul,.sidebar>h2,.sidebar>p.nav-group{display:block}.sidebar .mobile-menu{display:none}}</style></noscript><style id="course-nav-style">.course-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.4rem;padding:.65rem 1rem;font-size:.9rem}.course-nav a{color:inherit}@media print{.course-nav{display:none}}</style></head><body><header class="topbar"><div class="brand">Секстант и Солнце<small>ПЕРВЫЙ ОТСЧЁТ · КОРОТКАЯ ВЕРСИЯ</small></div><div class="tools"><a href="index.html">Главная</a><a href="GUIDE.html">Уроки</a><a href="CONTROLS.html">Управление</a><a href="STARTER-WORKSHEET.html" target="_blank" rel="noopener">Лист первого отсчёта</a><button type="button" onclick="window.print()">Печать</button></div></header><!-- course-nav --><nav aria-label="Маршруты курса" class="course-nav"><a href="GUIDE.html#walkthrough">Метод</a><a href="TRAINING.html">Практика</a><a href="CONTROLS.html">Справка</a><a href="QA-STATUS.html">QA</a></nav><!-- /course-nav --><p class="print-note">Рабочая редакция. Не для реального судовождения. Иллюстрации не являются игровыми наблюдениями.</p><main class="start-layout"><section id="start" aria-label="Перед началом"><h1 id="start-heading-1">Секстант и Солнце: первый отсчёт</h1>
 <p><strong>Короткая версия для первого знакомства · RadioNavigation / UBOAT</strong><br />
-Рабочая редакция · 23 октября 2026 года</p>
-<p>Здесь один результат: <strong>свой Hs</strong> — высота нижнего края Солнца до поправок. Альманах, поправки и расчёт места в эту версию не входят.</p>
+Рабочая редакция · 24 октября 2026 года</p>
+<p>Здесь вы получите <strong>свой Hs</strong> — высоту нижнего края Солнца до поправок. Секстант совмещает отражённый диск с видимым горизонтом; шкала показывает угол между ними. Для определения места затем понадобятся время наблюдения, поправки и расчёт по таблицам.</p>
 <p><strong>Только для игры и учёбы.</strong> Не смотрите на настоящее Солнце через незащищённую оптику; игровые фильтры нельзя переносить на реальный прибор.</p>
-<p><strong>Маршрут ещё не проверен новичком.</strong> Если инструкция не помогает выполнить шаг, запишите место остановки: это повод уточнить текст. Известные ограничения — в <a href="QA-STATUS.html">статусе проверки</a>.</p>
+<p><strong>Маршрут ещё не проверен новичком.</strong> Известные ограничения — в <a href="QA-STATUS.html">статусе проверки</a>.</p>
 <h2 id="start-heading-2">Что нужно</h2>
 <ul>
 <li>UBOAT с RadioNavigation, <strong>учебная копия</strong> сохранения и резервная копия настроек.</li>
@@ -51,32 +52,22 @@ section{scroll-margin-top:0}
 <li>Ваши обычные команды выхода наружу, вида от первого лица и показа интерфейса.</li>
 </ul>
 <p><strong>Практикуйтесь только на копии сохранения.</strong> Если копии нет, ограничьтесь чтением и бумажным разбором без действий в игре.</p>
-<h2 id="start-heading-3">Как работать</h2>
-<ol>
-<li>Прочитайте один шаг.</li>
-<li>Скажите, что должно получиться.</li>
-<li>Выполните действие.</li>
-<li>Сверьтесь с проверкой.</li>
-<li>Запишите результат; только потом идите дальше.</li>
-</ol>
-<p>Текст и рисунки держите открытыми. Остановиться после любого шага нормально. Неизвестное время этому упражнению не мешает: пометьте запись «время не установлено».</p>
-<p><a href="#lesson-1">Начать: шаг 1 →</a></p>
+<p><a href="GUIDE.html#scene-preparation">Как подготовить учебную сцену</a>: готовое проверенное сохранение не приложено. Подготовка копии и отката требует оператора и отдельно разрешённой игровой попытки; здесь её успешный проход не заявляется.</p>
+<p>Текст и рисунки держите открытыми. Если время неизвестно, пометьте запись «время не установлено»: такой отсчёт пригоден для упражнения с прибором, но ещё не для расчёта места.</p>
+<p><a id="start-heading-3" href="#lesson-1">Начать: шаг 1 →</a></p>
 </section><section id="lesson-1" aria-label="Первый отсчёт"><h2 id="lesson-1-heading-1">Первый отсчёт</h2>
-<p><strong>Цель:</strong> получить <strong>один собственный Hs</strong> — высоту нижнего края Солнца до поправок. Время, таблицы и расчёт места в этот раз не нужны.</p>
-<p><strong>Перед началом:</strong> есть учебная копия сохранения; сейчас день; сцена позволяет выйти к морю и увидеть Солнце. Приготовьте бумагу и <a href="STARTER-WORKSHEET.html">короткий лист записи</a>.</p>
 <p><strong>Клавиши ниже — назначения по умолчанию.</strong> Свои ищите в настройках управления и в справке <code>P</code>.</p>
 <h3 id="lesson-1-heading-2">1. Выйдите наружу</h3>
 <p>Своими обычными командами включите вид от первого лица и выйдите на открытое место.</p>
-<p class="check"><strong>Готово, если</strong> над головой нет потолка, видны море и небо. Если выйти не получается, откройте <a href="GUIDE.html#exit-help">разбор выхода</a>. Если подсказки не помогли, запишите место остановки.</p>
+<p>Над головой нет потолка, видны море и небо. Если выйти не получается, откройте <a href="GUIDE.html#exit-help">разбор выхода</a>.</p>
 <h3 id="lesson-1-heading-3">2. Найдите горизонт</h3>
-<p>Это граница моря и неба. Не край палубы, не берег и не полоса облаков.</p>
-<p>Границу моря и неба должно быть видно в обе стороны.</p>
+<p>Это отчётливая граница моря и неба, видимая в обе стороны. Не край палубы, не берег и не полоса облаков.</p>
 <h3 id="lesson-1-heading-4">3. Найдите Солнце</h3>
 <p>Поверните взгляд к самому диску, а не к блику на воде. Затем опустите взгляд к участку горизонта под Солнцем, не поворачиваясь в сторону.</p>
 <p class="check"><strong>Готово, если</strong> горизонт в поле зрения. Солнце может уйти вверх за край экрана — это нормально.</p>
 <h3 id="lesson-1-heading-5">4. Откройте секстант</h3>
 <p>Один раз нажмите <code>Z</code> (по умолчанию).</p>
-<p class="check"><strong>Готово, если</strong> появилось круглое окно прибора и читается число на шкале. Если окна нет, проверьте назначение команды открытия в настройках. Если это не помогло, остановитесь и запишите, что произошло.</p>
+<p>Должно появиться круглое окно прибора с читаемой шкалой. Если окна нет, проверьте назначение команды открытия в настройках.</p>
 <p>Если на шкале уже стоит большое число, в учебной копии нажмите <code>R</code>: барабан вернётся к нулю. Это исходная настройка для поиска, <strong>не поверка прибора</strong>.</p>
 <h3 id="lesson-1-heading-6">5. Затемните отражённое Солнце</h3>
 <p>Нажмите <code>3</code>. Если диск получился слишком тёмным, попробуйте <code>2</code>, затем <code>1</code>.</p>
@@ -91,24 +82,17 @@ section{scroll-margin-top:0}
 <h3 id="lesson-1-heading-8">7. Прочитайте и запишите Hs</h3>
 <p>Не вращая барабан, прочитайте число градусов и число минут. Запишите их вместе и добавьте слова «нижний край Солнца».</p>
 <p><code>°</code> — градусы, <code>′</code> — угловые минуты. В одном градусе 60 минут; это не минуты времени.</p>
-<p class="check"><strong>Проверьте:</strong> записан исходный отсчёт, а не готовый ответ из пособия.</p>
-<p><strong>Первый отсчёт получен:</strong> вы самостоятельно нашли касание нижним краем и записали свой Hs. Это первый успех.</p>
+<p>Сохраните исходный отсчёт без поправок: в дальнейшем по нему вычисляется высота центра Солнца.</p>
 <h3 id="lesson-1-heading-9">Закрепление: повторите дважды</h3>
 <p>Слегка сместите барабан, чтобы касание исчезло. Снова найдите нижний край и запишите новый Hs. Не возвращайте прежнее число по памяти.</p>
-<p>Два-три отсчёта подряд показывают, насколько устойчиво получается касание. Числа могут немного различаться: Солнце движется.</p>
+<p>Это упражнение на повторное наведение. Разность отсчётов сама по себе не показывает ошибку наведения: между попытками Солнце движется. Для оценки повторяемости понадобятся установленные условия времени.</p>
 <h3 id="lesson-1-heading-10">Остановитесь, если</h3>
 <ul>
 <li>не видно горизонта или солнечного диска;</li>
 <li><code>Z</code> не открывает прибор;</li>
 <li>шкала не читается.</li>
 </ul>
-<p>Запишите конкретное место остановки. Не подставляйте число из образца и не заменяйте действие телепортом или программным наведением.</p>
-<p>Отсчёт без времени — пока <strong>упражнение с прибором</strong>, не навигационное наблюдение.</p>
+<p>Запишите, что именно не получилось; отсутствующий отсчёт оставьте незаполненным.</p>
 <h3 id="lesson-1-heading-11">Что дальше</h3>
-<ul>
-<li><a href="STARTER-WORKSHEET.html">Короткий лист записи</a> — три попытки и проверка.</li>
-<li><a href="GUIDE.html#lesson-1">Полный урок 1</a> — подробно о выходе, альтернативных командах и фильтрах.</li>
-<li><a href="GUIDE.html#lesson-2">Урок 2</a> — связать новый отсчёт с датой и GMT.</li>
-</ul>
-<p>Технический статус игрового маршрута и известные ограничения — в <a href="QA-STATUS.html">разделе проверки</a>.</p>
+<p>Перейдите к <a href="GUIDE.html#lesson-2">уроку 2</a>, чтобы связать новый отсчёт с датой и GMT. Подробности выхода, альтернативных команд и фильтров — в <a href="GUIDE.html#lesson-1">полном уроке 1</a>.</p>
 </section><p class="end-note">Конец короткой версии · <a href="GUIDE.html">Уроки</a></p></main></body></html>

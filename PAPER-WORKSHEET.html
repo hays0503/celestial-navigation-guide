@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Лист бумажного расчёта — Секстант и Солнце</title><style>
+:root{--paper:#f5f3ed;--surface:#fffefa;--ink:#173b55;--text:#243d4a;--muted:#586d78;--line:#d6dfdf;--blue:#1e638d;--orange:#b8660e;--wash:#eaf3f4;--warning:#fff1d9;--font:system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:6rem}body{margin:0;background:var(--paper);color:var(--text);font:1rem/1.75 var(--font)}a{color:var(--blue);text-underline-offset:.18em}a:hover{color:var(--orange)}:focus-visible{outline:3px solid var(--orange);outline-offset:4px}.skip{position:absolute;left:1rem;top:-5rem}.skip:focus{top:.5rem;z-index:5;background:var(--surface);padding:.5rem}
+.topbar{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem max(1rem,calc((100vw - 1400px)/2));background:var(--surface);border-bottom:1px solid var(--line)}.brand{font-weight:750;line-height:1.3;letter-spacing:.02em;color:var(--ink)}.brand small{display:block;font-size:.73rem;letter-spacing:.08em;color:var(--muted);font-weight:550}.tools{display:flex;gap:.7rem;align-items:center;font-size:.85rem}.tools button{font:inherit;color:var(--ink);border:1px solid var(--line);border-radius:.4rem;background:var(--surface);padding:.35rem .75rem;cursor:pointer}.layout{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:245px minmax(0,860px);gap:3.5rem;padding:2.5rem 2rem 6rem}.sidebar{position:sticky;top:6rem;align-self:start;max-height:calc(100vh - 7rem);overflow:auto;font-size:.88rem;line-height:1.55}.sidebar h2{font-size:.72rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin:.2rem 0 .9rem}.sidebar ul{list-style:none;margin:0;padding:0}.sidebar li{margin:.15rem 0}.sidebar a{display:block;padding:.35rem .55rem;border-radius:.35rem;color:var(--text);text-decoration:none;border-left:3px solid transparent}.sidebar a[aria-current="location"]{background:var(--wash);color:var(--blue);border-left-color:var(--blue)}.sidebar .appendices{border-top:1px solid var(--line);margin-top:.9rem;padding-top:.9rem}.sidebar .edition{margin-top:1.2rem;color:var(--muted);font-size:.77rem}.mobile-menu{display:none}
+main{min-width:0}section{padding:0 0 3rem;margin:0 0 3rem;border-bottom:1px solid var(--line);scroll-margin-top:6rem}section:last-child{border-bottom:0}h1,h2,h3,h4,h5{color:var(--ink);line-height:1.28;font-weight:700}h1{font:700 clamp(2.7rem,5vw,4.1rem)/1.1 Georgia,serif;margin:.3rem 0 1.3rem;letter-spacing:-.035em}h2{font:700 clamp(1.9rem,3vw,2.7rem)/1.2 Georgia,serif;margin:.3rem 0 1.8rem}h3{font-size:1.35rem;margin:2.4rem 0 .8rem}h4{font-size:1.08rem;margin:1.8rem 0 .7rem}h5{font-size:1rem;margin:1.2rem 0 .5rem}p{margin:.8rem 0 1.1rem}li{padding-left:.1rem;margin:.38rem 0}ol,ul{padding-left:1.5rem}strong{font-weight:700;color:var(--ink)}em{color:var(--muted)}code{font: .92em ui-monospace,"Cascadia Code",Consolas,monospace;background:#eaf0ef;color:#184962;padding:.12rem .3rem;border-radius:.2rem;overflow-wrap:anywhere}pre{white-space:pre-wrap}blockquote,.warning{margin:1.4rem 0;padding:.8rem 1.2rem;background:var(--warning);border-left:4px solid var(--orange)}.check{background:var(--wash);padding:.8rem 1.1rem;border-left:3px solid #5594a1}.check-item{list-style:none;position:relative}.check-item>span{position:absolute;left:-1.2rem;color:var(--blue)}.section-kicker{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .65rem}.chapter-intro{background:var(--wash);padding:.45rem 1rem;border-radius:.3rem;margin-bottom:1.6rem;font-size:.9rem}
+figure{margin:1.7rem 0 2rem;background:var(--surface);border:1px solid var(--line);border-radius:.5rem;padding:.9rem}.figure-link{display:block;text-decoration:none}figure img{display:block;width:auto;max-width:100%;height:auto;max-height:500px;margin:0 auto;object-fit:contain}figcaption{margin:.8rem .25rem .15rem;color:var(--muted);font-size:.86rem;line-height:1.55}.table-scroll{width:100%;overflow-x:auto;margin:1.4rem 0;background:var(--surface);border:1px solid var(--line);border-radius:.35rem}table{border-collapse:collapse;width:100%;font-size:.92rem;line-height:1.5}th,td{text-align:left;vertical-align:top;padding:.7rem .8rem;border-bottom:1px solid var(--line);min-width:7rem}th{font-weight:650;background:var(--wash);color:var(--ink)}tr:last-child td{border-bottom:0}details{margin:1.6rem 0;padding:.85rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:.4rem}summary{cursor:pointer;color:var(--blue);font-weight:600;font-size:.92rem}details[open]>summary{margin-bottom:1rem}details.illustration{border-style:dashed}details figure{border:0;padding:0;margin:1rem 0}details.illustration>p{font-size:.9rem;color:var(--muted)}details.answer{background:var(--wash)}.end-note{font-size:.84rem;color:var(--muted)}.print-note{display:none}
+@media(max-width:1000px){.layout{grid-template-columns:205px minmax(0,1fr);gap:2rem;padding-left:1.3rem;padding-right:1.3rem}.sidebar{font-size:.82rem}.tools a{display:none}}
+@media(max-width:720px){body{font-size:1rem}.topbar{padding:.65rem 1rem}.brand small{font-size:.65rem}.tools{font-size:.8rem}.layout{display:block;padding:1rem 1rem 3rem}.sidebar{position:static;max-height:none;margin:0 0 2rem}.sidebar>h2,.sidebar>ul,.sidebar .edition,.sidebar>p.nav-group{display:none}.sidebar.is-open>ul{display:block}.sidebar.is-open>p.nav-group{display:block}.sidebar .appendices{border:0;margin:0;padding:0}.mobile-menu{display:block;width:100%;font:600 .9rem var(--font);text-align:left;padding:.7rem 0;color:var(--blue);background:transparent;border:0;border-bottom:1px solid var(--line);cursor:pointer}section{padding-bottom:2rem;margin-bottom:2rem}h1{font-size:2.6rem}h2{font-size:1.9rem}figure{padding:.5rem}figure img{max-height:330px}th,td{padding:.55rem;min-width:6rem}html{scroll-padding-top:5rem}.section-kicker{font-size:.7rem}}
+@media print{@page{margin:17mm}html{scroll-behavior:auto}body{background:white;color:#111;font:10.5pt/1.5 Georgia,serif}.topbar,.sidebar,.tools,.skip{display:none!important}.layout{display:block;max-width:none;margin:0;padding:0}main{max-width:none}section{break-before:page;margin:0 0 1rem;padding:0;border:0}section:first-child{break-before:auto}h1{font-size:31pt}h2{font-size:23pt}h3{font-size:15pt}h4{font-size:12pt}h1,h2,h3,h4{break-after:avoid}figure{break-inside:avoid;border:1px solid #bbb}figure img{max-height:110mm}a{color:#183f5c;text-decoration:none}table{font-size:9pt}.table-scroll{overflow:visible}th{background:#eee}details:not([open])> :not(summary){display:block!important}details{break-inside:auto;border:1px solid #ccc}summary{font-size:10pt}.print-note{display:block;font-size:9pt;color:#444}.check,.warning{break-inside:avoid}p{orphans:3;widows:3}}
+
+main>section:focus{outline:none}.mobile-toc-top{display:none}.sidebar{scroll-margin-top:5.2rem}
+h1,h2,h3,h4,h5,p,li,td,th{overflow-wrap:anywhere}.topbar{flex-wrap:wrap}
+.sidebar .nav-group{margin:1.1rem 0 .3rem;font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:650}
+.sidebar .nav-group:first-of-type{margin-top:0}
+@media(max-width:720px){.tools .mobile-toc-top{display:inline-block}.tools{gap:.45rem}.tools button{padding:.35rem .55rem}.brand{min-width:0}}
+@media print{th,td{min-width:0;overflow-wrap:anywhere}table{table-layout:fixed}#walkthrough .table-scroll{break-inside:avoid}main>section#start{break-before:auto}}
+.section-nav{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.86rem}.section-nav a{max-width:100%}.section-nav small{display:block;color:var(--muted)}
+@media print{.section-nav{display:none}thead{display:table-header-group}tr{break-inside:avoid}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{@page{size:A4}}
+section{scroll-margin-top:0}
+
+:root{color-scheme:light dark}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#0e1720;--surface:#16232e;--ink:#e8f0f4;--text:#c9d7de;--muted:#96abb7;
+    --line:#2c3f4b;--blue:#8ccbee;--orange:#f2a962;--wash:#1b2c37;--warning:#3b2a15;
+    --code-bg:#12202a;--code-fg:#a9d6ea;--check-line:#43808f;--figure-mat:#f7f7f4;
+    --shadow:0 10px 26px rgba(0,0,0,.45)}
+  code{background:var(--code-bg);color:var(--code-fg)}
+  .check{border-left-color:var(--check-line)}
+  figure img{background:var(--figure-mat);border-radius:.25rem}
+  .tools button:hover{background:var(--wash);color:var(--ink)}
+  .sidebar a[aria-current="location"]{background:var(--wash)}
+  blockquote,.warning{color:var(--text)}
+}
+@media print{:root{color-scheme:light;--paper:#fff;--surface:#fff;--ink:#111;--text:#111;
+  --muted:#444;--line:#ccc;--blue:#183f5c;--orange:#6b3b00;--wash:#f2f2f2;
+  --warning:#fff8ec;--code-bg:#f4f4f4;--code-fg:#111;--check-line:#666;--figure-mat:#fff}
+}
+.paper-layout{max-width:1000px;margin:2rem auto;padding:0 1.5rem}.paper-layout h1{font-size:2.2rem}.paper-layout h2{font-size:1.5rem}.paper-layout td{height:2.6rem}.paper-layout td:first-child{width:44%}.paper-layout table{table-layout:fixed}.paper-layout td{overflow-wrap:anywhere}@media print{.paper-layout{margin:0;padding:0;font-size:9pt;line-height:1.25}.paper-layout h1{font-size:21pt}.paper-layout h2{font-size:15pt;margin:.5rem 0}.paper-layout p{margin:.4rem 0}.paper-layout table{font-size:8.5pt;line-height:1.2}.paper-layout th,.paper-layout td{padding:.22rem .35rem;min-width:0}.paper-layout td{height:2.1rem}.paper-layout .table-scroll{margin:.5rem 0}.paper-layout tr{break-inside:avoid}.paper-page+.paper-page{break-before:page}}</style><noscript id="course-nojs"><style>@media screen and (max-width:720px){.sidebar>ul,.sidebar>h2,.sidebar>p.nav-group{display:block}.sidebar .mobile-menu{display:none}}</style></noscript><style id="course-nav-style">.course-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.4rem;padding:.65rem 1rem;font-size:.9rem}.course-nav a{color:inherit}@media print{.course-nav{display:none}}</style></head><body><header class="topbar"><div class="brand">Бумажный расчёт</div><div class="tools"><a href="index.html">Главная</a><a href="GUIDE.html#walkthrough">Разбор</a><button type="button" onclick="window.print()">Печать</button></div></header><!-- course-nav --><nav aria-label="Маршруты курса" class="course-nav"><a href="GUIDE.html#walkthrough">Метод</a><a href="TRAINING.html">Практика</a><a href="CONTROLS.html">Справка</a><a href="QA-STATUS.html">QA</a></nav><!-- /course-nav --><main class="paper-layout"><div class="paper-page"><h1 id="paper-sheet-heading-1">Лист бумажного расчёта</h1>
+<p><strong>Учебная задача, не реальное судовождение.</strong> Один комплект для двух наблюдений. Источник чисел — выбранное условие, не игра. Впишите его название и дату, чтобы не смешать учебную пару, исторический разбор и новую задачу.</p>
+<p><strong>Условие / название задачи:</strong> ________________________________<br />
+<strong>Дата наблюдений по условию:</strong> ________________________________<br />
+<strong>Выполняет / дата расчёта:</strong> ________________________________</p>
+<p>Для первого прохода используйте <a href="GUIDE.html#walkthrough">полный разбор</a>, затем заполните новый экземпляр по <a href="TRAINING.html#task">самостоятельной задаче</a>. Пособие и оригиналы таблиц можно держать открытыми; ключ самостоятельной задачи — отдельно.</p>
+<p><strong>Область этого листа:</strong> Солнце, нижний край; северные широта и склонение; меньший часовой угол &lt; 90°; q между 0° и 90°; Hc выше 0° и не выше 70°; для азимута δ &lt; Gr.δ, отсчёт от юга. Это бланк разобранной ветви, не универсальный алгоритм для всех полушарий. Если условие ветви не выполнено, остановитесь и отметьте его, а не применяйте напечатанную сумму автоматически.</p>
+<p><strong>Как заполнять клетки:</strong> в каждом поле сохраняйте единицы. Например, для <strong>первого наблюдения разобранной пары 3 сентября</strong>: адрес F VIII — PDF 98; строки 38° / 40°; глаз 5 / 6 м; четыре клетки в порядке «нижняя строка слева/справа, верхняя слева/справа» — <code>+10,9′ / +10,5′; +11,0′ / +10,6′</code>. Доля глаза — <code>(5,5 − 5)/(6 − 5) = 0,5</code>, поправки строк — <code>+10,7′ / +10,8′</code>. Это пример формата, <strong>не числа новой задачи</strong>.</p>
+<p>Ho/Hc на листе можно записывать до 0,01′ для чтения. Для последующих вычислений сохраняйте выражение с долей или значение в памяти калькулятора; округлённую запись обратно не подставляйте. Рабочие a и Zn округляются один раз перед построением. Если места мало, продолжите на обороте с названием поля и номером наблюдения — не стирайте исходные клетки ради ответа.</p>
+<h2 id="paper-sheet-heading-2">1. От исходных данных к Ho и положению Солнца</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>№1</th>
+<th>№2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GMT, часы:минуты:секунды</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Hs, градусы и минуты</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Край диска; ИП по условию</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>h = Hs + ИП</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Высота глаза, м</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>F VIII: страница; строки / столбцы</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Четыре клетки: нижняя строка слева / справа</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Четыре клетки: верхняя строка слева / справа</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Доля глаза: выражение и результат</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Поправки двух строк</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Доля высоты: выражение и результат</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Поправка между строками</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Месячная добавка; общая поправка</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ho, сохранить долю</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p class="check"><strong>Проверка высоты:</strong> Ho относится к центру; общая поправка учтена один раз. Подписаны оба наблюдения и источник условия.</p>
+</div><div class="paper-page"><h2 id="paper-sheet-solar-heading">1б. Положение Солнца и вычисления</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>№1</th>
+<th>№2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Источник солнечных данных; шкала времени</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Опорная строка: время и GHA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Следующая строка: время; обе δ</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Прошедшее время; приращение GHA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Доля интервала; изменение δ</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>GHA и δ на момент наблюдения</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p class="check"><strong>Проверка:</strong> Ho относится к центру; общая поправка учтена один раз. Склонение между исходными значениями. Табличные данные относятся к моментам выбранного условия.</p>
+<p><strong>Место для вычислений.</strong> Подпишите номер наблюдения и название поля, к которому относится каждая строка. Здесь можно сохранить полную подстановку с долей вместо длинной десятичной дроби.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Вычисление</th>
+<th>Выражение с единицами и результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>№1: приращение GHA</td>
+<td></td>
+</tr>
+<tr>
+<td>№1: интерполяция δ</td>
+<td></td>
+</tr>
+<tr>
+<td>№2: приращение GHA</td>
+<td></td>
+</tr>
+<tr>
+<td>№2: интерполяция δ</td>
+<td></td>
+</tr>
+<tr>
+<td>Дополнительная строка: __________</td>
+<td></td>
+</tr>
+<tr>
+<td>Дополнительная строка: __________</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+</div><div class="paper-page"><h2 id="paper-sheet-heading-3">2. Принятые точки, расчётные высоты и направления</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>№1</th>
+<th>№2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DR на свой момент; исходное место и путь</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Широта AP; выбранный t и восточная/западная сторона</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Долгота AP; обратная проверка LHA</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Проверка ветви: φ N, δ N, t &lt; 90°</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>F I: страница; группа t; строка φ</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>U — угол</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>V — число без ° и ′</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Gr.δ; проверка δ &lt; Gr.δ</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>q = U + δ; проверка 0° &lt; q &lt; 90°</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>F II: прямые клетки, доля; Lq</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Lh = Lq + V − 10</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>F II: диапазон градусов; обратные клетки и доля</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Hc, сохранить долю</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>a = Ho − Hc; рабочий a в NM и сторона</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>F XI по δ и t: адрес; строки и клетки</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Доля между строками; P</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>F XI по Hc: строки; пробные колонки</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Выбранные соседние колонки; четыре клетки</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Результат в каждой колонке при своей Hc</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Охват P; доля между колонками</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>A — угол от полюса</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Правило полюса; Zn до рабочего округления и для карты</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Направление и длина сдвига; длина на бумаге</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Направления LOP; подпись времени линии</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p class="check"><strong>Проверка:</strong> AP — точка расчёта, не найденное место. В обеих обратных операциях подтверждён охват. Интерсепт округлён из сохранённой разности; перпендикуляр проходит через конец сдвига.</p>
+</div><div class="paper-page"><h2 id="paper-sheet-heading-4">3. Путь, перенос и место</h2>
+<p><strong>Масштаб сетки:</strong> ____________________<br />
+<strong>Начало сетки (широта, долгота); истинный север:</strong> ____________________</p>
+<p><strong>AP₂ относительно AP₁: разность широт / долгот → NM → см:</strong> ____________________</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Начало</th>
+<th>Конец</th>
+<th>Истинное направление</th>
+<th>Скорость, узлы</th>
+<th>Время, ч</th>
+<th>Путь, NM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Запись</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Суммарный перенос: направление и расстояние / компоненты</td>
+<td></td>
+</tr>
+<tr>
+<td>Первая линия перенесена на t2 без поворота; вторая на месте</td>
+<td></td>
+</tr>
+<tr>
+<td>Меньший угол между линиями</td>
+<td></td>
+</tr>
+<tr>
+<td>Смещения пересечения от начала сетки: север/юг и восток/запад, NM</td>
+<td></td>
+</tr>
+<tr>
+<td>Fulst: страница, строка, клетки, доля; разность долгот</td>
+<td></td>
+</tr>
+<tr>
+<td>Широта пересечения</td>
+<td></td>
+</tr>
+<tr>
+<td>Долгота пересечения</td>
+<td></td>
+</tr>
+<tr>
+<td>Дата и время результата — второй момент</td>
+<td></td>
+</tr>
+<tr>
+<td>Допущения пути и ограничения точности</td>
+<td></td>
+</tr>
+<tr>
+<td>Неопределённость чертежа: мм на бумаге → NM; полосы вокруг линий</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p class="check"><strong>Проверка:</strong> перенесена ранняя линия по всему пути; копия не считается новым наблюдением. В долготу переведено восточно-западное смещение, не наклонное расстояние. Ответ подписан как условная задача.</p>
+</div></main></body></html>

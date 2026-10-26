@@ -1,46 +1,34 @@
 {
-  "recorded_at_utc": "2026-10-23T19:08:20.546245+00:00",
-  "published_base_commit": "20495e9540497458fdba05b780bb1aa7cd847cb3",
-  "verified_site_tree_sha256": "b5be70a58a938e212b10071ab7a00aa0e94407b865d38e23b703437e43f7ba94",
-  "verified_file_count": 103,
-  "tree_status": "Verified against content SHA-256 manifest of lessons-site/ (not claimed as old git SHA)",
+  "recorded_at_utc": "2026-10-26T07:15:59.689424+00:00",
+  "published_base_commit": "b16aea3439d1033febd008cd27dc1f3ad0a5b321",
+  "verified_site_tree_sha256": "1c0debfb299175ae9f85ff84d7e746652cc9af4d117a4aa852f100bdcad286fd",
+  "verified_file_count": 106,
+  "tree_status": "Local canonical lessons-site/ tree verified against SHA-256 manifest; not yet synced/pushed to publication repo.",
   "scope": {
     "protected_originals": 25,
     "production_files": 295,
     "source_table_pdfs": 3,
+    "original_table_renders_checked": 6,
+    "manual_cell_review": "evidence/editorial-simplification-20261024/TABLE-CELL-REVIEW.md",
     "note": "SHA-256 verified against baseline manifests; originals and production code untouched."
   },
   "results": {
-    "guide_content_and_links": {
+    "editorial_invariants_and_links": {
       "state": "PASS",
-      "passed": 86,
+      "passed": 73,
       "failed": 0
     },
-    "learning_regressions": {
+    "digital_print_inspection": {
       "state": "PASS",
-      "passed": 38,
-      "failed": 0
-    },
-    "stages_and_mutations": {
-      "state": "PASS",
-      "passed": 19,
-      "failed": 0
-    },
-    "print_export": {
-      "state": "PASS",
-      "passed": 5,
-      "failed": 0
-    },
-    "factcheck_preserve": {
-      "state": "PASS",
-      "passed": 36,
+      "passed": 424,
       "failed": 0
     },
     "browser_preview_and_negative_probes": {
       "state": "PASS",
-      "screens": 18,
-      "dark_screens": 5,
-      "negative_probes_rejected": 3
+      "screens": 26,
+      "dark_screens": 12,
+      "negative_probes_rejected": 3,
+      "nojs_route_verified": true
     },
     "portable_static_verifier": {
       "state": "PASS",
@@ -49,50 +37,68 @@
     }
   },
   "print_pages": {
-    "guide_pages": 131,
-    "basics_pages": 9,
-    "training_pages": 8,
-    "answers_pages": 16,
-    "start_pages": 5,
-    "field_pages": 5,
-    "worksheet_pages": 4,
-    "starter_worksheet_pages": 1,
-    "embedded_image_uses": 41
+    "paper-sheet": 4,
+    "worksheet": 4,
+    "starter-sheet": 1,
+    "field": 4,
+    "start": 4,
+    "training": 9,
+    "basics": 9,
+    "answers": 17,
+    "factcheck": 5,
+    "walkthrough": 13,
+    "guide": 137
   },
   "browser": {
     "engine": "Chrome headless, isolated user-data-dir, local HTTP server + CDP",
     "screens_checked": [
-      "index.html @390x844",
-      "BASICS.html @390x844",
-      "BASICS.html#angle-reading @390x844",
-      "BASICS.html#angle-arithmetic @390x844",
-      "BASICS.html#angle-subtraction @390x844",
-      "BASICS.html#angle-arithmetic @1360x960",
-      "BASICS.html#between @390x844",
-      "GUIDE.html#lesson-5 @390x844",
-      "GUIDE.html#lesson-6 @390x844",
-      "TRAINING.html @390x844",
-      "TRAINING.html#step-fii @390x844",
-      "ANSWERS.html#staged-keys @390x844",
-      "ANSWERS.html#basics-key @390x844",
-      "index.html @390x844",
-      "BASICS.html#angle-reading @390x844",
-      "TRAINING.html#step-fii @390x844",
-      "GUIDE.html#lesson-5 @1360x960",
-      "qa/index.html @390x844"
+      "index.html @390 (dark)",
+      "index.html @1440 (light)",
+      "GUIDE.html#lesson-1 @390 (light)",
+      "GUIDE.html#lesson-2 @390 (dark)",
+      "GUIDE.html#lesson-3 @390 (light)",
+      "GUIDE.html#lesson-4 @390 (dark)",
+      "GUIDE.html#lesson-5 @390 (light)",
+      "GUIDE.html#lesson-6 @390 (dark)",
+      "GUIDE.html#lesson-7 @390 (light)",
+      "GUIDE.html#walkthrough @1440 (dark)",
+      "PAPER-WORKSHEET.html @390 (dark)",
+      "START.html @390 (light)",
+      "TRAINING.html#step-fii-search @390 (dark)",
+      "ANSWERS.html#key-fii-search @390 (light)",
+      "BASICS.html @390 (dark)",
+      "FIELD.html @390 (light)",
+      "WORKSHEET.html @390 (light)",
+      "STARTER-WORKSHEET.html @390 (dark)",
+      "QA-STATUS.html @390 (dark)",
+      "FACTCHECK.html @1440 (light)",
+      "CONTROLS.html @390 (light)",
+      "TRAINING.html#prep-different-ap @390 (light)",
+      "TRAINING.html#prep-different-ap @1440 (dark)",
+      "GUIDE.html#scene-preparation @390 (light)",
+      "ANSWERS.html#key-two-ap @390 (dark)",
+      "GUIDE.html @390 (light)"
     ],
     "js_and_http_errors": 0,
     "max_horizontal_overflow_px": 0,
     "text_200_percent_at_390px": {
-      "font_size": "200%",
-      "width": 390,
-      "scrollWidth": 375
+      "width": 375,
+      "scrollWidth": 375,
+      "overflow": 0
     },
-    "keyboard_focus": {
-      "tag": "A",
-      "href": "figures/01-reading.png",
+    "keyboard_and_details": {
+      "tabVisible": true,
+      "outline": "solid",
+      "summaryFocused": true,
+      "before": false,
+      "afterEnter": true,
+      "afterSpace": false
+    },
+    "nojs_mobile_toc": {
       "visible": true,
-      "outline": "solid"
+      "href": "#walkthrough",
+      "heading": true,
+      "followed": true
     },
     "negative_probes": [
       {
@@ -103,7 +109,7 @@
       {
         "name": "wrong page with HTTP 200 rejected",
         "rejected": true,
-        "reason": "Expected content absent"
+        "reason": "Expected text absent"
       },
       {
         "name": "connection failure rejected",
@@ -115,39 +121,184 @@
   },
   "theme": {
     "behaviour": "Follows the reader system setting (prefers-color-scheme); no stored override.",
-    "dark_min_contrast_ratio": 6.7,
-    "dark_screens_checked": 5,
+    "dark_screens_checked": 12,
     "print_stays_light": true
   },
   "not_run": {
-    "beginner_paper_pilot": "NOT RUN",
+    "beginner_paper_pilot": "NOT RUN (two-pass protocol prepared in evidence/editorial-simplification-20261024/PAPER-PILOT-PROTOCOL.md)",
     "live_game_lesson_1": "NOT RUN (requires explicit permission, participant, backup/rollback)",
     "physical_print": "NOT RUN",
     "other_physical_devices": "NOT RUN"
   },
+  "source_wordlike_tokens": {
+    "01-SEXTANT.md": {
+      "before": 1593,
+      "current": 1481
+    },
+    "02-TIME.md": {
+      "before": 947,
+      "current": 787
+    },
+    "03-HEIGHT-CORRECTIONS.md": {
+      "before": 1725,
+      "current": 1351
+    },
+    "04-ALMANAC.md": {
+      "before": 1528,
+      "current": 1294
+    },
+    "05-CALCULATED-HEIGHT.md": {
+      "before": 2632,
+      "current": 2429
+    },
+    "06-POSITION-LINE.md": {
+      "before": 2372,
+      "current": 2241
+    },
+    "07-RUNNING-FIX.md": {
+      "before": 2099,
+      "current": 1977
+    },
+    "ANSWERS.md": {
+      "before": 665,
+      "current": 665
+    },
+    "BASICS-ANSWERS.md": {
+      "before": 525,
+      "current": 525
+    },
+    "BASICS.md": {
+      "before": 1965,
+      "current": 1965
+    },
+    "CONTROLS.md": {
+      "before": 227,
+      "current": 227
+    },
+    "DATA-SOURCES.md": {
+      "before": 639,
+      "current": 657
+    },
+    "EXERCISES.md": {
+      "before": 623,
+      "current": 623
+    },
+    "FACTCHECK.md": {
+      "before": 1325,
+      "current": 1357
+    },
+    "FACTS.md": {
+      "before": 1586,
+      "current": 1586
+    },
+    "FIELD.md": {
+      "before": 671,
+      "current": 684
+    },
+    "FULL-EXAMPLE-SOLUTION.md": {
+      "before": 952,
+      "current": 952
+    },
+    "FULL-EXAMPLE.md": {
+      "before": 1295,
+      "current": 1316
+    },
+    "INTRO.md": {
+      "before": 920,
+      "current": 730
+    },
+    "LIMITS.md": {
+      "before": 1121,
+      "current": 1452
+    },
+    "PAPER-WORKSHEET.md": {
+      "before": null,
+      "current": 760
+    },
+    "PRACTICE.md": {
+      "before": 1033,
+      "current": 1041
+    },
+    "QA-STATUS.md": {
+      "before": 684,
+      "current": 684
+    },
+    "QUALITY.md": {
+      "before": 738,
+      "current": 750
+    },
+    "READINESS.md": {
+      "before": 776,
+      "current": 976
+    },
+    "README.md": {
+      "before": 1307,
+      "current": 974
+    },
+    "SELF-CHECK.md": {
+      "before": 664,
+      "current": 675
+    },
+    "START-INTRO.md": {
+      "before": 194,
+      "current": 205
+    },
+    "START-LESSON.md": {
+      "before": 562,
+      "current": 449
+    },
+    "STARTER-WORKSHEET.md": {
+      "before": 225,
+      "current": 252
+    },
+    "TERMS.md": {
+      "before": 730,
+      "current": 730
+    },
+    "TRAINING-SOLUTION.md": {
+      "before": 2171,
+      "current": 2400
+    },
+    "TRAINING.md": {
+      "before": 2562,
+      "current": 3244
+    },
+    "TROUBLESHOOTING.md": {
+      "before": 1198,
+      "current": 1198
+    },
+    "WALKTHROUGH.md": {
+      "before": null,
+      "current": 3692
+    },
+    "WORKSHEET.md": {
+      "before": 632,
+      "current": 647
+    }
+  },
   "content_sha256": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "01-SEXTANT.md": "77159de5b7827120a9b78c4071b0a668cb258d4a621e83259f44768fbe7a7169",
-    "02-TIME.md": "591eb30568e08af17dafde99c4c647a139d0f47a0943979124ae20d8677dfc64",
-    "03-HEIGHT-CORRECTIONS.md": "be59c40f650ca7cb2d53b5a18fff385ec19214001bfdfbf3eaab7059ec039002",
-    "04-ALMANAC.md": "2a44b8c974e30e7fbc89b012fc74b60ac6eb5db2bff488f713e5feab8cf28848",
-    "05-CALCULATED-HEIGHT.md": "dde59c321b2af4258c88bd2ef6762a71fb7beaf487a669ba8104b9aa83cf3fa1",
-    "06-POSITION-LINE.md": "2c736eed364c612b77a58cc60de12fe09dc0c87ea5ffbd1eb09714cf98595e66",
-    "07-RUNNING-FIX.md": "ea2321889204d85a62f584c6fb19ea0bf37b9ee551bc46174f96d364e95fc81e",
-    "ANSWERS.html": "c3a55df1b12e03a3069bc0935903a15eaad868338322e7ddf0ec0805957bb4b8",
+    "01-SEXTANT.md": "33d6f8bf952743e9c4b50a6eef54a20eae9550f5587002929c445d33be4066fc",
+    "02-TIME.md": "8dda6c13d2dd61a0570eee24f33f03d594b85fccbe5ec92d7e6b5631bd2d80f2",
+    "03-HEIGHT-CORRECTIONS.md": "ef524a8ae8c15e56bcaa428fc3c088db1b6266c2ee31552f1de03757c8f9a6e4",
+    "04-ALMANAC.md": "1c95e45d996755d904ac8c181438f0c15c672c6d0d57b464482842cc5dffde7c",
+    "05-CALCULATED-HEIGHT.md": "b4c9a7dcb819ed7bf0270d9d3862aaa8beda691f363700936321a274d5b4b17b",
+    "06-POSITION-LINE.md": "cf12e333afc501a0b2aa940588674fae587968220cf5b70080e87bfc07845587",
+    "07-RUNNING-FIX.md": "309f238e5733a3e1e1dd7a21e119c070351b8ed8866212182870abd91c63f909",
+    "ANSWERS.html": "9487767cc8aaf1e2a4474f922038e4febef7024ad4ba0507348df643d4275eba",
     "ANSWERS.md": "04632f5cac8cbba59f66d8eee23dabbcb081461568996e3d22a3b2babba6e8a2",
     "BASICS-ANSWERS.md": "9f6462cfe54f97d3969e26053d05417bd37621a6649a39b967cd1c4d601735e8",
-    "BASICS.html": "8d68946e55392400ea2db9ead9c572cdf6e171de19c9e5481becfea706acec57",
+    "BASICS.html": "e8962ff1f059e6e33932bd48661ac869514a17867f48942372cdb81dbaf37d8c",
     "BASICS.md": "2487c61c947a737fe67cf681075c0dc580e53872f43196ea31bdc0749c2e234a",
-    "CONTROLS.html": "31072ca5441a2543f503e71c75613738a06ca9cf0895857b7c48c206c65d36ad",
+    "CONTROLS.html": "a6385e53f66eb087d6d1fb7e15cf18ff25eccbfb64175e6793855683726f0d63",
     "CONTROLS.md": "45b03c0bbc474547eea742a43c06e22e3646233e7ea5513ba6a5b8e369ec1ddd",
-    "DATA-SOURCES.md": "442ac005d6048539931906b5d88c1a58a5f504d8d487bdb8cb8f475356e75a41",
+    "DATA-SOURCES.md": "5bcd47726cd0906edab44cce79ad753675abbfedec37901571a6330eb6ffa1ed",
     "EXERCISES.md": "a666a849804f0f293d236353a271dafb9cb26c309a9fd4d22ca93ceaaae7e829",
-    "FACTCHECK.html": "7c336f616d3ac0f9238c371e008f07da41de03b921fcadbb51cc00e61bdf5ca0",
-    "FACTCHECK.md": "90dcb3926908c2a4b2bbc8ce077be966b6561c4fad5c55b2d2d1000964b4f64c",
+    "FACTCHECK.html": "8bfe8b9fe870632df24835caf563e66eb1028c88809ebe941525f7396bfd8604",
+    "FACTCHECK.md": "36886e1a02ded7003430fc5e8f4ee70cdeb4c665da6c49340bd633e0368e091b",
     "FACTS.md": "7a26a350ac4b043427f836a889e456721247e86bd9573c1049fdd421a8282086",
-    "FIELD.html": "15e1c5e6ef5d77895e8d6aaf37b3b130dfff89fc5b9c9f5ab5f2fe576d160077",
-    "FIELD.md": "ea9c312bc1f50974a8efcf57b69f746bf5341cb83efa72c3889b9be1f31d2798",
+    "FIELD.html": "e83f3f5a90f7bdecdfe1191b9a650bf5a1854efdce060cdec3296df6db1410d5",
+    "FIELD.md": "f8db35e4c4d3be97997a4c999c3b6c06e30bdab4e31adfae90012262ba4506e3",
     "figures/01-altitude-angle.png": "ca89abe04802427edd291df6eb470e255bbc3c631781c066f7c5f463367b1642",
     "figures/01-contact.png": "8ecf3f4357cbc45cbb2590c9550a56d6546d713ec22c3ba9f383c4360faab7ec",
     "figures/01-horizon.png": "2b49fff213a39ce2fede92e20f53240e230fca16cb064ef4d6f5bc19a8e07f82",
@@ -165,7 +316,7 @@
     "figures/04-meridian.png": "f961100f810318d7e5bef0061c0f0c6f6be9d8cb1be0ac2ed216e9c376f0442f",
     "figures/04-time-between.png": "ed46d466e56da9929b09181dafd10c5274c4f71f36d28c61b7b3e2fab3b6f726",
     "figures/05-compare-heights.png": "06789d2872d02d434b2ccf27f331825eaa288aabc91ca7f2a66c11f09864d199",
-    "figures/05-fi-cell.png": "c27a710557187cb46a7757c02c046ccd345b755e70828ea595d127959351dced",
+    "figures/05-fi-cell.png": "25ef5e0785633a2d448157b2068b29751cd3cf29ac0f6f37b4c355a42bab2301",
     "figures/05-map-grid.png": "0c2e307b96c632b4931209e1d2e71c3115785d2b5e8256b7f7cfb6e3c6fee0db",
     "figures/05-read-table.png": "0ffa64f90df7361c285dc44e791da130f8bdc3a1da39245c716c00e4c519c040",
     "figures/06-compass.png": "22ed1323a1848cac577c9a8f51a72451f40ab9c3fa711e0447ad519322ba9ed9",
@@ -196,18 +347,20 @@
     "figures/learning/lop-stage-4.png": "b075bd135b85e9111873d222b82b8a638dd01024d5871afed51b6fd3ce7925c5",
     "figures/learning/README.md": "b4ead2174b87d80bc94eeda12e0985f145a64687f18bfa22beadf4ac1a64bb15",
     "FULL-EXAMPLE-SOLUTION.md": "e94f0a0b32041c6f27b2eddf01e4e72947b79681bccf632a6bb6b4b08a7d9e8f",
-    "FULL-EXAMPLE.md": "8176b7539f042f7569dd294479d8520753e5f3027a835df9a769d279568c25b2",
-    "GUIDE.html": "9db3d39f9aedcff6cb8c031cb0db8460e48a1b85f892b0155fa1f2fc96e0be02",
-    "GUIDE.md": "2f3bdb3aca9662cd28fca4c5e994156577e4fc2f58b3483c7eb27c6b1aaa1ac9",
-    "index.html": "98b17a3d75918814f09612b02c696029c962b2b423269adeb73f793a07400570",
-    "INTRO.md": "5ed142e2f085879c9f3f04d5204b46b6912042eb4d1966c29494dbe8ef86c2fe",
-    "LIMITS.md": "a9842689602edbe32aa2dae3654280d597f724589a0e0729b6a8736320948dba",
-    "PRACTICE.md": "5a2a6872cc73356bc40f8172d28dbf9d77ba65269d6241dc700e38af033ec948",
-    "QA-STATUS.html": "e8af187d13771fc4cec4206448a891dd4acca110b922f9c47a725df15cd338cc",
+    "FULL-EXAMPLE.md": "efc5281292622fe69847d232fc4599917418c14acac8e58358b0b4e7d4aac21a",
+    "GUIDE.html": "565690960a44daff8ea549dac6bd67d6e0bbf93fd5f0c436763d58ab3e9a072b",
+    "GUIDE.md": "ea8a130a4624d0fff850af1ec7f58047ff78809018527b83d609e10a7b2d810b",
+    "index.html": "029905996cd2023cacfe594c9000402c0d83287d50b4a6500d166d5193ec028d",
+    "INTRO.md": "b7f8f40d2288417c1a39873c84ed34fbeb513f503593ac93332e08a09820cecc",
+    "LIMITS.md": "5e16ff071abb2dac019e35b0a88f9da58efb38042f41ca5dc23a12c900c76614",
+    "PAPER-WORKSHEET.html": "dc4d99a3faeaba472fd794e151e952b116923ffb4373ee0bc168bf4908b5a974",
+    "PAPER-WORKSHEET.md": "917b2f4044c3fbc985c3f38cd980cb80198d90e9597716ab51bb2da6924ad021",
+    "PRACTICE.md": "88ab8f14756438c5f91e9c70f1c6901dc9a171b564d8b84a528eca50b8efc4e6",
+    "QA-STATUS.html": "b9e41784d9e74e98fc999462c018e6edae176859f13d289a70879a2e9daac713",
     "QA-STATUS.md": "e68dc8954801619f5b787e76341cdf2f37680d0f36e3f11e95f7713d6efe48b5",
-    "QUALITY.md": "76b122d633b231d22417071f3e16117df39ef9f8bde2b7f495255eafcbc48fa9",
-    "READINESS.md": "a7af5de73b41c99212ea062a90cf495fe1e5b60f5b7d650f0b37af45cfae9151",
-    "README.md": "345ff6fa12b0d42665bb78a170094d6daad35db5f9b588cc9cd12be4c6462c46",
+    "QUALITY.md": "8244609442da99a9f38d3392a57749b995d0a29dae67f581cfe28c7dbec577c1",
+    "READINESS.md": "be640af8524a497afbc178a50e9d85bf2b698594122481658de3c02ad949ae63",
+    "README.md": "408544627d223d516b55801da3414c3160241e9113a4a1cfd08e48bf09cb914e",
     "reference/ALGORITHM.md": "452cb2c2a5602160fc96a7ad6d086e6ff601ef8df1576e156e4401087a10bec6",
     "reference/example.json": "4b5dd7116b35ce71cf0f157828153a96bddd20a7a5c862e2e67e74c967614b75",
     "reference/figures/running-fix.png": "16353d2819bc41e11759bf53cd86a2b6a71bf82d91aa8a6b7d73196baf410791",
@@ -215,20 +368,21 @@
     "reference/PAGES.md": "8b9500401ba3770fd4a5cfaae65ba373fceed065695e35b52f175710758ae88e",
     "reference/README.md": "d36d70a59a46917e29a7422eed0eed3e15179ee8f45ff9f013f3dc26646f0212",
     "reference/TEXT-MANUAL.md": "6d45c74a026499653d9ab8f4c67d969175b232db3fe5c1cd2460e45a4c491a27",
-    "SELF-CHECK.md": "44cad2d3f8c48ae710518532dfe442d10a9d89752a1355f11c62e66f70e0379f",
-    "START-INTRO.md": "f47bacfc896d5e04e043dff2141ce37d37fcb4d10819786d4aa98e8e32193152",
-    "START-LESSON.md": "d57c907a16faee8251643f2003edf18cd6c96cb0deaf2991d72164460ffc0b66",
-    "START.html": "c5a148272f56e27762d2c1003b50d54a3ebd4605b5db7f5bc6b5186c5fa0707a",
-    "START.md": "71d4da751996d8ec0949a8a5bf378d51a53f41082ae9e3bfa8617cc754c8c271",
-    "STARTER-WORKSHEET.html": "c988348a8e55cb3e59821ad79270755fe6ea8cf122698d44f8e2543845f49243",
-    "STARTER-WORKSHEET.md": "4b43e1c260850419d2d734dfd18d1ccc434b9d4e22f08e669a673d534297417c",
+    "SELF-CHECK.md": "6163e2b9252d9d7dc57f9bbdbd5e73d8d3b5a40646ec478212f164d891d758d3",
+    "START-INTRO.md": "457d26a8ef7f81905853a39c60c0cc3ef398ea9f6919b6f92927dee294294fc1",
+    "START-LESSON.md": "6b4b504037d872f576814f5956dc703b2d97f65ca7101916bdce50ff00539b9b",
+    "START.html": "a1dcb35443beb68f6616378995ac117462beb2407c3f3e4a85db01ebecfbdbb4",
+    "START.md": "5051c09255d6d0785171110ee1177a79bee47c8c8d57ba63f938de179a4a94c0",
+    "STARTER-WORKSHEET.html": "589582482a21769d98510339d7c8b8bd3f71b4572282a6230c935e3cb8bd84c7",
+    "STARTER-WORKSHEET.md": "48c8ddbdc4a1857a9ec15cc6d7416120e11629cf76c2a32a5fe0c3b51cfddda0",
     "TERMS.md": "892323061145085568ec891ec097d84fbfc8f082b6801a09d09df604c3a2b820",
-    "TRAINING-SOLUTION.md": "fa342c186ce346dc99f5cb0a15496117b8bc34b314ed8174d36140d36b3ad1f5",
-    "TRAINING.html": "44836f14be71866707a841fe553ef61c8f1a6203eaab82f9b8b34ed422283fd9",
-    "TRAINING.md": "4d3447431391f1889180e98ab849cba29df1a94c1723ced98c09f39e429a232f",
+    "TRAINING-SOLUTION.md": "203553ba86752cf0f5599a52d442dd7a1bdc960c669ffe2826fd8219fb561e74",
+    "TRAINING.html": "1becdabd61919a852bb518ed7fd581c6622888e6475c00a3a2579cd95439edc4",
+    "TRAINING.md": "c2aa9d289975401323ce165580631de542b6a0f54a3f332d1c94f7db575f5f9b",
     "TROUBLESHOOTING.md": "286457e5fd939521376996f84aa59034dfcded688c5af5ce48e7250f341fbd1b",
-    "WORKSHEET.html": "09501acca866fab78b677927819678a5e50a4d849c59000a9864d897a074b805",
-    "WORKSHEET.md": "ed2469bb9cc0e48abdcb6b6cec2cc3c5cbafdbd658e3ee1e7ad73c71733eea58"
+    "WALKTHROUGH.md": "c1fd567c7f321ffddfd84258a97f29673f1f9199e393ab26ee8bad78882064bd",
+    "WORKSHEET.html": "24021e22be5e5e4ff8ddc54a7b24222497a3bd53fbc8713e53ac84efe06ddb7a",
+    "WORKSHEET.md": "1cba5e55ac459d3f47de5060fb895a7d7d3ffbe1145389770375dd159f4fc805"
   },
-  "limits": "Portable checks in qa/verify_site.py verify HTML structure, links, image dimensions, answer separation and source-table PDF hashes directly from this site copy. Full ephem/audit/CDP scripts run in the workspace evidence/ directory. Technical checks do not prove human comprehension, physical print or live game behaviour."
+  "limits": "Portable checks in qa/verify_site.py verify HTML structure, links, image dimensions, answer separation and source-table PDF hashes directly from this site copy. Full editorial/CDP/print scripts run in evidence/editorial-simplification-20261024/. Technical checks do not prove human comprehension, physical print or live game behaviour."
 }

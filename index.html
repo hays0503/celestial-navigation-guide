@@ -59,7 +59,7 @@ h3{font-size:1.3rem}
 .hero-note{background:var(--wash);border-left:4px solid var(--blue);padding:1rem 1.1rem;font-size:.9rem}
 .hero-note strong{display:block;color:var(--ink);margin-bottom:.35rem}
 .section{padding-top:2.7rem}
-.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
 .card{display:flex;flex-direction:column;min-height:13rem;background:var(--surface);border:1px solid var(--line);border-radius:.5rem;padding:1.15rem;text-decoration:none;color:var(--text)}
 .card:hover{border-color:var(--blue);color:var(--text);transform:translateY(-2px);box-shadow:var(--shadow)}
 .card .num{font:700 .78rem var(--font);letter-spacing:.1em;color:var(--muted);margin-bottom:1.5rem}
@@ -107,100 +107,52 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
   .card,.panel,.hero-note{break-inside:avoid}
 }
 </style>
-<style id="course-nav-style">.course-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.4rem;padding:.65rem 1rem;font-size:.9rem}.course-nav a{color:inherit}@media print{.course-nav{display:none}}</style></head>
+<noscript id="course-nojs"><style>@media screen and (max-width:720px){.sidebar>ul,.sidebar>h2,.sidebar>p.nav-group{display:block}.sidebar .mobile-menu{display:none}}</style></noscript><style id="course-nav-style">.course-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.4rem;padding:.65rem 1rem;font-size:.9rem}.course-nav a{color:inherit}@media print{.course-nav{display:none}}</style></head>
 <body>
 <header class="topbar">
   <div class="wrap">
     <div class="brand">Секстант и Солнце<small>УЧЕБНЫЙ САЙТ · RADIONAVIGATION / UBOAT</small></div>
     <nav class="topnav" aria-label="Основная навигация">
-      <a href="START.html">Первый отсчёт</a>
+      <a href="GUIDE.html#walkthrough">Метод на бумаге</a>
       <a href="GUIDE.html">Уроки</a>
       <a href="TRAINING.html">Практика</a>
-      <a href="QA-STATUS.html">Справочник и QA</a>
-      <a href="FIELD.html">Карточка</a>
-      <a href="ANSWERS.html">Ключи</a>
+      <a href="CONTROLS.html">Управление</a>
+      <a href="QA-STATUS.html">Статус</a>
     </nav>
   </div>
-</header><!-- course-nav --><nav aria-label="Маршруты курса" class="course-nav"><a href="START.html">Учиться</a><a href="TRAINING.html">Практика</a><a href="CONTROLS.html">Справка</a><a href="QA-STATUS.html">QA</a></nav><!-- /course-nav -->
+</header>
 
 <main class="wrap">
   <section class="hero">
     <div>
-      <p class="eyebrow">Практическое пособие для начинающих</p>
+      <p class="eyebrow">Пособие по солнечной навигации</p>
       <h1>Секстант и Солнце</h1>
-      <p class="lede">От первого взгляда на морской горизонт до линии положения и места по двум наблюдениям. Сначала смысл и действие, затем числа.</p>
-      <div class="actions">
-        <a class="button primary" href="START.html">Получить первый отсчёт</a>
-        <a class="button" href="GUIDE.html">Открыть уроки</a>
-      </div>
-      <p class="status">Рабочая редакция · 23 октября 2026 года · не для реального судовождения</p>
+      <p class="lede">Как измеренный угол превращается в линию на карте, а два наблюдения — в оценку места. Объяснения геометрии, ручной расчёт по таблицам и полный бумажный разбор. UBOAT — прикладной контекст для работы с прибором.</p>
+      <p class="status">Рабочая редакция · 24 октября 2026 года · проверка понятности человеком и игровая приёмка ещё впереди</p>
     </div>
     <aside class="hero-note">
-      <strong>Что внутри</strong>
-      Семь уроков, практикум на бумаге, полевая карточка, лист записей и отдельные ключи. Инструкции и оригинальные таблицы можно держать открытыми.
-      <br><br><a href="GUIDE.html#facts">Коротко о происхождении метода и прибора →</a>
+      <strong>Изучать метод можно без игры</strong>
+      В разобранном примере все данные заданы. Вы пройдёте от исходных высот через поправки и таблицы до двух линий, переноса и координат. Затем решите новую задачу; пособие и оригинальные таблицы можно держать открытыми.
     </aside>
   </section>
 
   <section class="section" aria-labelledby="choose-work">
-    <h2 id="choose-work">Какой результат хотите получить?</h2>
+    <h2 id="choose-work">С чего начать</h2>
     <div class="grid">
-      <a class="card" href="START.html"><div class="num">А · ПРИБОР</div><strong>Снять первый угол</strong><span>Собственный Hs без расчётов. Подготовительные темы проходить заранее не нужно.</span></a>
-      <a class="card" href="BASICS.html#check-in"><div class="num">Б · БУМАГА</div><strong>Разобраться с числами</strong><span>Шесть вопросов, короткие объяснения углов и таблиц, затем практикум. Без запуска игры.</span></a>
-      <a class="card" href="GUIDE.html#readiness"><div class="num">В · СВОИ ДАННЫЕ</div><strong>Подготовить собственный расчёт</strong><span>Проверить источники времени, поправок и пути. При неизвестном входе полный расчёт пока недоступен.</span></a>
+      <a class="card soft" href="GUIDE.html#walkthrough"><div class="num">МЕТОД · БУМАГА</div><strong>От высоты к месту</strong><span>Полный разбор одной пары: зачем нужна каждая операция, где взять число и как проверить результат. Без запуска игры.</span></a>
+      <a class="card" href="START.html"><div class="num">ПРИБОР · UBOAT</div><strong>Первый отсчёт</strong><span>Найти горизонт, совместить край Солнца и записать свой Hs. Для этого расчёт места ещё не нужен.</span></a>
+      <a class="card" href="GUIDE.html#readiness"><div class="num">СОБСТВЕННЫЕ ДАННЫЕ</div><strong>Подготовить наблюдение</strong><span>Проверить источники времени, поправок, счисления и пути. Полный расчёт возможен только при известных входах.</span></a>
     </div>
-    <p>Подготовка к расчётам и короткие проходы П1–П6 входят в рабочую редакцию; проверка понятности человеком и игровая приёмка урока 1 ещё не проводились.</p>
   </section>
 
   <section class="section" aria-labelledby="materials">
-    <h2 id="materials">Материалы</h2>
-    <div class="grid">
-      <a class="card" href="START.html">
-        <div class="num">01 · ПЕРВЫЙ УСПЕХ</div>
-        <strong>Первый отсчёт</strong>
-        <span>Горизонт, Солнце, окуляр, касание и собственный Hs — без расчётов и лишних клавиш.</span>
-      </a>
-      <a class="card" href="GUIDE.html">
-        <div class="num">02 · УРОКИ</div>
-        <strong>Семь уроков</strong>
-        <span>Время, поправки, альманах, расчёт, линия и место по двум наблюдениям.</span>
-      </a>
-      <a class="card" href="TRAINING.html">
-        <div class="num">03 · ПРАКТИКА</div>
-        <strong>Практикум</strong>
-        <span>Три коротких блока, новая задача без подсказок, поиск ошибок и опыты с неточностью.</span>
-      </a>
-      <a class="card" href="FIELD.html">
-        <div class="num">04 · НА ПАМЯТЬ</div>
-        <strong>Полевая карточка</strong>
-        <span>Четыре решения на одном листе: наблюдение, место, разбор ошибки, таблицы.</span>
-      </a>
-      <a class="card soft" href="STARTER-WORKSHEET.html">
-        <div class="num">05 · ПЕЧАТЬ</div>
-        <strong>Лист первого отсчёта</strong>
-        <span>Одна страница: три попытки касания и проверка. Полный лист — позже.</span>
-      </a>
-      <a class="card soft" href="CONTROLS.html">
-        <div class="num">06 · КАРТОЧКА</div>
-        <strong>Управление прибором</strong>
-        <span>Клавиши, фильтры и точный шаг. Что делает `R`, а что — `C`.</span>
-      </a>
-      <a class="card soft" href="QA-STATUS.html">
-        <div class="num">07 · ПРОВЕРКА</div>
-        <strong>Статус и границы</strong>
-        <span>Что подтверждено, что ещё нет и где остановиться. Не урок.</span>
-      </a>
-      <a class="card wide soft" href="WORKSHEET.html">
-        <div class="num">08 · ПЕЧАТЬ</div>
-        <strong>Лист наблюдений и прокладки</strong>
-        <span>Четыре страницы A4 для собственных данных: поля наблюдения, поправок, пути и места.</span>
-      </a>
-      <a class="card wide soft" href="ANSWERS.html">
-        <div class="num">09 · ПОСЛЕ СВОЕЙ ПОПЫТКИ</div>
-        <strong>Решения и ключи</strong>
-        <span>Отдельная страница с решением примера, ключами упражнений и блоком практикума.</span>
-      </a>
-    </div>
+    <h2 id="materials">Практика и листы</h2>
+    <ul>
+      <li><a href="TRAINING.html">Практикум</a> — короткие задания и новая полная задача; <a href="ANSWERS.html">ключи</a> открываются после попытки.</li>
+      <li><a href="PAPER-WORKSHEET.html">Лист бумажного расчёта</a> — оба наблюдения, таблицы и перенос на одном комплекте; <a href="WORKSHEET.html">лист собственного наблюдения</a> — с источниками игровых данных.</li>
+      <li><a href="STARTER-WORKSHEET.html">Лист первого отсчёта</a> — запись касаний без расчёта места.</li>
+      <li><a href="BASICS.html">Углы, время и таблицы</a> — помощь по отдельным навыкам; <a href="FIELD.html">полевая карточка</a> — краткая справка по действиям.</li>
+    </ul>
   </section>
 
   <section class="section split" aria-labelledby="route">
@@ -230,7 +182,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
     </aside>
   </section>
 
-  <p class="warning"><strong>Только для игры и учёбы.</strong> Не смотрите на настоящее Солнце через незащищённую оптику. Сайт не заменяет проверку собственных игровых источников и не содержит готовых координат для наведения прибора. Ключи предназначены для сверки после собственной попытки.</p>
+  <p class="warning"><strong>Только для учёбы, не для реального судовождения.</strong> Не смотрите на настоящее Солнце через незащищённую оптику. Результаты разобранного примера относятся только к его условиям; свои измерения ими не заменяют.</p>
 </main>
 
 <footer>

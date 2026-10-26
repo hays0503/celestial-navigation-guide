@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Проверки редакции — Секстант и Солнце</title><style>:root{--paper:#f7f5ef;--surface:#fffefa;--ink:#16232b;--text:#243d4a;--muted:#586d78;--line:#d8ded9;--link:#1e5f7a;--code:#eaf0ef;color-scheme:light dark}@media (prefers-color-scheme:dark){:root{--paper:#0e1720;--surface:#16232e;--ink:#e8f0f4;--text:#c9d7de;--muted:#96abb7;--line:#2c3f4b;--link:#8ccbee;--code:#16232e}}@media print{:root{--paper:#fff;--surface:#fff;--ink:#111;--text:#111;--muted:#444;--line:#ccc;--link:#183f5c;--code:#f4f4f4}}body{margin:0;background:var(--paper);color:var(--text);font:1rem/1.7 Georgia,serif}.wrap{max-width:860px;margin:0 auto;padding:2rem 1.5rem 4rem}h1{font-size:2.2rem;line-height:1.2;color:var(--ink)}h2{margin-top:2rem;font-size:1.5rem;color:var(--ink)}code{background:var(--code);padding:.1rem .3rem;border-radius:.2rem;font-size:.9em}pre{background:var(--code);padding:.8rem;overflow:auto}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border-bottom:1px solid var(--line);padding:.5rem .6rem;text-align:left;vertical-align:top}th{background:var(--surface)}a{color:var(--link)}</style></head><body><div class="wrap"><p><a href="../index.html">Главная</a> · <a href="../QA-STATUS.html">Статус</a> · <a href="checks.json">checks.json</a> · <a href="verify_site.py">verify_site.py</a> · <a href="EDITORIAL-20261023B.md">Выпуск: рабочая редакция 1</a> · <a href="EDITORIAL-20261023.md">История: редактура 9fe911a</a></p><h1>Проверки рабочей редакции</h1>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Проверки редакции — Секстант и Солнце</title><style>:root{--paper:#f7f5ef;--surface:#fffefa;--ink:#16232b;--text:#243d4a;--muted:#586d78;--line:#d8ded9;--link:#1e5f7a;--code:#eaf0ef;color-scheme:light dark}@media (prefers-color-scheme:dark){:root{--paper:#0e1720;--surface:#16232e;--ink:#e8f0f4;--text:#c9d7de;--muted:#96abb7;--line:#2c3f4b;--link:#8ccbee;--code:#16232e}}@media print{:root{--paper:#fff;--surface:#fff;--ink:#111;--text:#111;--muted:#444;--line:#ccc;--link:#183f5c;--code:#f4f4f4}}body{margin:0;background:var(--paper);color:var(--text);font:1rem/1.7 Georgia,serif}.wrap{max-width:860px;margin:0 auto;padding:2rem 1.5rem 4rem}h1{font-size:2.2rem;line-height:1.2;color:var(--ink)}h2{margin-top:2rem;font-size:1.5rem;color:var(--ink)}code{background:var(--code);padding:.1rem .3rem;border-radius:.2rem;font-size:.9em}pre{background:var(--code);padding:.8rem;overflow:auto}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border-bottom:1px solid var(--line);padding:.5rem .6rem;text-align:left;vertical-align:top}th{background:var(--surface)}a{color:var(--link)}</style></head><body><div class="wrap"><p><a href="../index.html">Главная</a> · <a href="../QA-STATUS.html">Статус</a> · <a href="checks.json">checks.json</a> · <a href="verify_site.py">verify_site.py</a> · <a href="EDITORIAL-20261024.md">Редактура 2026-10-24</a> · <a href="EDITORIAL-20261023B.md">История: рабочая редакция 1</a></p><h1>Проверки рабочей редакции</h1>
 <ul>
-<li>Время записи (UTC): <code>2026-10-23T19:08:20.546245+00:00</code></li>
-<li>Сводный SHA-256 проверенного дерева <code>lessons-site/</code>: <code>b5be70a58a938e21…</code> (103 файлов в <code>checks.json</code>)</li>
-<li>Предыдущий базовый коммит в репозитории публикации до синхронизации: <code>20495e954049</code></li>
+<li>Время записи (UTC): <code>2026-10-26T07:15:59.689424+00:00</code></li>
+<li>Сводный SHA-256 проверенного дерева <code>lessons-site/</code>: <code>1c0debfb299175ae…</code> (106 файлов в <code>checks.json</code>)</li>
+<li>Базовый коммит в репозитории публикации до синхронизации: <code>b16aea3439d1</code></li>
 </ul>
-<p>Результаты ниже привязаны к фактическим SHA-256 файлов текущей редакции в <code>qa/checks.json</code>, а не к старому коммиту.</p>
+<p>Результаты ниже привязаны к фактическим SHA-256 файлов текущей локальной редакции в <code>qa/checks.json</code>.</p>
 <h2>Сводка проверок (PASS / FAIL / NOT RUN)</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -17,34 +17,24 @@
 </thead>
 <tbody>
 <tr>
-<td>Структура, ссылки и сохранность GUIDE</td>
+<td>Содержательные инварианты, арифметика, ссылки и якоря (<code>verify_editorial.py</code>)</td>
 <td><strong>PASS</strong></td>
-<td>86 PASS / 0 FAIL</td>
+<td>73 PASS / 0 FAIL</td>
 </tr>
 <tr>
-<td>Численные и учебные регрессии</td>
+<td>Цифровой экспорт A4 (<code>inspect_prints.py</code>)</td>
 <td><strong>PASS</strong></td>
-<td>38 PASS / 0 FAIL</td>
+<td>424 PASS / 0 FAIL (11 PDF)</td>
 </tr>
 <tr>
-<td>Поставка Б (П1–П6, схемы F II/LOP, мутации ключей)</td>
+<td>Браузер, темы, 200% шрифт, клавиатура и режим без JS (<code>preview_editorial.mjs</code>)</td>
 <td><strong>PASS</strong></td>
-<td>19 PASS / 0 FAIL</td>
+<td>26 экранов (из них 12 тёмных), 3 негативных отказа, переполнение 0 px</td>
 </tr>
 <tr>
-<td>Цифровой экспорт A4</td>
+<td>Сверка со страницами оригинальных таблиц (<code>inspect_tables.py</code>)</td>
 <td><strong>PASS</strong></td>
-<td>5 PASS / 0 FAIL</td>
-</tr>
-<tr>
-<td>Браузер (CDP + негативные пробы)</td>
-<td><strong>PASS</strong></td>
-<td>18 экранов (из них 5 тёмных), 3 негативных отказа, макс. переполнение 0 px</td>
-</tr>
-<tr>
-<td>Тёмная тема по системной настройке</td>
-<td><strong>PASS</strong></td>
-<td>минимальный контраст в тёмной теме 6.7:1; печать остаётся светлой</td>
+<td>6 страниц PDF отрендерены и сверены с клетками разборов</td>
 </tr>
 <tr>
 <td>Переносимая проверка статической копии (<code>qa/verify_site.py</code>)</td>
@@ -52,9 +42,9 @@
 <td>6 PASS / 0 FAIL</td>
 </tr>
 <tr>
-<td>Бумажный пилот с новичком</td>
+<td>Бумажный пилот с начинающим участником</td>
 <td><strong>NOT RUN</strong></td>
-<td>Протокол готов; нужен участник без знакомства с курсом</td>
+<td>Двухпроходный протокол готов (<code>PAPER-PILOT-PROTOCOL.md</code>); нужен участник</td>
 </tr>
 <tr>
 <td>Игровая приёмка урока 1 (LIVE)</td>
@@ -62,41 +52,39 @@
 <td>Требуются отдельное разрешение, оператор, участник и backup/rollback</td>
 </tr>
 <tr>
-<td>Физическая печать и физический телефон</td>
+<td>Физическая печать и другие физические устройства</td>
 <td><strong>NOT RUN</strong></td>
-<td>Проверены цифровой A4 и эмуляция 390×844</td>
+<td>Проверены цифровой A4 и локальная эмуляция</td>
 </tr>
 </tbody>
 </table></div>
 <h2>Цифровой A4 (страниц)</h2>
 <ul>
-<li><code>guide_pages</code>: <strong>131</strong></li>
-<li><code>basics_pages</code>: <strong>9</strong></li>
-<li><code>training_pages</code>: <strong>8</strong></li>
-<li><code>answers_pages</code>: <strong>16</strong></li>
-<li><code>start_pages</code>: <strong>5</strong></li>
-<li><code>field_pages</code>: <strong>5</strong></li>
-<li><code>worksheet_pages</code>: <strong>4</strong></li>
-<li><code>starter_worksheet_pages</code>: <strong>1</strong></li>
-<li><code>embedded_image_uses</code>: <strong>41</strong></li>
+<li><code>paper-sheet</code>: <strong>4</strong></li>
+<li><code>worksheet</code>: <strong>4</strong></li>
+<li><code>starter-sheet</code>: <strong>1</strong></li>
+<li><code>field</code>: <strong>4</strong></li>
+<li><code>start</code>: <strong>4</strong></li>
+<li><code>training</code>: <strong>9</strong></li>
+<li><code>basics</code>: <strong>9</strong></li>
+<li><code>answers</code>: <strong>17</strong></li>
+<li><code>factcheck</code>: <strong>5</strong></li>
+<li><code>walkthrough</code>: <strong>13</strong></li>
+<li><code>guide</code>: <strong>137</strong></li>
 </ul>
 <h2>Как запустить переносимую проверку из копии сайта</h2>
-<p>Этот скрипт входит прямо в опубликованную копию <code>qa/verify_site.py</code> и требует только стандартный Python 3:</p>
 <pre><code class="language-powershell">python -X utf8 -B qa/verify_site.py
 </code></pre>
-<p>Он проверяет наличие всех страниц, <code>lang=&quot;ru&quot;</code>, <code>viewport</code>, уникальность <code>id</code>, все локальные ссылки и межстраничные <code>#якоря</code>, размеры PNG, отсутствие утечки ответов в учебные страницы и SHA-256 трёх исходных PDF в <code>source-tables/</code>.</p>
-<h2>Как повторить полную локальную сборку и браузерные прогоны в рабочем проекте</h2>
-<p>Полные регрессии (с пересчётом эфемерид, экспортом PDF через Chrome и мутационными проверками) выполняются из корня рабочего проекта:</p>
-<pre><code class="language-powershell">python -X utf8 -B evidence/learning-stages-20261023/draw_stages.py
-python -X utf8 -B evidence/beginners-guide-20261022/build_guide.py --report-dir evidence/learning-stages-20261023
-node evidence/learning-stages-20261023/preview_checks.mjs
-powershell -ExecutionPolicy Bypass -File evidence/learning-stages-20261023/print_previews.ps1
-python -X utf8 -B evidence/beginners-guide-20261022/verify_guide.py --report-dir evidence/learning-stages-20261023
-python -X utf8 -B -c &quot;import runpy; from pathlib import Path; runpy.run_path('evidence/beginners-guide-learning-20261022/verify_learning.py')['main'](Path('evidence/learning-stages-20261023'))&quot;
-python -X utf8 -B evidence/learning-stages-20261023/verify_stages.py
-python -X utf8 -B evidence/learning-stages-20261023/publish_qa.py
+<h2>Как повторить сборку и проверки этой редакции в рабочем проекте</h2>
+<pre><code class="language-powershell">python -X utf8 -B evidence/beginners-guide-20261022/build_guide.py --report-dir evidence/editorial-simplification-20261024
+python -X utf8 -B evidence/editorial-simplification-20261024/verify_editorial.py
+node evidence/editorial-simplification-20261024/preview_editorial.mjs
+python -X utf8 -B evidence/editorial-simplification-20261024/print_full_guide.py
+python -X utf8 -B evidence/editorial-simplification-20261024/inspect_prints.py
+python -X utf8 -B evidence/editorial-simplification-20261024/inspect_tables.py
+python -X utf8 -B evidence/editorial-simplification-20261024/publish_qa.py
 </code></pre>
 <h2>Граница</h2>
-<p>Portable checks in qa/verify_site.py verify HTML structure, links, image dimensions, answer separation and source-table PDF hashes directly from this site copy. Full ephem/audit/CDP scripts run in the workspace evidence/ directory. Technical checks do not prove human comprehension, physical print or live game behaviour.</p>
+<p>Portable checks in qa/verify_site.py verify HTML structure, links, image dimensions, answer separation and source-table PDF hashes directly from this site copy. Full editorial/CDP/print scripts run in evidence/editorial-simplification-20261024/. Technical checks do not prove human comprehension, physical print or live game behaviour.</p>
 <p><strong>Не для реального судовождения.</strong></p>
 </div></body></html>

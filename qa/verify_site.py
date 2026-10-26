@@ -29,7 +29,7 @@ PINNED_TABLES = {
 WITHHELD_ANSWERS = [
     '19°04,3′', '7°02,3′', '13°56,0′', '20°55,6′',
     '39°28,57′', '32°50,0′', '39°42,09′', '39°42,53′',
-    '4 NM E и 4 NM S от O', '9°06,8′ E', '150,7°', '210,6°',
+    '4 NM E и 4 NM S от O', '9°06,8′ E', '150,7°', '210,6°', '40°34,50′',
 ]
 
 
@@ -116,7 +116,7 @@ def main() -> dict[str, object]:
     check('all HTML images exist, have alt text and matching PNG dimensions', not bad_images)
 
     learner_pages = ['BASICS.html', 'TRAINING.html', 'START.html', 'WORKSHEET.html',
-                     'STARTER-WORKSHEET.html', 'FIELD.html', 'GUIDE.html']
+                     'PAPER-WORKSHEET.html', 'STARTER-WORKSHEET.html', 'FIELD.html', 'GUIDE.html']
     learner_text = '\n'.join((SITE / name).read_text(encoding='utf-8') for name in learner_pages)
     answers_text = (SITE / 'ANSWERS.html').read_text(encoding='utf-8')
     check('independent task answers appear only on ANSWERS.html',
