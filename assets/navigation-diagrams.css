@@ -65,6 +65,10 @@
 .nav-axis-num{font:11px system-ui,sans-serif;fill:var(--muted);stroke:none;text-anchor:middle}
 .nav-axis-num-left{font:11px system-ui,sans-serif;fill:var(--muted);stroke:none;text-anchor:end}
 .nav-axis-unit{font:11px system-ui,sans-serif;fill:var(--muted);stroke:none;text-anchor:end}
+.nav-fii-highlight{fill:var(--nav-offset);fill-opacity:.12;stroke:none}
+.nav-fii-found{fill:var(--nav-copy);fill-opacity:.14;stroke:none}
+.nav-fii-sep{stroke:var(--muted);stroke-dasharray:3 4;stroke-width:1!important}
+.nav-fii-note{font:13px system-ui,sans-serif;fill:var(--text);stroke:none}
 .nav-buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 .6rem}
 .nav-buttons button{font:600 .9rem var(--font);min-height:44px;padding:.5rem .85rem;border:1px solid var(--line);border-radius:.4rem;background:var(--wash);color:var(--ink);cursor:pointer}
 .nav-buttons button:hover{border-color:var(--blue)}.nav-buttons button[aria-disabled="true"]{color:var(--muted);cursor:default}
