@@ -1,6 +1,13 @@
 /* Reader-controlled enhancement. No autoplay, timers, network or stored settings. */
 (() => {
   'use strict';
+  const topbar = document.querySelector('.topbar');
+  if (topbar) {
+    const alignControls = () => document.documentElement.style.setProperty(
+      '--nav-sticky-top', `${Math.ceil(topbar.getBoundingClientRect().height) + 2}px`);
+    alignControls();
+    if (typeof ResizeObserver !== 'undefined') new ResizeObserver(alignControls).observe(topbar);
+  }
   document.querySelectorAll('[data-nav-diagram]').forEach(figure => {
     const steps = [...figure.querySelectorAll('.nav-steps li')];
     const layers = [...figure.querySelectorAll('[data-reveal], [data-stages]')];
@@ -23,6 +30,8 @@
       back.setAttribute('aria-disabled', String(current === 0));
       next.setAttribute('aria-disabled', String(current === steps.length - 1));
       status.textContent = `Шаг ${current + 1} из ${steps.length}. ${steps[current].textContent}`;
+      const caption = figure.querySelector('.nav-current-step');
+      if (caption) caption.textContent = `Шаг ${current + 1}/${steps.length} · ${steps[current].dataset.stepTitle}`;
     }
     figure.addEventListener('click', event => {
       const button = event.target.closest('button[data-action]');
@@ -36,6 +45,8 @@
     show(0);
     figure.classList.add('is-ready');
     controls.hidden = false;
+    const feedback = figure.querySelector('.nav-diagram-feedback');
+    if (feedback) feedback.hidden = false;
     figure.getBoundingClientRect(); // Commit the initial styles before enabling transitions.
     figure.classList.remove('nav-initializing');
   });

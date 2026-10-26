@@ -69,6 +69,26 @@
 .nav-fii-found{fill:var(--nav-copy);fill-opacity:.14;stroke:none}
 .nav-fii-sep{stroke:var(--muted);stroke-dasharray:3 4;stroke-width:1!important}
 .nav-fii-note{font:13px system-ui,sans-serif;fill:var(--text);stroke:none}
+.nav-calculations{display:grid;gap:.5rem;margin:.8rem 0;font-size:.95rem;line-height:1.55}
+.nav-calculation{background:var(--wash);border-left:3px solid var(--nav-copy);padding:.55rem .7rem;overflow-wrap:anywhere}
+.nav-calculation p{margin:0}
+.nav-calculation p+p{margin-top:.3rem}
+.nav-diagram.is-ready .nav-calculation:not(.is-visible){display:none}
+.nav-diagram{scroll-margin-top:var(--nav-sticky-top,4rem)}
+.nav-diagram-controls{position:sticky;top:var(--nav-sticky-top,4rem);z-index:2;background:var(--surface);padding:.35rem 0}
+.nav-current-step{margin:0;font-size:.875rem;font-weight:600;color:var(--ink)}
+.nav-diagram-controls .nav-buttons{margin:.4rem 0}
+.nav-static-twoap{display:grid;gap:1rem}
+.nav-static-twoap h5{margin:.4rem 0;font-size:1rem}
+.nav-static-twoap p{font-size:.95rem}
+.nav-diagram.is-ready .nav-static-twoap{display:none}
+.nav-static-gha{display:grid;gap:.5rem}
+.nav-diagram.is-ready .nav-static-gha{display:none}
+[data-nav-diagram="gha"]:not(.is-ready)>svg{display:none}
+[data-nav-diagram="twoap"]:not(.is-ready)>svg,[data-nav-diagram="twoap"]:not(.is-ready)>.nav-calculations{display:none}
+[data-nav-diagram="gha"] svg:not(.nav-definitions){max-width:280px}
+[data-nav-diagram="fxi"] .nav-cell-text{font-size:16px}
+@media(max-width:480px){.nav-diagram{padding:.65rem}}
 .nav-buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 .6rem}
 .nav-buttons button{font:600 .9rem var(--font);min-height:44px;padding:.5rem .85rem;border:1px solid var(--line);border-radius:.4rem;background:var(--wash);color:var(--ink);cursor:pointer}
 .nav-buttons button:hover{border-color:var(--blue)}.nav-buttons button[aria-disabled="true"]{color:var(--muted);cursor:default}
@@ -111,6 +131,16 @@
  .nav-diagram .nav-path{stroke-dasharray:4 4!important}
  .nav-diagram .nav-contact-disc{transform:translateY(0)!important;transition:none!important}
  .nav-diagram [data-stages]{opacity:1!important;transition:none!important}
- .nav-diagram [data-static="hide"]{display:none!important}
+  .nav-diagram [data-static="hide"]{display:none!important}
+  .nav-diagram .nav-calculation{display:block!important;visibility:visible!important;font-size:9pt;padding:1mm 2mm}
+  .nav-diagram-feedback{display:none!important}
+  .nav-calculations{gap:1mm;margin:2mm 0}
+  [data-nav-diagram="gha"] svg:not(.nav-definitions){max-width:45mm}
+  [data-nav-diagram="gha"]>svg{display:none!important}
+  .nav-diagram .nav-static-gha{display:grid!important;grid-template-columns:1fr 1fr;max-width:125mm;margin:auto}
+  .nav-static-gha svg:not(.nav-definitions){max-width:none!important}
+  [data-nav-diagram="twoap"]>svg,[data-nav-diagram="twoap"]>.nav-calculations{display:none!important}
+  .nav-diagram .nav-static-twoap{display:grid!important;grid-template-columns:1fr 1fr;gap:3mm}
+  .nav-static-twoap h5,.nav-static-twoap p{font-size:8pt}
  .nav-diagram-note,.nav-diagram-intro,.nav-legend{font-size:8pt!important}
 }
