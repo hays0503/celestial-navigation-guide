@@ -1,9 +1,9 @@
 {
-  "recorded_at_utc": "2026-10-26T08:15:27.208102+00:00",
-  "published_base_commit": "a5a2084b1d3b6ebbfff529a28a29d13b73c9ee2c",
-  "verified_site_tree_sha256": "1c0debfb299175ae9f85ff84d7e746652cc9af4d117a4aa852f100bdcad286fd",
-  "verified_file_count": 106,
-  "tree_status": "Published reader tree in commit a5a2084b1d3b; served bytes re-verified against this manifest.",
+  "recorded_at_utc": "2026-10-26T13:53:34.138976+00:00",
+  "published_base_commit": "4b3909e4cf25224b95cf65f82deb7555703a53b9",
+  "verified_site_tree_sha256": "07c2cf76f566e211876c8c96d0ebe0b6a5663f3d18e726455080f1a6daaa9989",
+  "verified_file_count": 108,
+  "tree_status": "Published reader tree in commit 4b3909e4cf25; served bytes re-verified against this manifest.",
   "scope": {
     "protected_originals": 25,
     "production_files": 295,
@@ -15,18 +15,18 @@
   "results": {
     "editorial_invariants_and_links": {
       "state": "PASS",
-      "passed": 73,
+      "passed": 75,
       "failed": 0
     },
     "digital_print_inspection": {
       "state": "PASS",
-      "passed": 424,
+      "passed": 466,
       "failed": 0
     },
     "browser_preview_and_negative_probes": {
       "state": "PASS",
-      "screens": 26,
-      "dark_screens": 12,
+      "screens": 35,
+      "dark_screens": 15,
       "negative_probes_rejected": 3,
       "nojs_route_verified": true
     },
@@ -34,6 +34,12 @@
       "state": "PASS",
       "passed": 6,
       "script": "qa/verify_site.py"
+    },
+    "interactive_diagrams": {
+      "state": "PASS",
+      "geometry_checks": 79,
+      "browser_checks": 109,
+      "not_run": "Human comprehension, physical print and physical touch devices."
     }
   },
   "print_pages": {
@@ -41,13 +47,13 @@
     "worksheet": 4,
     "starter-sheet": 1,
     "field": 4,
-    "start": 4,
-    "training": 9,
+    "start": 5,
+    "training": 11,
     "basics": 9,
     "answers": 17,
     "factcheck": 5,
-    "walkthrough": 13,
-    "guide": 137
+    "walkthrough": 18,
+    "guide": 144
   },
   "browser": {
     "engine": "Chrome headless, isolated user-data-dir, local HTTP server + CDP",
@@ -77,6 +83,15 @@
       "TRAINING.html#prep-different-ap @1440 (dark)",
       "GUIDE.html#scene-preparation @390 (light)",
       "ANSWERS.html#key-two-ap @390 (dark)",
+      "GUIDE.html#diagram-lop @390 (light)",
+      "GUIDE.html#diagram-transfer @1440 (dark)",
+      "GUIDE.html#diagram-fviii @390 (light)",
+      "GUIDE.html#diagram-fxi @390 (light)",
+      "GUIDE.html#diagram-gha @390 (light)",
+      "TRAINING.html#diagram-twoap @390 (dark)",
+      "GUIDE.html#diagram-contact @390 (light)",
+      "START.html#diagram-contact @390 (dark)",
+      "GUIDE.html#diagram-lop @390 (light)",
       "GUIDE.html @390 (light)"
     ],
     "js_and_http_errors": 0,
@@ -121,7 +136,7 @@
   },
   "theme": {
     "behaviour": "Follows the reader system setting (prefers-color-scheme); no stored override.",
-    "dark_screens_checked": 12,
+    "dark_screens_checked": 15,
     "print_stays_light": true
   },
   "not_run": {
@@ -135,23 +150,24 @@
     "remote": "https://github.com/hays0503/celestial-navigation-guide",
     "site": "https://hays0503.github.io/celestial-navigation-guide/",
     "branch": "main",
-    "reader_commit": "a5a2084b1d3b6ebbfff529a28a29d13b73c9ee2c",
-    "previous_commit": "b16aea3439d1033febd008cd27dc1f3ad0a5b321",
-    "pushed_at_utc": "2026-10-26T07:22:00Z",
+    "reader_commit": "4b3909e4cf25224b95cf65f82deb7555703a53b9",
+    "reader_tree_sha256": "07c2cf76f566e211876c8c96d0ebe0b6a5663f3d18e726455080f1a6daaa9989",
+    "previous_commit": "a73e863",
+    "pushed_at_utc": "2026-10-26T12:35:00Z",
     "served_bytes_verified": {
-      "index.html": true,
-      "WALKTHROUGH.md": true,
-      "PAPER-WORKSHEET.html": true,
-      "TRAINING.html": true,
       "GUIDE.html": true,
-      "ANSWERS.html": true
+      "TRAINING.html": true,
+      "START.html": true,
+      "WALKTHROUGH.md": true,
+      "assets/navigation-diagrams.js": true,
+      "assets/navigation-diagrams.css": true
     },
-    "note": "QA status page itself is updated in a follow-up commit; reader files served from the publication commit above. Exact-byte checks compared SHA-256 of the served response with the local canonical file."
+    "note": "Reader files served from the publication commit above. QA status page is updated in a follow-up commit; exact-byte checks compared SHA-256 of each served response with the local canonical file."
   },
   "source_wordlike_tokens": {
     "01-SEXTANT.md": {
       "before": 1593,
-      "current": 1481
+      "current": 1484
     },
     "02-TIME.md": {
       "before": 947,
@@ -163,7 +179,7 @@
     },
     "04-ALMANAC.md": {
       "before": 1528,
-      "current": 1294
+      "current": 1297
     },
     "05-CALCULATED-HEIGHT.md": {
       "before": 2632,
@@ -171,11 +187,11 @@
     },
     "06-POSITION-LINE.md": {
       "before": 2372,
-      "current": 2241
+      "current": 2278
     },
     "07-RUNNING-FIX.md": {
       "before": 2099,
-      "current": 1977
+      "current": 2007
     },
     "ANSWERS.md": {
       "before": 665,
@@ -263,7 +279,7 @@
     },
     "START-LESSON.md": {
       "before": 562,
-      "current": 449
+      "current": 452
     },
     "STARTER-WORKSHEET.md": {
       "before": 225,
@@ -279,7 +295,7 @@
     },
     "TRAINING.md": {
       "before": 2562,
-      "current": 3244
+      "current": 3247
     },
     "TROUBLESHOOTING.md": {
       "before": 1198,
@@ -287,7 +303,7 @@
     },
     "WALKTHROUGH.md": {
       "before": null,
-      "current": 3692
+      "current": 3704
     },
     "WORKSHEET.md": {
       "before": 632,
@@ -296,15 +312,17 @@
   },
   "content_sha256": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "01-SEXTANT.md": "33d6f8bf952743e9c4b50a6eef54a20eae9550f5587002929c445d33be4066fc",
+    "01-SEXTANT.md": "2403cf2b680ffa11a6c996518759acbd2c9a8dff708156d2591182dbb3da1687",
     "02-TIME.md": "8dda6c13d2dd61a0570eee24f33f03d594b85fccbe5ec92d7e6b5631bd2d80f2",
     "03-HEIGHT-CORRECTIONS.md": "ef524a8ae8c15e56bcaa428fc3c088db1b6266c2ee31552f1de03757c8f9a6e4",
-    "04-ALMANAC.md": "1c95e45d996755d904ac8c181438f0c15c672c6d0d57b464482842cc5dffde7c",
+    "04-ALMANAC.md": "d6f5a25d5d44654cdb2b0be6905d6850951c98cce38ba00558ec06133cda0238",
     "05-CALCULATED-HEIGHT.md": "b4c9a7dcb819ed7bf0270d9d3862aaa8beda691f363700936321a274d5b4b17b",
-    "06-POSITION-LINE.md": "cf12e333afc501a0b2aa940588674fae587968220cf5b70080e87bfc07845587",
-    "07-RUNNING-FIX.md": "309f238e5733a3e1e1dd7a21e119c070351b8ed8866212182870abd91c63f909",
+    "06-POSITION-LINE.md": "8d0be80560110dfaa55708ed83c00e5575c03a788c924fd32fe646f1a2a7d604",
+    "07-RUNNING-FIX.md": "13e45d3db6216c1cdbc855780165be75a75410e846851dc757566b34444f5552",
     "ANSWERS.html": "9487767cc8aaf1e2a4474f922038e4febef7024ad4ba0507348df643d4275eba",
     "ANSWERS.md": "04632f5cac8cbba59f66d8eee23dabbcb081461568996e3d22a3b2babba6e8a2",
+    "assets/navigation-diagrams.css": "f2e62d82260b475defbc319fa19cddab35500ce350876e0945714c1f33af30ea",
+    "assets/navigation-diagrams.js": "5afe38ad32feaf44aa9c835601f9093a58f80059ea8cb02cd37b9a380668f03a",
     "BASICS-ANSWERS.md": "9f6462cfe54f97d3969e26053d05417bd37621a6649a39b967cd1c4d601735e8",
     "BASICS.html": "e8962ff1f059e6e33932bd48661ac869514a17867f48942372cdb81dbaf37d8c",
     "BASICS.md": "2487c61c947a737fe67cf681075c0dc580e53872f43196ea31bdc0749c2e234a",
@@ -366,8 +384,8 @@
     "figures/learning/README.md": "b4ead2174b87d80bc94eeda12e0985f145a64687f18bfa22beadf4ac1a64bb15",
     "FULL-EXAMPLE-SOLUTION.md": "e94f0a0b32041c6f27b2eddf01e4e72947b79681bccf632a6bb6b4b08a7d9e8f",
     "FULL-EXAMPLE.md": "efc5281292622fe69847d232fc4599917418c14acac8e58358b0b4e7d4aac21a",
-    "GUIDE.html": "565690960a44daff8ea549dac6bd67d6e0bbf93fd5f0c436763d58ab3e9a072b",
-    "GUIDE.md": "ea8a130a4624d0fff850af1ec7f58047ff78809018527b83d609e10a7b2d810b",
+    "GUIDE.html": "6089ea334e34dd69c72a4bd73efa9206fbf1a635ade1775bf7a4684a7f3a36ba",
+    "GUIDE.md": "1d2a5dc19e1efbb6e83cc55145968885e73cce37bc8617bcd87b059bfda08ed3",
     "index.html": "029905996cd2023cacfe594c9000402c0d83287d50b4a6500d166d5193ec028d",
     "INTRO.md": "b7f8f40d2288417c1a39873c84ed34fbeb513f503593ac93332e08a09820cecc",
     "LIMITS.md": "5e16ff071abb2dac019e35b0a88f9da58efb38042f41ca5dc23a12c900c76614",
@@ -388,17 +406,17 @@
     "reference/TEXT-MANUAL.md": "6d45c74a026499653d9ab8f4c67d969175b232db3fe5c1cd2460e45a4c491a27",
     "SELF-CHECK.md": "6163e2b9252d9d7dc57f9bbdbd5e73d8d3b5a40646ec478212f164d891d758d3",
     "START-INTRO.md": "457d26a8ef7f81905853a39c60c0cc3ef398ea9f6919b6f92927dee294294fc1",
-    "START-LESSON.md": "6b4b504037d872f576814f5956dc703b2d97f65ca7101916bdce50ff00539b9b",
-    "START.html": "a1dcb35443beb68f6616378995ac117462beb2407c3f3e4a85db01ebecfbdbb4",
-    "START.md": "5051c09255d6d0785171110ee1177a79bee47c8c8d57ba63f938de179a4a94c0",
+    "START-LESSON.md": "036dd701bc93bdd7a1407c313cdd63ca07ca2fb07f18ec6871c36823bf8987af",
+    "START.html": "463392cdef9874066ab8f2e905261b6ac40bed61a73096ef350c573020074403",
+    "START.md": "3dda458c968c02374576d588af572c800e202712a732316fd35a21b7e202d36c",
     "STARTER-WORKSHEET.html": "589582482a21769d98510339d7c8b8bd3f71b4572282a6230c935e3cb8bd84c7",
     "STARTER-WORKSHEET.md": "48c8ddbdc4a1857a9ec15cc6d7416120e11629cf76c2a32a5fe0c3b51cfddda0",
     "TERMS.md": "892323061145085568ec891ec097d84fbfc8f082b6801a09d09df604c3a2b820",
     "TRAINING-SOLUTION.md": "203553ba86752cf0f5599a52d442dd7a1bdc960c669ffe2826fd8219fb561e74",
-    "TRAINING.html": "1becdabd61919a852bb518ed7fd581c6622888e6475c00a3a2579cd95439edc4",
-    "TRAINING.md": "c2aa9d289975401323ce165580631de542b6a0f54a3f332d1c94f7db575f5f9b",
+    "TRAINING.html": "1cdacd0bfefa43a8cbb035c37345bf800ae06389448c00513a97b577c4a1de82",
+    "TRAINING.md": "5ea88b28f72a0422936a44afcfd3b00fbf1d85ddc8235d1436a0e1ad1d2a7b73",
     "TROUBLESHOOTING.md": "286457e5fd939521376996f84aa59034dfcded688c5af5ce48e7250f341fbd1b",
-    "WALKTHROUGH.md": "c1fd567c7f321ffddfd84258a97f29673f1f9199e393ab26ee8bad78882064bd",
+    "WALKTHROUGH.md": "90e1c0a5c01907da9744833c06126eb9344b974a78a866f07503e5d42e41f6bc",
     "WORKSHEET.html": "24021e22be5e5e4ff8ddc54a7b24222497a3bd53fbc8713e53ac84efe06ddb7a",
     "WORKSHEET.md": "1cba5e55ac459d3f47de5060fb895a7d7d3ffbe1145389770375dd159f4fc805"
   },

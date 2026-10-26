@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Проверки редакции — Секстант и Солнце</title><style>:root{--paper:#f7f5ef;--surface:#fffefa;--ink:#16232b;--text:#243d4a;--muted:#586d78;--line:#d8ded9;--link:#1e5f7a;--code:#eaf0ef;color-scheme:light dark}@media (prefers-color-scheme:dark){:root{--paper:#0e1720;--surface:#16232e;--ink:#e8f0f4;--text:#c9d7de;--muted:#96abb7;--line:#2c3f4b;--link:#8ccbee;--code:#16232e}}@media print{:root{--paper:#fff;--surface:#fff;--ink:#111;--text:#111;--muted:#444;--line:#ccc;--link:#183f5c;--code:#f4f4f4}}body{margin:0;background:var(--paper);color:var(--text);font:1rem/1.7 Georgia,serif}.wrap{max-width:860px;margin:0 auto;padding:2rem 1.5rem 4rem}h1{font-size:2.2rem;line-height:1.2;color:var(--ink)}h2{margin-top:2rem;font-size:1.5rem;color:var(--ink)}code{background:var(--code);padding:.1rem .3rem;border-radius:.2rem;font-size:.9em}pre{background:var(--code);padding:.8rem;overflow:auto}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border-bottom:1px solid var(--line);padding:.5rem .6rem;text-align:left;vertical-align:top}th{background:var(--surface)}a{color:var(--link)}</style></head><body><div class="wrap"><p><a href="../index.html">Главная</a> · <a href="../QA-STATUS.html">Статус</a> · <a href="checks.json">checks.json</a> · <a href="verify_site.py">verify_site.py</a> · <a href="EDITORIAL-20261024.md">Редактура 2026-10-24</a> · <a href="EDITORIAL-20261023B.md">История: рабочая редакция 1</a></p><h1>Проверки рабочей редакции</h1>
 <ul>
-<li>Время записи (UTC): <code>2026-10-26T08:15:27.208102+00:00</code></li>
-<li>Сводный SHA-256 проверенного дерева <code>lessons-site/</code>: <code>1c0debfb299175ae…</code> (106 файлов в <code>checks.json</code>)</li>
-<li>Опубликованный коммит с читательскими файлами: <code>a5a2084b1d3b</code>; сайт: https://hays0503.github.io/celestial-navigation-guide/</li>
+<li>Время записи (UTC): <code>2026-10-26T13:53:34.138976+00:00</code></li>
+<li>Сводный SHA-256 проверенного дерева <code>lessons-site/</code>: <code>07c2cf76f566e211…</code> (108 файлов в <code>checks.json</code>)</li>
+<li>Опубликованный коммит с читательскими файлами: <code>4b3909e4cf25</code>; сайт: https://hays0503.github.io/celestial-navigation-guide/</li>
 </ul>
 <p>Страница описывает опубликованное дерево. Его байты сверены с <code>qa/checks.json</code>; страница проверок обновлена после публикации отдельным коммитом.</p>
 <h2>Сводка проверок (PASS / FAIL / NOT RUN)</h2>
@@ -19,17 +19,22 @@
 <tr>
 <td>Содержательные инварианты, арифметика, ссылки и якоря (<code>verify_editorial.py</code>)</td>
 <td><strong>PASS</strong></td>
-<td>73 PASS / 0 FAIL</td>
+<td>75 PASS / 0 FAIL</td>
 </tr>
 <tr>
 <td>Цифровой экспорт A4 (<code>inspect_prints.py</code>)</td>
 <td><strong>PASS</strong></td>
-<td>424 PASS / 0 FAIL (11 PDF)</td>
+<td>466 PASS / 0 FAIL (11 PDF)</td>
 </tr>
 <tr>
 <td>Браузер, темы, 200% шрифт, клавиатура и режим без JS (<code>preview_editorial.mjs</code>)</td>
 <td><strong>PASS</strong></td>
-<td>26 экранов (из них 12 тёмных), 3 негативных отказа, переполнение 0 px</td>
+<td>35 экранов (из них 15 тёмных), 3 негативных отказа, переполнение 0 px</td>
+</tr>
+<tr>
+<td>Пошаговые SVG-схемы</td>
+<td><strong>PASS</strong></td>
+<td>79 проверок геометрии; 109 проверок шагов, клавиатуры, reduced motion, печати и no-JS</td>
 </tr>
 <tr>
 <td>Сверка со страницами оригинальных таблиц (<code>inspect_tables.py</code>)</td>
@@ -64,13 +69,13 @@
 <li><code>worksheet</code>: <strong>4</strong></li>
 <li><code>starter-sheet</code>: <strong>1</strong></li>
 <li><code>field</code>: <strong>4</strong></li>
-<li><code>start</code>: <strong>4</strong></li>
-<li><code>training</code>: <strong>9</strong></li>
+<li><code>start</code>: <strong>5</strong></li>
+<li><code>training</code>: <strong>11</strong></li>
 <li><code>basics</code>: <strong>9</strong></li>
 <li><code>answers</code>: <strong>17</strong></li>
 <li><code>factcheck</code>: <strong>5</strong></li>
-<li><code>walkthrough</code>: <strong>13</strong></li>
-<li><code>guide</code>: <strong>137</strong></li>
+<li><code>walkthrough</code>: <strong>18</strong></li>
+<li><code>guide</code>: <strong>144</strong></li>
 </ul>
 <h2>Как запустить переносимую проверку из копии сайта</h2>
 <pre><code class="language-powershell">python -X utf8 -B qa/verify_site.py
