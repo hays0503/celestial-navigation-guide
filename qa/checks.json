@@ -1,9 +1,9 @@
 {
-  "recorded_at_utc": "2026-10-26T07:15:59.689424+00:00",
-  "published_base_commit": "b16aea3439d1033febd008cd27dc1f3ad0a5b321",
+  "recorded_at_utc": "2026-10-26T08:15:27.208102+00:00",
+  "published_base_commit": "a5a2084b1d3b6ebbfff529a28a29d13b73c9ee2c",
   "verified_site_tree_sha256": "1c0debfb299175ae9f85ff84d7e746652cc9af4d117a4aa852f100bdcad286fd",
   "verified_file_count": 106,
-  "tree_status": "Local canonical lessons-site/ tree verified against SHA-256 manifest; not yet synced/pushed to publication repo.",
+  "tree_status": "Published reader tree in commit a5a2084b1d3b; served bytes re-verified against this manifest.",
   "scope": {
     "protected_originals": 25,
     "production_files": 295,
@@ -129,6 +129,24 @@
     "live_game_lesson_1": "NOT RUN (requires explicit permission, participant, backup/rollback)",
     "physical_print": "NOT RUN",
     "other_physical_devices": "NOT RUN"
+  },
+  "publication": {
+    "status": "published",
+    "remote": "https://github.com/hays0503/celestial-navigation-guide",
+    "site": "https://hays0503.github.io/celestial-navigation-guide/",
+    "branch": "main",
+    "reader_commit": "a5a2084b1d3b6ebbfff529a28a29d13b73c9ee2c",
+    "previous_commit": "b16aea3439d1033febd008cd27dc1f3ad0a5b321",
+    "pushed_at_utc": "2026-10-26T07:22:00Z",
+    "served_bytes_verified": {
+      "index.html": true,
+      "WALKTHROUGH.md": true,
+      "PAPER-WORKSHEET.html": true,
+      "TRAINING.html": true,
+      "GUIDE.html": true,
+      "ANSWERS.html": true
+    },
+    "note": "QA status page itself is updated in a follow-up commit; reader files served from the publication commit above. Exact-byte checks compared SHA-256 of the served response with the local canonical file."
   },
   "source_wordlike_tokens": {
     "01-SEXTANT.md": {
