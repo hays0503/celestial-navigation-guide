@@ -1,5 +1,5 @@
 {
-  "recorded_at_utc": "2026-10-27T03:51:31.709898+00:00",
+  "recorded_at_utc": "2026-10-27T03:59:53.185531+00:00",
   "published_base_commit": "431d27006aacee39603c1855b3a9e1239577dd1f",
   "verified_site_tree_sha256": "33dc94d5e21432f4683f7cfaf4fd371a114ca9f9b1910faf4be5f2f5992915e6",
   "verified_file_count": 161,
@@ -95,7 +95,7 @@
     "reader_commit": "431d27006aacee39603c1855b3a9e1239577dd1f",
     "reader_tree_sha256": "33dc94d5e21432f4683f7cfaf4fd371a114ca9f9b1910faf4be5f2f5992915e6",
     "previous_commit": "e528b83",
-    "verified_at_utc": "2026-10-27T00:00:00+00:00",
+    "verified_at_utc": "2026-10-27T03:55:34.528848+00:00",
     "served_bytes_verified": {
       "files_total": 173,
       "non_pdf_sha256": 170,
