@@ -1,9 +1,9 @@
 {
-  "recorded_at_utc": "2026-10-27T03:43:44.000399+00:00",
-  "published_base_commit": "e528b83171cdc4dfaf5df690df1b7439a7ddc340",
+  "recorded_at_utc": "2026-10-27T03:51:31.709898+00:00",
+  "published_base_commit": "431d27006aacee39603c1855b3a9e1239577dd1f",
   "verified_site_tree_sha256": "33dc94d5e21432f4683f7cfaf4fd371a114ca9f9b1910faf4be5f2f5992915e6",
   "verified_file_count": 161,
-  "tree_status": "Local canonical lessons-site/ tree verified against SHA-256 manifest; not yet synced/pushed to publication repo.",
+  "tree_status": "Published reader tree in commit 431d27006aac; served bytes re-verified against this manifest.",
   "scope": {
     "protected_originals": 25,
     "production_files": 295,
@@ -87,7 +87,23 @@
     "other_physical_devices": "NOT RUN",
     "lan_copy": "NOT RUN"
   },
-  "publication": null,
+  "publication": {
+    "status": "published",
+    "remote": "https://github.com/hays0503/celestial-navigation-guide",
+    "site": "https://hays0503.github.io/celestial-navigation-guide/",
+    "branch": "main",
+    "reader_commit": "431d27006aacee39603c1855b3a9e1239577dd1f",
+    "reader_tree_sha256": "33dc94d5e21432f4683f7cfaf4fd371a114ca9f9b1910faf4be5f2f5992915e6",
+    "previous_commit": "e528b83",
+    "verified_at_utc": "2026-10-27T00:00:00+00:00",
+    "served_bytes_verified": {
+      "files_total": 173,
+      "non_pdf_sha256": 170,
+      "source_table_pdf_content_length": 3,
+      "failures": 0
+    },
+    "note": "Every published non-PDF file matched by full SHA-256 and the three source-table PDFs by Content-Length after the Pages build for this commit. QA follows in a separate commit."
+  },
   "content_sha256": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "01-SEXTANT.md": "2403cf2b680ffa11a6c996518759acbd2c9a8dff708156d2591182dbb3da1687",
