@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Проверки редакции — Секстант и Солнце</title><style>:root{--paper:#f7f5ef;--surface:#fffefa;--ink:#16232b;--text:#243d4a;--muted:#586d78;--line:#d8ded9;--link:#1e5f7a;--code:#eaf0ef;color-scheme:light dark}@media (prefers-color-scheme:dark){:root{--paper:#0e1720;--surface:#16232e;--ink:#e8f0f4;--text:#c9d7de;--muted:#96abb7;--line:#2c3f4b;--link:#8ccbee;--code:#16232e}}@media print{:root{--paper:#fff;--surface:#fff;--ink:#111;--text:#111;--muted:#444;--line:#ccc;--link:#183f5c;--code:#f4f4f4}}body{margin:0;background:var(--paper);color:var(--text);font:1rem/1.7 Georgia,serif}.wrap{max-width:860px;margin:0 auto;padding:2rem 1.5rem 4rem}h1{font-size:2.2rem;line-height:1.2;color:var(--ink)}h2{margin-top:2rem;font-size:1.5rem;color:var(--ink)}code{background:var(--code);padding:.1rem .3rem;border-radius:.2rem;font-size:.9em}pre{background:var(--code);padding:.8rem;overflow:auto}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border-bottom:1px solid var(--line);padding:.5rem .6rem;text-align:left;vertical-align:top}th{background:var(--surface)}a{color:var(--link)}</style></head><body><div class="wrap"><p><a href="../index.html">Главная</a> · <a href="../QA-STATUS.html">Статус</a> · <a href="checks.json">checks.json</a> · <a href="verify_site.py">verify_site.py</a> · <a href="EDITORIAL-20261024.md">Редактура 2026-10-24</a> · <a href="EDITORIAL-20261023B.md">История: рабочая редакция 1</a></p><h1>Проверки рабочей редакции</h1>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Проверки редакции — Секстант и Солнце</title><style>:root{--paper:#f7f5ef;--surface:#fffefa;--ink:#16232b;--text:#243d4a;--muted:#586d78;--line:#d8ded9;--link:#1e5f7a;--code:#eaf0ef;color-scheme:light dark}@media (prefers-color-scheme:dark){:root{--paper:#0e1720;--surface:#16232e;--ink:#e8f0f4;--text:#c9d7de;--muted:#96abb7;--line:#2c3f4b;--link:#8ccbee;--code:#16232e}}@media print{:root{--paper:#fff;--surface:#fff;--ink:#111;--text:#111;--muted:#444;--line:#ccc;--link:#183f5c;--code:#f4f4f4}}body{margin:0;background:var(--paper);color:var(--text);font:1rem/1.7 Georgia,serif}.wrap{max-width:860px;margin:0 auto;padding:2rem 1.5rem 4rem}h1{font-size:2.2rem;line-height:1.2;color:var(--ink)}h2{margin-top:2rem;font-size:1.5rem;color:var(--ink)}code{background:var(--code);padding:.1rem .3rem;border-radius:.2rem;font-size:.9em}pre{background:var(--code);padding:.8rem;overflow:auto}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border-bottom:1px solid var(--line);padding:.5rem .6rem;text-align:left;vertical-align:top}th{background:var(--surface)}a{color:var(--link)}</style></head><body><div class="wrap"><p><a href="../index.html">Главная</a> · <a href="../QA-STATUS.html">Статус</a> · <a href="checks.json">checks.json</a> · <a href="verify_site.py">verify_site.py</a> · <a href="EDITORIAL-20261027.md">Редакция 2026-10-27</a></p><h1>Проверки рабочей редакции</h1>
 <ul>
-<li>Время записи (UTC): <code>2026-10-26T15:51:02.535250+00:00</code></li>
-<li>Сводный SHA-256 проверенного дерева <code>lessons-site/</code>: <code>0c92f0e37a911dc6…</code> (108 файлов в <code>checks.json</code>)</li>
-<li>Опубликованный коммит с читательскими файлами: <code>6358b21c49c0</code>; сайт: https://hays0503.github.io/celestial-navigation-guide/</li>
+<li>Время записи (UTC): <code>2026-10-27T03:43:44.000399+00:00</code></li>
+<li>Сводный SHA-256 проверенного дерева <code>lessons-site/</code>: <code>33dc94d5e21432f4…</code> (161 файлов в <code>checks.json</code>)</li>
+<li>Базовый коммит в репозитории публикации до синхронизации: <code>e528b83171cd</code></li>
 </ul>
-<p>Страница описывает опубликованное дерево. Его байты сверены с <code>qa/checks.json</code>; страница проверок обновлена после публикации отдельным коммитом.</p>
-<h2>Сводка проверок (PASS / FAIL / NOT RUN)</h2>
+<p>Результаты привязаны к фактическим SHA-256 файлов текущей редакции в <code>qa/checks.json</code>.</p>
+<h2>Сводка (PASS / FAIL / NOT RUN)</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -17,79 +17,88 @@
 </thead>
 <tbody>
 <tr>
-<td>Содержательные инварианты, арифметика, ссылки и якоря (<code>verify_editorial.py</code>)</td>
+<td>Содержательные инварианты и ссылки (<code>verify_editorial.py</code>)</td>
 <td><strong>PASS</strong></td>
-<td>75 PASS / 0 FAIL</td>
+<td>75 / 0</td>
 </tr>
 <tr>
-<td>Цифровой экспорт A4 (<code>inspect_prints.py</code>)</td>
+<td>Геометрия существующих SVG-схем (<code>verify_geometry.py</code>)</td>
 <td><strong>PASS</strong></td>
-<td>469 PASS / 0 FAIL (11 PDF)</td>
+<td>86 / 0</td>
 </tr>
 <tr>
-<td>Браузер, темы, 200% шрифт, клавиатура и режим без JS (<code>preview_editorial.mjs</code>)</td>
+<td>Поиск по оригиналам: браузер и шаги</td>
 <td><strong>PASS</strong></td>
-<td>36 экранов (из них 15 тёмных), 3 негативных отказа, переполнение 0 px</td>
+<td>556 проверок, 70 снимков</td>
 </tr>
 <tr>
-<td>Пошаговые SVG-схемы</td>
+<td>Поиск по оригиналам: пиксели и источники</td>
 <td><strong>PASS</strong></td>
-<td>86 проверок геометрии; 237 проверок шагов, клавиатуры, reduced motion, печати и no-JS</td>
+<td>264 / 0</td>
 </tr>
 <tr>
-<td>Сверка со страницами оригинальных таблиц (<code>inspect_tables.py</code>)</td>
+<td>Поиск по оригиналам: цифровой A4</td>
 <td><strong>PASS</strong></td>
-<td>6 страниц PDF отрендерены и сверены с клетками разборов</td>
+<td>189 / 0, 26 страниц</td>
 </tr>
 <tr>
-<td>Переносимая проверка статической копии (<code>qa/verify_site.py</code>)</td>
+<td>Сквозная анимация: браузер, клавиатура, no-JS</td>
 <td><strong>PASS</strong></td>
-<td>6 PASS / 0 FAIL</td>
+<td>273 проверок, 32 снимков</td>
+</tr>
+<tr>
+<td>Сквозная анимация: арифметика и SVG</td>
+<td><strong>PASS</strong></td>
+<td>49 / 0</td>
+</tr>
+<tr>
+<td>Сквозная анимация: цифровой A4</td>
+<td><strong>PASS</strong></td>
+<td>187 / 0, 24 страниц</td>
+</tr>
+<tr>
+<td>Переносимая проверка (<code>qa/verify_site.py</code>)</td>
+<td><strong>PASS</strong></td>
+<td>6 / 0</td>
 </tr>
 <tr>
 <td>Бумажный пилот с начинающим участником</td>
 <td><strong>NOT RUN</strong></td>
-<td>Двухпроходный протокол готов (<code>PAPER-PILOT-PROTOCOL.md</code>); нужен участник</td>
+<td>Нужен участник; ключ отдельно</td>
 </tr>
 <tr>
 <td>Игровая приёмка урока 1 (LIVE)</td>
 <td><strong>NOT RUN</strong></td>
-<td>Требуются отдельное разрешение, оператор, участник и backup/rollback</td>
+<td>Нужны разрешение, оператор, backup/rollback</td>
 </tr>
 <tr>
-<td>Физическая печать и другие физические устройства</td>
+<td>Физическая печать, телефон, LAN</td>
 <td><strong>NOT RUN</strong></td>
-<td>Проверены цифровой A4 и локальная эмуляция</td>
+<td>Проверены цифровой A4 и эмуляция экрана</td>
 </tr>
 </tbody>
 </table></div>
 <h2>Цифровой A4 (страниц)</h2>
 <ul>
-<li><code>paper-sheet</code>: <strong>4</strong></li>
-<li><code>worksheet</code>: <strong>4</strong></li>
-<li><code>starter-sheet</code>: <strong>1</strong></li>
-<li><code>field</code>: <strong>4</strong></li>
-<li><code>start</code>: <strong>5</strong></li>
-<li><code>training</code>: <strong>10</strong></li>
-<li><code>basics</code>: <strong>9</strong></li>
-<li><code>answers</code>: <strong>17</strong></li>
-<li><code>factcheck</code>: <strong>5</strong></li>
-<li><code>walkthrough</code>: <strong>18</strong></li>
-<li><code>guide</code>: <strong>146</strong></li>
+<li><code>table-search</code>: <strong>26</strong></li>
+<li><code>sextant-to-fix</code>: <strong>24</strong></li>
 </ul>
-<h2>Как запустить переносимую проверку из копии сайта</h2>
+<h2>Как повторить переносимую проверку</h2>
 <pre><code class="language-powershell">python -X utf8 -B qa/verify_site.py
 </code></pre>
-<h2>Как повторить сборку и проверки этой редакции в рабочем проекте</h2>
-<pre><code class="language-powershell">python -X utf8 -B evidence/beginners-guide-20261022/build_guide.py --report-dir evidence/editorial-simplification-20261024
+<h2>Как собрать и проверить редакцию в рабочем проекте</h2>
+<pre><code class="language-powershell">python -X utf8 -B evidence/beginners-guide-20261022/build_guide.py --report-dir evidence/sextant-to-fix-20261027
+python -X utf8 -B evidence/table-search-20261026/verify_sources.py
+node evidence/table-search-20261026/preview_table_search.mjs
+python -X utf8 -B evidence/table-search-20261026/inspect_print.py
+python -X utf8 -B evidence/sextant-to-fix-20261027/verify_journey.py
+node evidence/sextant-to-fix-20261027/preview_journey.mjs
+python -X utf8 -B evidence/sextant-to-fix-20261027/inspect_print.py
 python -X utf8 -B evidence/editorial-simplification-20261024/verify_editorial.py
-node evidence/editorial-simplification-20261024/preview_editorial.mjs
-python -X utf8 -B evidence/editorial-simplification-20261024/print_full_guide.py
-python -X utf8 -B evidence/editorial-simplification-20261024/inspect_prints.py
-python -X utf8 -B evidence/editorial-simplification-20261024/inspect_tables.py
-python -X utf8 -B evidence/editorial-simplification-20261024/publish_qa.py
+python -X utf8 -B evidence/site-animations-20261026/verify_geometry.py
+python -X utf8 -B evidence/sextant-to-fix-20261027/publish_qa.py
 </code></pre>
-<h2>Граница</h2>
-<p>Portable checks in qa/verify_site.py verify HTML structure, links, image dimensions, answer separation and source-table PDF hashes directly from this site copy. Full editorial/CDP/print scripts run in evidence/editorial-simplification-20261024/. Technical checks do not prove human comprehension, physical print or live game behaviour.</p>
+<h2>Границы</h2>
+<p>Portable checks in qa/verify_site.py verify HTML structure, links, image dimensions, answer separation and source-table PDF hashes directly from this site copy. Full editorial/CDP/print scripts live in the evidence directories named above. Technical checks do not prove human comprehension, physical print or live game behaviour.</p>
 <p><strong>Не для реального судовождения.</strong></p>
 </div></body></html>

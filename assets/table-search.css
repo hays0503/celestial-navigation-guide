@@ -1,0 +1,51 @@
+.lookup-layout{max-width:920px;margin:auto;padding:1.5rem 1rem 4rem;overflow-wrap:anywhere}
+.topbar .brand{min-width:0;overflow-wrap:anywhere}
+.lookup-layout h1{font-size:clamp(2rem,5vw,3rem)}
+.ts-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem;margin:1.5rem 0}
+.ts-index a{display:block;padding:.7rem;background:var(--surface);border:1px solid var(--line);border-radius:.4rem}
+.ts-route{border:1px solid var(--line);border-radius:.5rem;padding:1rem;margin:2rem 0;background:var(--surface);scroll-margin-top:var(--lookup-top,5rem)}
+.ts-route h2{font:700 1.35rem/1.35 var(--font);margin:0 0 .6rem}
+.ts-inputs{font-weight:600;background:var(--wash);padding:.7rem}
+.ts-source,.ts-note,.ts-legend{font-size:.875rem;line-height:1.6}
+.ts-caution{padding:.7rem;border-left:3px solid var(--orange);background:var(--warning);font-size:.9rem}
+.ts-controls{position:sticky;top:var(--lookup-top,5rem);z-index:2;background:var(--surface);padding:.4rem 0 .6rem}
+.ts-status{font-size:.9rem;font-weight:600;margin:0 0 .4rem}
+.ts-buttons{display:flex;flex-wrap:wrap;gap:.5rem}
+.ts-buttons button{font:600 .95rem var(--font);min-height:44px;padding:.5rem .8rem;border:1px solid var(--line);border-radius:.4rem;background:var(--wash);color:var(--ink);cursor:pointer}
+.ts-buttons button[aria-disabled="true"]{color:var(--muted);cursor:default}
+.ts-buttons button:focus-visible,.ts-index a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.ts-route.is-ready .ts-frame{display:none}
+.ts-route.is-ready .ts-frame.is-current{display:block}
+.ts-frame{margin:1rem 0 1.5rem;break-inside:avoid}
+.ts-frame h3{font-size:1.1rem;margin:.8rem 0 .5rem}
+.ts-explanation{font-size:1rem;line-height:1.65}
+.ts-overview{display:block;width:100%;max-width:390px;height:auto;margin:1rem auto;background:white;border:1px solid var(--line)}
+.ts-location-context{display:flex;align-items:center;gap:.8rem;margin:.8rem 0}
+.ts-location{display:block;flex:0 0 60px;width:60px;height:auto;background:white;border:1px solid var(--line)}
+.ts-location-context .ts-note{margin:0;min-width:0}
+.ts-location-box{fill:rgba(18,99,174,.14);stroke:#1263ae;stroke-width:1.5;vector-effect:non-scaling-stroke}
+.ts-scan{display:block;width:100%;max-width:540px;height:auto;margin:1rem auto;background:white;border:1px solid var(--line)}
+.ts-column-box{stroke:#1263ae;stroke-width:2;fill:none;vector-effect:non-scaling-stroke}
+.ts-guide{fill:none;stroke-width:2;vector-effect:non-scaling-stroke;stroke-linecap:butt}
+.ts-column{stroke:#1263ae;stroke-dasharray:5 3}
+.ts-row{stroke:#ba4500}
+.ts-cell{fill:none;stroke:#06765c;stroke-width:2;vector-effect:non-scaling-stroke}
+.ts-row-box{fill:none;stroke:#ba4500;stroke-width:1.5;vector-effect:non-scaling-stroke}
+.ts-ellipsis{fill:#435b6b;font:14px system-ui,sans-serif;text-anchor:middle}
+.ts-result{font-size:1rem;line-height:1.6;padding:.7rem;border-left:3px solid var(--success,#127465);background:var(--wash)}
+.ts-legend{display:flex;flex-wrap:wrap;gap:.3rem 1rem;color:var(--muted)}
+.ts-route.was-used .is-current .ts-guide{animation:lookup-line .5s ease-out both}
+@keyframes lookup-line{from{opacity:0}to{opacity:1}}
+@media(max-width:480px){.ts-index{grid-template-columns:1fr}.ts-route{padding:.65rem}.lookup-layout{padding:1rem .7rem 3rem}}
+@media(prefers-reduced-motion:reduce){.ts-route.was-used .is-current .ts-guide{animation:none}}
+@media print{
+ .lookup-layout{max-width:none;margin:0;padding:0}.topbar,.ts-controls,.ts-index{display:none!important}
+ .ts-route{break-before:page;break-inside:auto;border:0;margin:0;padding:0}
+ .ts-frames{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3mm}
+ .ts-route.is-ready .ts-frame,.ts-route .ts-frame{display:block!important;margin:0;padding:2mm;border:1px solid #bbb}
+ .ts-frame h3{font-size:10pt}.ts-explanation,.ts-result{font-size:9pt;line-height:1.35}
+ .ts-overview{max-width:40mm;max-height:none!important}.ts-scan{max-width:75mm}
+ .ts-location-context{gap:2mm;margin:2mm 0}.ts-location{flex-basis:14mm;width:14mm}
+ .ts-note,.ts-source,.ts-caution,.ts-legend{font-size:8pt}.ts-guide{animation:none!important}
+ #try-yourself{break-before:page}
+}

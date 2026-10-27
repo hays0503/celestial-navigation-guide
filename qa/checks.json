@@ -1,15 +1,16 @@
 {
-  "recorded_at_utc": "2026-10-26T15:51:02.535250+00:00",
-  "published_base_commit": "6358b21c49c0116aa36a9923b30363e676108cf1",
-  "verified_site_tree_sha256": "0c92f0e37a911dc662657bda25d440893f8c29179c0055d8e83da79d8cca92e5",
-  "verified_file_count": 108,
-  "tree_status": "Published reader tree in commit 6358b21c49c0; served bytes re-verified against this manifest.",
+  "recorded_at_utc": "2026-10-27T03:43:44.000399+00:00",
+  "published_base_commit": "e528b83171cdc4dfaf5df690df1b7439a7ddc340",
+  "verified_site_tree_sha256": "33dc94d5e21432f4683f7cfaf4fd371a114ca9f9b1910faf4be5f2f5992915e6",
+  "verified_file_count": 161,
+  "tree_status": "Local canonical lessons-site/ tree verified against SHA-256 manifest; not yet synced/pushed to publication repo.",
   "scope": {
     "protected_originals": 25,
     "production_files": 295,
     "source_table_pdfs": 3,
-    "original_table_renders_checked": 6,
-    "manual_cell_review": "evidence/editorial-simplification-20261024/TABLE-CELL-REVIEW.md",
+    "original_table_renders_checked": 7,
+    "manual_cell_review": "evidence/table-search-20261026/RATINGS.md",
+    "manual_journey_review": "evidence/sextant-to-fix-20261027/RATINGS.md",
     "note": "SHA-256 verified against baseline manifests; originals and production code untouched."
   },
   "results": {
@@ -18,311 +19,92 @@
       "passed": 75,
       "failed": 0
     },
-    "digital_print_inspection": {
+    "emitted_svg_geometry": {
       "state": "PASS",
-      "passed": 469,
+      "passed": 86,
       "failed": 0
-    },
-    "browser_preview_and_negative_probes": {
-      "state": "PASS",
-      "screens": 36,
-      "dark_screens": 15,
-      "negative_probes_rejected": 3,
-      "nojs_route_verified": true
     },
     "portable_static_verifier": {
       "state": "PASS",
       "passed": 6,
+      "failed": 0,
       "script": "qa/verify_site.py"
+    },
+    "original_table_search": {
+      "state": "PASS",
+      "routes": 8,
+      "frames": 53,
+      "browser_checks": 556,
+      "browser_screens": 70,
+      "source_checks": 264,
+      "print_checks": 189,
+      "print_pages": 26,
+      "verified_html_sha256": "f59cf6ea8b7aad27a76da2fdea6ffdff79f38f692b3dc32b18038afc29f99320",
+      "not_run": "Human paper pilot with the two prepared lookup tasks."
+    },
+    "sextant_to_fix_journey": {
+      "state": "PASS",
+      "steps": 23,
+      "browser_checks": 273,
+      "browser_screens": 32,
+      "source_checks": 49,
+      "print_checks": 187,
+      "print_pages": 24,
+      "verified_html_sha256": "d0ed753683e07f0077a77132f92f07ad24676bfde9c7d17d2a0522d74c861faf",
+      "not_run": "Human comprehension pilot, phone, physical print and LIVE game pass."
     },
     "interactive_diagrams": {
       "state": "PASS",
       "geometry_checks": 86,
-      "browser_checks": 237,
-      "not_run": "Human comprehension, physical print and physical touch devices."
+      "note": "Previously published eight diagrams keep their geometry checks; new browser runs cover the two new modules."
     }
   },
   "print_pages": {
-    "paper-sheet": 4,
-    "worksheet": 4,
-    "starter-sheet": 1,
-    "field": 4,
-    "start": 5,
-    "training": 10,
-    "basics": 9,
-    "answers": 17,
-    "factcheck": 5,
-    "walkthrough": 18,
-    "guide": 146
+    "table-search": 26,
+    "sextant-to-fix": 24
   },
   "browser": {
     "engine": "Chrome headless, isolated user-data-dir, local HTTP server + CDP",
-    "screens_checked": [
-      "index.html @390 (dark)",
-      "index.html @1440 (light)",
-      "GUIDE.html#lesson-1 @390 (light)",
-      "GUIDE.html#lesson-2 @390 (dark)",
-      "GUIDE.html#lesson-3 @390 (light)",
-      "GUIDE.html#lesson-4 @390 (dark)",
-      "GUIDE.html#lesson-5 @390 (light)",
-      "GUIDE.html#lesson-6 @390 (dark)",
-      "GUIDE.html#lesson-7 @390 (light)",
-      "GUIDE.html#walkthrough @1440 (dark)",
-      "PAPER-WORKSHEET.html @390 (dark)",
-      "START.html @390 (light)",
-      "TRAINING.html#step-fii-search @390 (dark)",
-      "ANSWERS.html#key-fii-search @390 (light)",
-      "BASICS.html @390 (dark)",
-      "FIELD.html @390 (light)",
-      "WORKSHEET.html @390 (light)",
-      "STARTER-WORKSHEET.html @390 (dark)",
-      "QA-STATUS.html @390 (dark)",
-      "FACTCHECK.html @1440 (light)",
-      "CONTROLS.html @390 (light)",
-      "TRAINING.html#prep-different-ap @390 (light)",
-      "TRAINING.html#prep-different-ap @1440 (dark)",
-      "GUIDE.html#scene-preparation @390 (light)",
-      "ANSWERS.html#key-two-ap @390 (dark)",
-      "GUIDE.html#diagram-lop @390 (light)",
-      "GUIDE.html#diagram-transfer @1440 (dark)",
-      "GUIDE.html#diagram-fviii @390 (light)",
-      "GUIDE.html#diagram-fxi @390 (light)",
-      "GUIDE.html#diagram-gha @390 (light)",
-      "GUIDE.html#diagram-fii-inverse @390 (light)",
-      "TRAINING.html#diagram-twoap @390 (dark)",
-      "GUIDE.html#diagram-contact @390 (light)",
-      "START.html#diagram-contact @390 (dark)",
-      "GUIDE.html#diagram-lop @390 (light)",
-      "GUIDE.html @390 (light)"
+    "new_module_screens": 102,
+    "journey_widths": [
+      320,
+      360,
+      390,
+      768,
+      1440
     ],
+    "journey_dark_or_narrow_screens": 0,
     "js_and_http_errors": 0,
-    "max_horizontal_overflow_px": 0,
-    "text_200_percent_at_390px": {
-      "width": 375,
-      "scrollWidth": 375,
-      "overflow": 0
-    },
-    "keyboard_and_details": {
-      "tabVisible": true,
-      "outline": "solid",
-      "summaryFocused": true,
-      "before": false,
-      "afterEnter": true,
-      "afterSpace": false
-    },
-    "nojs_mobile_toc": {
-      "visible": true,
-      "href": "#walkthrough",
-      "heading": true,
-      "followed": true
-    },
-    "negative_probes": [
-      {
-        "name": "HTTP 404 rejected",
-        "rejected": true,
-        "reason": "HTTP 404"
-      },
-      {
-        "name": "wrong page with HTTP 200 rejected",
-        "rejected": true,
-        "reason": "Expected text absent"
-      },
-      {
-        "name": "connection failure rejected",
-        "rejected": true,
-        "reason": "fetch failed"
-      }
-    ],
+    "journey_text_200_percent": "all 23 steps at 320/360/390/768/1440 px",
+    "keyboard": "Enter and Space on the journey; focus retained",
+    "nojs": "All 23 journey stages and all eight lookup routes remain visible",
     "physical_phone": "NOT RUN"
   },
-  "theme": {
-    "behaviour": "Follows the reader system setting (prefers-color-scheme); no stored override.",
-    "dark_screens_checked": 15,
-    "print_stays_light": true
-  },
   "not_run": {
-    "beginner_paper_pilot": "NOT RUN (two-pass protocol prepared in evidence/editorial-simplification-20261024/PAPER-PILOT-PROTOCOL.md)",
-    "live_game_lesson_1": "NOT RUN (requires explicit permission, participant, backup/rollback)",
+    "beginner_paper_pilot": "NOT RUN (participant and closed lookup key are prepared separately)",
+    "live_game_lesson_1": "NOT RUN (requires explicit permission, operator, participant, backup/rollback)",
     "physical_print": "NOT RUN",
-    "other_physical_devices": "NOT RUN"
+    "other_physical_devices": "NOT RUN",
+    "lan_copy": "NOT RUN"
   },
-  "publication": {
-    "status": "published",
-    "remote": "https://github.com/hays0503/celestial-navigation-guide",
-    "site": "https://hays0503.github.io/celestial-navigation-guide/",
-    "branch": "main",
-    "reader_commit": "6358b21c49c0116aa36a9923b30363e676108cf1",
-    "reader_tree_sha256": "0c92f0e37a911dc662657bda25d440893f8c29179c0055d8e83da79d8cca92e5",
-    "previous_commit": "9d90d4c",
-    "verified_at_utc": "2026-10-26T15:50:54.316172+00:00",
-    "served_bytes_verified": {
-      "GUIDE.html": true,
-      "START.html": true,
-      "TRAINING.html": true,
-      "assets/navigation-diagrams.css": true,
-      "assets/navigation-diagrams.js": true
-    },
-    "note": "Five changed reader files matched by full SHA-256; QA follows in a separate commit."
-  },
-  "source_wordlike_tokens": {
-    "01-SEXTANT.md": {
-      "before": 1593,
-      "current": 1484
-    },
-    "02-TIME.md": {
-      "before": 947,
-      "current": 787
-    },
-    "03-HEIGHT-CORRECTIONS.md": {
-      "before": 1725,
-      "current": 1351
-    },
-    "04-ALMANAC.md": {
-      "before": 1528,
-      "current": 1297
-    },
-    "05-CALCULATED-HEIGHT.md": {
-      "before": 2632,
-      "current": 2433
-    },
-    "06-POSITION-LINE.md": {
-      "before": 2372,
-      "current": 2278
-    },
-    "07-RUNNING-FIX.md": {
-      "before": 2099,
-      "current": 2007
-    },
-    "ANSWERS.md": {
-      "before": 665,
-      "current": 665
-    },
-    "BASICS-ANSWERS.md": {
-      "before": 525,
-      "current": 525
-    },
-    "BASICS.md": {
-      "before": 1965,
-      "current": 1965
-    },
-    "CONTROLS.md": {
-      "before": 227,
-      "current": 227
-    },
-    "DATA-SOURCES.md": {
-      "before": 639,
-      "current": 657
-    },
-    "EXERCISES.md": {
-      "before": 623,
-      "current": 623
-    },
-    "FACTCHECK.md": {
-      "before": 1325,
-      "current": 1357
-    },
-    "FACTS.md": {
-      "before": 1586,
-      "current": 1586
-    },
-    "FIELD.md": {
-      "before": 671,
-      "current": 684
-    },
-    "FULL-EXAMPLE-SOLUTION.md": {
-      "before": 952,
-      "current": 952
-    },
-    "FULL-EXAMPLE.md": {
-      "before": 1295,
-      "current": 1316
-    },
-    "INTRO.md": {
-      "before": 920,
-      "current": 730
-    },
-    "LIMITS.md": {
-      "before": 1121,
-      "current": 1452
-    },
-    "PAPER-WORKSHEET.md": {
-      "before": null,
-      "current": 760
-    },
-    "PRACTICE.md": {
-      "before": 1033,
-      "current": 1041
-    },
-    "QA-STATUS.md": {
-      "before": 684,
-      "current": 684
-    },
-    "QUALITY.md": {
-      "before": 738,
-      "current": 750
-    },
-    "READINESS.md": {
-      "before": 776,
-      "current": 976
-    },
-    "README.md": {
-      "before": 1307,
-      "current": 974
-    },
-    "SELF-CHECK.md": {
-      "before": 664,
-      "current": 675
-    },
-    "START-INTRO.md": {
-      "before": 194,
-      "current": 205
-    },
-    "START-LESSON.md": {
-      "before": 562,
-      "current": 452
-    },
-    "STARTER-WORKSHEET.md": {
-      "before": 225,
-      "current": 252
-    },
-    "TERMS.md": {
-      "before": 730,
-      "current": 730
-    },
-    "TRAINING-SOLUTION.md": {
-      "before": 2171,
-      "current": 2400
-    },
-    "TRAINING.md": {
-      "before": 2562,
-      "current": 3247
-    },
-    "TROUBLESHOOTING.md": {
-      "before": 1198,
-      "current": 1198
-    },
-    "WALKTHROUGH.md": {
-      "before": null,
-      "current": 3704
-    },
-    "WORKSHEET.md": {
-      "before": 632,
-      "current": 647
-    }
-  },
+  "publication": null,
   "content_sha256": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "01-SEXTANT.md": "2403cf2b680ffa11a6c996518759acbd2c9a8dff708156d2591182dbb3da1687",
     "02-TIME.md": "8dda6c13d2dd61a0570eee24f33f03d594b85fccbe5ec92d7e6b5631bd2d80f2",
-    "03-HEIGHT-CORRECTIONS.md": "ef524a8ae8c15e56bcaa428fc3c088db1b6266c2ee31552f1de03757c8f9a6e4",
-    "04-ALMANAC.md": "d6f5a25d5d44654cdb2b0be6905d6850951c98cce38ba00558ec06133cda0238",
-    "05-CALCULATED-HEIGHT.md": "ba60f96e09b1d48d7c9ba54574a241d4f3d64d7d261806d4ddb60e853bb9f960",
-    "06-POSITION-LINE.md": "8d0be80560110dfaa55708ed83c00e5575c03a788c924fd32fe646f1a2a7d604",
-    "07-RUNNING-FIX.md": "13e45d3db6216c1cdbc855780165be75a75410e846851dc757566b34444f5552",
+    "03-HEIGHT-CORRECTIONS.md": "26ee379d5ce88f506f6bb22de3bc6e55a18667e90c6d9b373358d4080fa14ae3",
+    "04-ALMANAC.md": "4c323c281f5b311807b4910648bed051ac79561c1397275e68de36c69e7bc4fe",
+    "05-CALCULATED-HEIGHT.md": "7de5571f4de02065e0d573e9592decde656879eb060173b0f9174d41bfda5453",
+    "06-POSITION-LINE.md": "d854ef9d48187ca9e623c7823f0aa93ea9de23c5102949a303eea13f2fc13f9e",
+    "07-RUNNING-FIX.md": "63657a335c4c3fc0c93f560c2989bdb60f548df5e80495143643dd55c62727aa",
     "ANSWERS.html": "9487767cc8aaf1e2a4474f922038e4febef7024ad4ba0507348df643d4275eba",
     "ANSWERS.md": "04632f5cac8cbba59f66d8eee23dabbcb081461568996e3d22a3b2babba6e8a2",
+    "assets/journey.css": "a62ff372cced678ee7b7abc637c4df9ff0c6e28e93e058b58fb932a4c9f02308",
+    "assets/journey.js": "de031170dcb1f20b1773a5bc18d587d00dc84b2e080e5615d9fbf8401a98cb8b",
     "assets/navigation-diagrams.css": "98fc90813a16b45e6f599656f66be1c254787ad59f4150cceba1666d3e1f4c75",
     "assets/navigation-diagrams.js": "33e6042c725f8a6fdd35cb19a6c44c392cf65478c9402a7a6bdc3418e7b602f1",
+    "assets/table-search.css": "0941862bed25352aacdc89f9e9310d2a2a3272d8813175bf0228cbdb74600e60",
+    "assets/table-search.js": "b3e0a43ca01d126c82f3c44e046086356ac01ec1d3c593569ea899db73a4c31d",
     "BASICS-ANSWERS.md": "9f6462cfe54f97d3969e26053d05417bd37621a6649a39b967cd1c4d601735e8",
     "BASICS.html": "e8962ff1f059e6e33932bd48661ac869514a17867f48942372cdb81dbaf37d8c",
     "BASICS.md": "2487c61c947a737fe67cf681075c0dc580e53872f43196ea31bdc0749c2e234a",
@@ -382,10 +164,57 @@
     "figures/learning/lop-stage-3.png": "268d51952b8076e04d944835f99bee948ec28ac1a87ded6bc40b8a3591e32c19",
     "figures/learning/lop-stage-4.png": "b075bd135b85e9111873d222b82b8a638dd01024d5871afed51b6fd3ce7925c5",
     "figures/learning/README.md": "b4ead2174b87d80bc94eeda12e0985f145a64687f18bfa22beadf4ac1a64bb15",
+    "figures/table-search/crops/fi-pdf34-815-1210-130-101.png": "38d0602c436e63e95d5e86b493e2a7754deaffe4d668e6c06bc7800c52bf02e3",
+    "figures/table-search/crops/fi-pdf34-815-65-130-132.png": "c07b4c4b2b87e50a6804cbc1549462bcb5df07b94b4b351ec1f3d6905b4b5583",
+    "figures/table-search/crops/fi-pdf34-994-1210-90-101.png": "397b1ebef09a5e72f0495c7df48419971d421207095dfef4184064f9361645ae",
+    "figures/table-search/crops/fi-pdf34-994-65-90-132.png": "80b442320d1d748841a7d343992b6955f7ab4ba42f57885c676ac0677cf68344",
+    "figures/table-search/crops/fii-pdf79-387-126-168-118.png": "bfe589bfa8883be7d99dbf392335cef16c242309d755e85e0dd6cd601c7320e5",
+    "figures/table-search/crops/fii-pdf79-387-598-168-106.png": "c25b6cde494fe94562d54d6729fe29094d0ad053b59d7d6a5f1f82d45da79083",
+    "figures/table-search/crops/fii-pdf79-387-598-168-214.png": "88a4d114657ed07aef01133250d28194ddf797962f18e31a641f58c79363386d",
+    "figures/table-search/crops/fii-pdf79-387-898-168-76.png": "558317a662067e95a5433878eb73072524f8613e79c2231539cfa90d081e171b",
+    "figures/table-search/crops/fii-pdf79-92-126-50-118.png": "1ac4e127aff98dbbc73ba34617afc0bb3428d82ef0f5d2f5a3fa9576c3e196e5",
+    "figures/table-search/crops/fii-pdf79-92-598-50-106.png": "aef45961f9bcb49fdde84f25e58c39925fff1f5e5f65c8acc91e7c65e099b282",
+    "figures/table-search/crops/fii-pdf79-92-598-50-214.png": "db0dbab855b35f11736e66ec2ce63c0c4a3734a61b259006e666d212f71880d1",
+    "figures/table-search/crops/fii-pdf79-92-898-50-76.png": "6b956294f0607185efffe81a034c25ec57ad1bd77071e2ac96b508d40e28a06b",
+    "figures/table-search/crops/fulst-pdf200-254-50-107-33.png": "ab60787f09ace23e432a97608f6cf58dc515e550b26252bcf997bd4cc67ebaf4",
+    "figures/table-search/crops/fulst-pdf200-254-837-107-53.png": "8c06154b5a3716aa0017c1b8be0622d92e909cf0e7be80239d964b7a51e236eb",
+    "figures/table-search/crops/fulst-pdf200-64-50-82-33.png": "2070844590c5010a4c7669ce502c66f5919892ba4fa6377b7e782b45e95cf917",
+    "figures/table-search/crops/fulst-pdf200-64-837-82-53.png": "2ace0212fbfc28acb93f5f25617178d148d1c001f737adafac2899d2e4457467",
+    "figures/table-search/crops/fviii-pdf98-153-1138-74-65.png": "1bee8b6638e07ff6106849ab46623c32b0473942295e4bd23a3da71a8f017675",
+    "figures/table-search/crops/fviii-pdf98-153-165-74-48.png": "e6edb3b3db6c2523b04ed030b018f9fd2134a9f9d444304b0abc4f021827806d",
+    "figures/table-search/crops/fviii-pdf98-489-1138-110-65.png": "56ea6a0d72369230570a101d047064fac182abeaa2fa07d7e237c072aa3c900e",
+    "figures/table-search/crops/fviii-pdf98-489-165-110-48.png": "50b17a55d087fb53927e06421bdba2e6a8b5dbabbb14fa464fbef4d47f3b7739",
+    "figures/table-search/crops/fviii-pdf98-650-1396-155-62.png": "45c3ea0d655b558a6e0d431d5ea1f4991066283624f0441b3289880aa48f30de",
+    "figures/table-search/crops/fxi-forward-pdf104-451-278-82-58.png": "8d1541f1a0151c6dd03e2a243e154770ae801ee78657854bd65b76b1de59fd3d",
+    "figures/table-search/crops/fxi-forward-pdf104-451-60-82-70.png": "f096a19eae2bc65ce56e8586e0c55abee0de3eb4c2d89651673c92ec52a5e56c",
+    "figures/table-search/crops/fxi-forward-pdf104-95-278-108-58.png": "0a3d2b02b251652430cd4f263400a7187cdb9870b30ddc3ccef77141bcaa2c79",
+    "figures/table-search/crops/fxi-forward-pdf104-95-60-108-70.png": "4ffde7633b2ceeb1097e68b682843b170b4d04e30deb625326bfe4d6d9710d2c",
+    "figures/table-search/crops/fxi-inverse-pdf105-188-1625-170-44.png": "b16f8ae2ccb790aa76cbdc0d124616c6f963352409ab9a9865eb24575571b465",
+    "figures/table-search/crops/fxi-inverse-pdf105-188-925-170-82.png": "225030c7bad3cc743871de20940075df600e3629b3b4712446800dbbbd8e0657",
+    "figures/table-search/crops/fxi-inverse-pdf105-272-1625-170-44.png": "126084bd0c1ec289c9ce033802894af16d85820ae9fb12ce3f6f7d0bf9543185",
+    "figures/table-search/crops/fxi-inverse-pdf105-272-925-170-82.png": "09025d8e520ea39cfeae117e7b4f1e56990afce04b1b7df4fb662ab78ae45835",
+    "figures/table-search/crops/fxi-inverse-pdf105-80-1625-108-44.png": "521e158eca2bfe75b5a145cfc310bcd8ef50ec2dcd2bd6637c5b8c0a9f0172c6",
+    "figures/table-search/crops/fxi-inverse-pdf105-80-925-108-82.png": "8e3658386c872dd61f94d7388531a138d1b556f43dc3b55c1635baf178b99f22",
+    "figures/table-search/crops/sh5-pdf57-98-1007-198-169.png": "69595b76b212f24e98ba06a403f19080d109a9a2d5b51102cc883ca7217b2e04",
+    "figures/table-search/crops/sh5-pdf57-98-116-198-58.png": "f23f475e655e5e9d64444febc7ba3bf8d22ed3db0309314aac493726caa9237d",
+    "figures/table-search/fi-pdf34-locator.png": "eafc85c92c2da5872fd8bbb28a2ad0dd58be22854d17b9b9c708a0a40dc0a71b",
+    "figures/table-search/fi-pdf34.png": "e40d2f4f6a46035770bdb7c878cfffda0ee8dc0990a321ea072213f7d32f493b",
+    "figures/table-search/fii-pdf79-locator.png": "32e12001cfc4e1dff24d08fab755005b6c31b6baf6eaf6b7121cdc23db753b57",
+    "figures/table-search/fii-pdf79.png": "4ac3a087a8a496e53d09ba37afc609984abbe9542f12158ce445b7f7169b9bdf",
+    "figures/table-search/fulst-pdf200-locator.png": "694b4830e6d7b17a8b35f959cc0ec6005ea3524d12b106569deb1d34cc1e6de5",
+    "figures/table-search/fulst-pdf200.png": "6acff1ee3c6f0abd2d0b3711f84a0f518bca4250362508700bc8f546545f0f62",
+    "figures/table-search/fviii-pdf98-locator.png": "b9c30245c075a30d2b997a85f4ecc2711ee84ccff4bc22a214bb54daab1f3f77",
+    "figures/table-search/fviii-pdf98.png": "5b2675dd5d37242c91a8056c47d9de54770f1bb4a63ba1bf2d1855149056edb6",
+    "figures/table-search/fxi-forward-pdf104-locator.png": "a51d886ed5babf122467d000f465b357c0d458b977c08418bcab1c82249491fc",
+    "figures/table-search/fxi-forward-pdf104.png": "43ba3da86e9441088dc248f11c3aedc299686436e74b93c0c3f51cf4239efc42",
+    "figures/table-search/fxi-inverse-pdf105-locator.png": "f4dfac91b1ff5ae3415a92b3a2b711f81e4a01f4c294c502f0d529fd7896e221",
+    "figures/table-search/fxi-inverse-pdf105.png": "27585cca3d5e3b7a6529c9f9d92714fa4f24ef36ca7272e3181a12b1fa75fa7b",
+    "figures/table-search/sh5-pdf57-locator.png": "34208afb95ca599b13f6c699361833544b02c6422d600badeb67fc5c29d64687",
+    "figures/table-search/sh5-pdf57.png": "8e857e74295985242c57b05c8e001f6ed09ecac8cc9d7c3cb4ff397462ce1c06",
     "FULL-EXAMPLE-SOLUTION.md": "e94f0a0b32041c6f27b2eddf01e4e72947b79681bccf632a6bb6b4b08a7d9e8f",
     "FULL-EXAMPLE.md": "efc5281292622fe69847d232fc4599917418c14acac8e58358b0b4e7d4aac21a",
-    "GUIDE.html": "11a2f64425bd3162dacdcc8997586c90dc5b967c7693277c8edad77d05529b43",
-    "GUIDE.md": "d065fac63a73f0d780c974d2480be000613cf9fd6e9eaf07ba9e185485d1dd0c",
+    "GUIDE.html": "857543776dbf2fef4191aa85a403f178d5f1706028199cf4e0a56ca6edee279e",
+    "GUIDE.md": "f48938a0c6d83bfaa0625bb7631c6fa4ad94ab553c1e086da4afd16b8dd62b7c",
     "index.html": "029905996cd2023cacfe594c9000402c0d83287d50b4a6500d166d5193ec028d",
     "INTRO.md": "b7f8f40d2288417c1a39873c84ed34fbeb513f503593ac93332e08a09820cecc",
     "LIMITS.md": "5e16ff071abb2dac019e35b0a88f9da58efb38042f41ca5dc23a12c900c76614",
@@ -405,20 +234,22 @@
     "reference/README.md": "d36d70a59a46917e29a7422eed0eed3e15179ee8f45ff9f013f3dc26646f0212",
     "reference/TEXT-MANUAL.md": "6d45c74a026499653d9ab8f4c67d969175b232db3fe5c1cd2460e45a4c491a27",
     "SELF-CHECK.md": "6163e2b9252d9d7dc57f9bbdbd5e73d8d3b5a40646ec478212f164d891d758d3",
+    "SEXTANT-TO-FIX.html": "d0ed753683e07f0077a77132f92f07ad24676bfde9c7d17d2a0522d74c861faf",
     "START-INTRO.md": "457d26a8ef7f81905853a39c60c0cc3ef398ea9f6919b6f92927dee294294fc1",
     "START-LESSON.md": "036dd701bc93bdd7a1407c313cdd63ca07ca2fb07f18ec6871c36823bf8987af",
     "START.html": "a9eb2589838a286d898c2c2ceee5737532f14e99c3c1ae2190265d2c48333c79",
     "START.md": "3dda458c968c02374576d588af572c800e202712a732316fd35a21b7e202d36c",
     "STARTER-WORKSHEET.html": "589582482a21769d98510339d7c8b8bd3f71b4572282a6230c935e3cb8bd84c7",
     "STARTER-WORKSHEET.md": "48c8ddbdc4a1857a9ec15cc6d7416120e11629cf76c2a32a5fe0c3b51cfddda0",
+    "TABLE-SEARCH.html": "f59cf6ea8b7aad27a76da2fdea6ffdff79f38f692b3dc32b18038afc29f99320",
     "TERMS.md": "892323061145085568ec891ec097d84fbfc8f082b6801a09d09df604c3a2b820",
     "TRAINING-SOLUTION.md": "203553ba86752cf0f5599a52d442dd7a1bdc960c669ffe2826fd8219fb561e74",
     "TRAINING.html": "e407b02605bbe9d0b968e716c089878adb89f5fb68c2e34d6305c40af3f2b102",
     "TRAINING.md": "5ea88b28f72a0422936a44afcfd3b00fbf1d85ddc8235d1436a0e1ad1d2a7b73",
     "TROUBLESHOOTING.md": "286457e5fd939521376996f84aa59034dfcded688c5af5ce48e7250f341fbd1b",
-    "WALKTHROUGH.md": "90e1c0a5c01907da9744833c06126eb9344b974a78a866f07503e5d42e41f6bc",
+    "WALKTHROUGH.md": "894a2bd269672fd5154ccedd0143bab7590a127cd15ac6a751604e2207d7cab4",
     "WORKSHEET.html": "24021e22be5e5e4ff8ddc54a7b24222497a3bd53fbc8713e53ac84efe06ddb7a",
     "WORKSHEET.md": "1cba5e55ac459d3f47de5060fb895a7d7d3ffbe1145389770375dd159f4fc805"
   },
-  "limits": "Portable checks in qa/verify_site.py verify HTML structure, links, image dimensions, answer separation and source-table PDF hashes directly from this site copy. Full editorial/CDP/print scripts run in evidence/editorial-simplification-20261024/. Technical checks do not prove human comprehension, physical print or live game behaviour."
+  "limits": "Portable checks in qa/verify_site.py verify HTML structure, links, image dimensions, answer separation and source-table PDF hashes directly from this site copy. Full editorial/CDP/print scripts live in the evidence directories named above. Technical checks do not prove human comprehension, physical print or live game behaviour."
 }
